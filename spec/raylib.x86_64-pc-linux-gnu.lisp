@@ -16,488 +16,488 @@
 
 
 ;; "/usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h:12:27"
-;; Skipping definition ((:TAG . "typedef") (:NS . 0) (:NAME . "__gnuc_va_list") (:LOCATION . "/usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h:12:27") (:TYPE (:TAG . "__builtin_va_list"))) because of missing type |__builtin_va_list|
+;; Skipping definition ((:TAG . "typedef") (:NS . 0) (:NAME . "__gnuc_va_list") (:LOCATION . "/usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h:12:27") (:TYPE (:TAG . "__builtin_va_list"))) because of missing type __BUILTIN_VA_LIST
 
 ;; "/usr/lib/llvm-18/lib/clang/18/include/__stdarg_va_list.h:12:27"
-;; Skipping definition ((:TAG . "typedef") (:NS . 0) (:NAME . "va_list") (:LOCATION . "/usr/lib/llvm-18/lib/clang/18/include/__stdarg_va_list.h:12:27") (:TYPE (:TAG . "__builtin_va_list"))) because of missing type |__builtin_va_list|
+;; Skipping definition ((:TAG . "typedef") (:NS . 0) (:NAME . "va_list") (:LOCATION . "/usr/lib/llvm-18/lib/clang/18/include/__stdarg_va_list.h:12:27") (:TYPE (:TAG . "__builtin_va_list"))) because of missing type __BUILTIN_VA_LIST
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:209:16"
-(CFFI:DEFCSTRUCT (|Vector2| :SIZE 8)
-  (|x| :FLOAT :OFFSET 0)
-  (|y| :FLOAT :OFFSET 4))
+(CFFI:DEFCSTRUCT (VECTOR2 :SIZE 8)
+  (X :FLOAT :OFFSET 0)
+  (Y :FLOAT :OFFSET 4))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:212:3"
-(CFFI:DEFCTYPE |Vector2| (:STRUCT |Vector2|))
+(CFFI:DEFCTYPE VECTOR2 (:STRUCT VECTOR2))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:215:16"
-(CFFI:DEFCSTRUCT (|Vector3| :SIZE 12)
-  (|x| :FLOAT :OFFSET 0)
-  (|y| :FLOAT :OFFSET 4)
-  (|z| :FLOAT :OFFSET 8))
+(CFFI:DEFCSTRUCT (VECTOR3 :SIZE 12)
+  (X :FLOAT :OFFSET 0)
+  (Y :FLOAT :OFFSET 4)
+  (Z :FLOAT :OFFSET 8))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:219:3"
-(CFFI:DEFCTYPE |Vector3| (:STRUCT |Vector3|))
+(CFFI:DEFCTYPE VECTOR3 (:STRUCT VECTOR3))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:222:16"
-(CFFI:DEFCSTRUCT (|Vector4| :SIZE 16)
-  (|x| :FLOAT :OFFSET 0)
-  (|y| :FLOAT :OFFSET 4)
-  (|z| :FLOAT :OFFSET 8)
-  (|w| :FLOAT :OFFSET 12))
+(CFFI:DEFCSTRUCT (VECTOR4 :SIZE 16)
+  (X :FLOAT :OFFSET 0)
+  (Y :FLOAT :OFFSET 4)
+  (Z :FLOAT :OFFSET 8)
+  (W :FLOAT :OFFSET 12))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:227:3"
-(CFFI:DEFCTYPE |Vector4| (:STRUCT |Vector4|))
+(CFFI:DEFCTYPE VECTOR4 (:STRUCT VECTOR4))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:230:17"
-(CFFI:DEFCTYPE |Quaternion| |Vector4|)
+(CFFI:DEFCTYPE QUATERNION VECTOR4)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:233:16"
-(CFFI:DEFCSTRUCT (|Matrix| :SIZE 64)
-  (|m0| :FLOAT :OFFSET 0)
-  (|m4| :FLOAT :OFFSET 4)
-  (|m8| :FLOAT :OFFSET 8)
-  (|m12| :FLOAT :OFFSET 12)
-  (|m1| :FLOAT :OFFSET 16)
-  (|m5| :FLOAT :OFFSET 20)
-  (|m9| :FLOAT :OFFSET 24)
-  (|m13| :FLOAT :OFFSET 28)
-  (|m2| :FLOAT :OFFSET 32)
-  (|m6| :FLOAT :OFFSET 36)
-  (|m10| :FLOAT :OFFSET 40)
-  (|m14| :FLOAT :OFFSET 44)
-  (|m3| :FLOAT :OFFSET 48)
-  (|m7| :FLOAT :OFFSET 52)
-  (|m11| :FLOAT :OFFSET 56)
-  (|m15| :FLOAT :OFFSET 60))
+(CFFI:DEFCSTRUCT (MATRIX :SIZE 64)
+  (M0 :FLOAT :OFFSET 0)
+  (M4 :FLOAT :OFFSET 4)
+  (M8 :FLOAT :OFFSET 8)
+  (M12 :FLOAT :OFFSET 12)
+  (M1 :FLOAT :OFFSET 16)
+  (M5 :FLOAT :OFFSET 20)
+  (M9 :FLOAT :OFFSET 24)
+  (M13 :FLOAT :OFFSET 28)
+  (M2 :FLOAT :OFFSET 32)
+  (M6 :FLOAT :OFFSET 36)
+  (M10 :FLOAT :OFFSET 40)
+  (M14 :FLOAT :OFFSET 44)
+  (M3 :FLOAT :OFFSET 48)
+  (M7 :FLOAT :OFFSET 52)
+  (M11 :FLOAT :OFFSET 56)
+  (M15 :FLOAT :OFFSET 60))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:238:3"
-(CFFI:DEFCTYPE |Matrix| (:STRUCT |Matrix|))
+(CFFI:DEFCTYPE MATRIX (:STRUCT MATRIX))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:241:16"
-(CFFI:DEFCSTRUCT (|Color| :SIZE 4)
-  (|r| :UNSIGNED-CHAR :OFFSET 0)
-  (|g| :UNSIGNED-CHAR :OFFSET 1)
-  (|b| :UNSIGNED-CHAR :OFFSET 2)
-  (|a| :UNSIGNED-CHAR :OFFSET 3))
+(CFFI:DEFCSTRUCT (COLOR :SIZE 4)
+  (R :UNSIGNED-CHAR :OFFSET 0)
+  (G :UNSIGNED-CHAR :OFFSET 1)
+  (B :UNSIGNED-CHAR :OFFSET 2)
+  (A :UNSIGNED-CHAR :OFFSET 3))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:246:3"
-(CFFI:DEFCTYPE |Color| (:STRUCT |Color|))
+(CFFI:DEFCTYPE COLOR (:STRUCT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:249:16"
-(CFFI:DEFCSTRUCT (|Rectangle| :SIZE 16)
-  (|x| :FLOAT :OFFSET 0)
-  (|y| :FLOAT :OFFSET 4)
-  (|width| :FLOAT :OFFSET 8)
-  (|height| :FLOAT :OFFSET 12))
+(CFFI:DEFCSTRUCT (RECTANGLE :SIZE 16)
+  (X :FLOAT :OFFSET 0)
+  (Y :FLOAT :OFFSET 4)
+  (WIDTH :FLOAT :OFFSET 8)
+  (HEIGHT :FLOAT :OFFSET 12))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:254:3"
-(CFFI:DEFCTYPE |Rectangle| (:STRUCT |Rectangle|))
+(CFFI:DEFCTYPE RECTANGLE (:STRUCT RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:257:16"
-(CFFI:DEFCSTRUCT (|Image| :SIZE 24)
-  (|data| (:POINTER :VOID) :OFFSET 0)
-  (|width| :INT :OFFSET 8)
-  (|height| :INT :OFFSET 12)
-  (|mipmaps| :INT :OFFSET 16)
-  (|format| :INT :OFFSET 20))
+(CFFI:DEFCSTRUCT (IMAGE :SIZE 24)
+  (DATA (:POINTER :VOID) :OFFSET 0)
+  (WIDTH :INT :OFFSET 8)
+  (HEIGHT :INT :OFFSET 12)
+  (MIPMAPS :INT :OFFSET 16)
+  (FORMAT :INT :OFFSET 20))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:263:3"
-(CFFI:DEFCTYPE |Image| (:STRUCT |Image|))
+(CFFI:DEFCTYPE IMAGE (:STRUCT IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:266:16"
-(CFFI:DEFCSTRUCT (|Texture| :SIZE 20)
-  (|id| :UNSIGNED-INT :OFFSET 0)
-  (|width| :INT :OFFSET 4)
-  (|height| :INT :OFFSET 8)
-  (|mipmaps| :INT :OFFSET 12)
-  (|format| :INT :OFFSET 16))
+(CFFI:DEFCSTRUCT (TEXTURE :SIZE 20)
+  (ID :UNSIGNED-INT :OFFSET 0)
+  (WIDTH :INT :OFFSET 4)
+  (HEIGHT :INT :OFFSET 8)
+  (MIPMAPS :INT :OFFSET 12)
+  (FORMAT :INT :OFFSET 16))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:272:3"
-(CFFI:DEFCTYPE |Texture| (:STRUCT |Texture|))
+(CFFI:DEFCTYPE TEXTURE (:STRUCT TEXTURE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:275:17"
-(CFFI:DEFCTYPE |Texture2D| |Texture|)
+(CFFI:DEFCTYPE TEXTURE2D TEXTURE)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:278:17"
-(CFFI:DEFCTYPE |TextureCubemap| |Texture|)
+(CFFI:DEFCTYPE TEXTURECUBEMAP TEXTURE)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:281:16"
-(CFFI:DEFCSTRUCT (|RenderTexture| :SIZE 44)
-  (|id| :UNSIGNED-INT :OFFSET 0)
-  (|texture| |Texture| :OFFSET 4)
-  (|depth| |Texture| :OFFSET 24))
+(CFFI:DEFCSTRUCT (RENDERTEXTURE :SIZE 44)
+  (ID :UNSIGNED-INT :OFFSET 0)
+  (TEXTURE TEXTURE :OFFSET 4)
+  (DEPTH TEXTURE :OFFSET 24))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:285:3"
-(CFFI:DEFCTYPE |RenderTexture| (:STRUCT |RenderTexture|))
+(CFFI:DEFCTYPE RENDERTEXTURE (:STRUCT RENDERTEXTURE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:288:23"
-(CFFI:DEFCTYPE |RenderTexture2D| |RenderTexture|)
+(CFFI:DEFCTYPE RENDERTEXTURE2D RENDERTEXTURE)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:291:16"
-(CFFI:DEFCSTRUCT (|NPatchInfo| :SIZE 36)
-  (|source| |Rectangle| :OFFSET 0)
-  (|left| :INT :OFFSET 16)
-  (|top| :INT :OFFSET 20)
-  (|right| :INT :OFFSET 24)
-  (|bottom| :INT :OFFSET 28)
-  (|layout| :INT :OFFSET 32))
+(CFFI:DEFCSTRUCT (NPATCHINFO :SIZE 36)
+  (SOURCE RECTANGLE :OFFSET 0)
+  (LEFT :INT :OFFSET 16)
+  (TOP :INT :OFFSET 20)
+  (RIGHT :INT :OFFSET 24)
+  (BOTTOM :INT :OFFSET 28)
+  (LAYOUT :INT :OFFSET 32))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:298:3"
-(CFFI:DEFCTYPE |NPatchInfo| (:STRUCT |NPatchInfo|))
+(CFFI:DEFCTYPE NPATCHINFO (:STRUCT NPATCHINFO))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:301:16"
-(CFFI:DEFCSTRUCT (|GlyphInfo| :SIZE 40)
-  (|value| :INT :OFFSET 0)
-  (|offsetX| :INT :OFFSET 4)
-  (|offsetY| :INT :OFFSET 8)
-  (|advanceX| :INT :OFFSET 12)
-  (|image| |Image| :OFFSET 16))
+(CFFI:DEFCSTRUCT (GLYPHINFO :SIZE 40)
+  (VALUE :INT :OFFSET 0)
+  (OFFSETX :INT :OFFSET 4)
+  (OFFSETY :INT :OFFSET 8)
+  (ADVANCEX :INT :OFFSET 12)
+  (IMAGE IMAGE :OFFSET 16))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:307:3"
-(CFFI:DEFCTYPE |GlyphInfo| (:STRUCT |GlyphInfo|))
+(CFFI:DEFCTYPE GLYPHINFO (:STRUCT GLYPHINFO))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:310:16"
-(CFFI:DEFCSTRUCT (|Font| :SIZE 48)
-  (|baseSize| :INT :OFFSET 0)
-  (|glyphCount| :INT :OFFSET 4)
-  (|glyphPadding| :INT :OFFSET 8)
-  (|texture| |Texture2D| :OFFSET 12)
-  (|recs| (:POINTER |Rectangle|) :OFFSET 32)
-  (|glyphs| (:POINTER |GlyphInfo|) :OFFSET 40))
+(CFFI:DEFCSTRUCT (FONT :SIZE 48)
+  (BASESIZE :INT :OFFSET 0)
+  (GLYPHCOUNT :INT :OFFSET 4)
+  (GLYPHPADDING :INT :OFFSET 8)
+  (TEXTURE TEXTURE2D :OFFSET 12)
+  (RECS (:POINTER RECTANGLE) :OFFSET 32)
+  (GLYPHS (:POINTER GLYPHINFO) :OFFSET 40))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:317:3"
-(CFFI:DEFCTYPE |Font| (:STRUCT |Font|))
+(CFFI:DEFCTYPE FONT (:STRUCT FONT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:320:16"
-(CFFI:DEFCSTRUCT (|Camera3D| :SIZE 44)
-  (|position| |Vector3| :OFFSET 0)
-  (|target| |Vector3| :OFFSET 12)
-  (|up| |Vector3| :OFFSET 24)
-  (|fovy| :FLOAT :OFFSET 36)
-  (|projection| :INT :OFFSET 40))
+(CFFI:DEFCSTRUCT (CAMERA3D :SIZE 44)
+  (POSITION VECTOR3 :OFFSET 0)
+  (TARGET VECTOR3 :OFFSET 12)
+  (UP VECTOR3 :OFFSET 24)
+  (FOVY :FLOAT :OFFSET 36)
+  (PROJECTION :INT :OFFSET 40))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:326:3"
-(CFFI:DEFCTYPE |Camera3D| (:STRUCT |Camera3D|))
+(CFFI:DEFCTYPE CAMERA3D (:STRUCT CAMERA3D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:328:18"
-(CFFI:DEFCTYPE |Camera| |Camera3D|)
+(CFFI:DEFCTYPE CAMERA CAMERA3D)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:331:16"
-(CFFI:DEFCSTRUCT (|Camera2D| :SIZE 24)
-  (|offset| |Vector2| :OFFSET 0)
-  (|target| |Vector2| :OFFSET 8)
-  (|rotation| :FLOAT :OFFSET 16)
-  (|zoom| :FLOAT :OFFSET 20))
+(CFFI:DEFCSTRUCT (CAMERA2D :SIZE 24)
+  (OFFSET VECTOR2 :OFFSET 0)
+  (TARGET VECTOR2 :OFFSET 8)
+  (ROTATION :FLOAT :OFFSET 16)
+  (ZOOM :FLOAT :OFFSET 20))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:336:3"
-(CFFI:DEFCTYPE |Camera2D| (:STRUCT |Camera2D|))
+(CFFI:DEFCTYPE CAMERA2D (:STRUCT CAMERA2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:339:16"
-(CFFI:DEFCSTRUCT (|Mesh| :SIZE 120)
-  (|vertexCount| :INT :OFFSET 0)
-  (|triangleCount| :INT :OFFSET 4)
-  (|vertices| (:POINTER :FLOAT) :OFFSET 8)
-  (|texcoords| (:POINTER :FLOAT) :OFFSET 16)
-  (|texcoords2| (:POINTER :FLOAT) :OFFSET 24)
-  (|normals| (:POINTER :FLOAT) :OFFSET 32)
-  (|tangents| (:POINTER :FLOAT) :OFFSET 40)
-  (|colors| (:POINTER :UNSIGNED-CHAR) :OFFSET 48)
-  (|indices| (:POINTER :UNSIGNED-SHORT) :OFFSET 56)
-  (|animVertices| (:POINTER :FLOAT) :OFFSET 64)
-  (|animNormals| (:POINTER :FLOAT) :OFFSET 72)
-  (|boneIds| (:POINTER :UNSIGNED-CHAR) :OFFSET 80)
-  (|boneWeights| (:POINTER :FLOAT) :OFFSET 88)
-  (|boneMatrices| (:POINTER |Matrix|) :OFFSET 96)
-  (|boneCount| :INT :OFFSET 104)
-  (|vaoId| :UNSIGNED-INT :OFFSET 108)
-  (|vboId| (:POINTER :UNSIGNED-INT) :OFFSET 112))
+(CFFI:DEFCSTRUCT (MESH :SIZE 120)
+  (VERTEXCOUNT :INT :OFFSET 0)
+  (TRIANGLECOUNT :INT :OFFSET 4)
+  (VERTICES (:POINTER :FLOAT) :OFFSET 8)
+  (TEXCOORDS (:POINTER :FLOAT) :OFFSET 16)
+  (TEXCOORDS2 (:POINTER :FLOAT) :OFFSET 24)
+  (NORMALS (:POINTER :FLOAT) :OFFSET 32)
+  (TANGENTS (:POINTER :FLOAT) :OFFSET 40)
+  (COLORS (:POINTER :UNSIGNED-CHAR) :OFFSET 48)
+  (INDICES (:POINTER :UNSIGNED-SHORT) :OFFSET 56)
+  (ANIMVERTICES (:POINTER :FLOAT) :OFFSET 64)
+  (ANIMNORMALS (:POINTER :FLOAT) :OFFSET 72)
+  (BONEIDS (:POINTER :UNSIGNED-CHAR) :OFFSET 80)
+  (BONEWEIGHTS (:POINTER :FLOAT) :OFFSET 88)
+  (BONEMATRICES (:POINTER MATRIX) :OFFSET 96)
+  (BONECOUNT :INT :OFFSET 104)
+  (VAOID :UNSIGNED-INT :OFFSET 108)
+  (VBOID (:POINTER :UNSIGNED-INT) :OFFSET 112))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:363:3"
-(CFFI:DEFCTYPE |Mesh| (:STRUCT |Mesh|))
+(CFFI:DEFCTYPE MESH (:STRUCT MESH))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:366:16"
-(CFFI:DEFCSTRUCT (|Shader| :SIZE 16)
-  (|id| :UNSIGNED-INT :OFFSET 0)
-  (|locs| (:POINTER :INT) :OFFSET 8))
+(CFFI:DEFCSTRUCT (SHADER :SIZE 16)
+  (ID :UNSIGNED-INT :OFFSET 0)
+  (LOCS (:POINTER :INT) :OFFSET 8))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:369:3"
-(CFFI:DEFCTYPE |Shader| (:STRUCT |Shader|))
+(CFFI:DEFCTYPE SHADER (:STRUCT SHADER))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:372:16"
-(CFFI:DEFCSTRUCT (|MaterialMap| :SIZE 28)
-  (|texture| |Texture2D| :OFFSET 0)
-  (|color| |Color| :OFFSET 20)
-  (|value| :FLOAT :OFFSET 24))
+(CFFI:DEFCSTRUCT (MATERIALMAP :SIZE 28)
+  (TEXTURE TEXTURE2D :OFFSET 0)
+  (COLOR COLOR :OFFSET 20)
+  (VALUE :FLOAT :OFFSET 24))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:376:3"
-(CFFI:DEFCTYPE |MaterialMap| (:STRUCT |MaterialMap|))
+(CFFI:DEFCTYPE MATERIALMAP (:STRUCT MATERIALMAP))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:379:16"
-(CFFI:DEFCSTRUCT (|Material| :SIZE 40)
-  (|shader| |Shader| :OFFSET 0)
-  (|maps| (:POINTER |MaterialMap|) :OFFSET 16)
-  (|params| (:ARRAY :FLOAT 4) :OFFSET 24))
+(CFFI:DEFCSTRUCT (MATERIAL :SIZE 40)
+  (SHADER SHADER :OFFSET 0)
+  (MAPS (:POINTER MATERIALMAP) :OFFSET 16)
+  (PARAMS (:ARRAY :FLOAT 4) :OFFSET 24))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:383:3"
-(CFFI:DEFCTYPE |Material| (:STRUCT |Material|))
+(CFFI:DEFCTYPE MATERIAL (:STRUCT MATERIAL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:386:16"
-(CFFI:DEFCSTRUCT (|Transform| :SIZE 40)
-  (|translation| |Vector3| :OFFSET 0)
-  (|rotation| |Quaternion| :OFFSET 12)
-  (|scale| |Vector3| :OFFSET 28))
+(CFFI:DEFCSTRUCT (TRANSFORM :SIZE 40)
+  (TRANSLATION VECTOR3 :OFFSET 0)
+  (ROTATION QUATERNION :OFFSET 12)
+  (SCALE VECTOR3 :OFFSET 28))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:390:3"
-(CFFI:DEFCTYPE |Transform| (:STRUCT |Transform|))
+(CFFI:DEFCTYPE TRANSFORM (:STRUCT TRANSFORM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:393:16"
-(CFFI:DEFCSTRUCT (|BoneInfo| :SIZE 36)
-  (|name| (:ARRAY :CHAR 32) :OFFSET 0)
-  (|parent| :INT :OFFSET 32))
+(CFFI:DEFCSTRUCT (BONEINFO :SIZE 36)
+  (NAME (:ARRAY :CHAR 32) :OFFSET 0)
+  (PARENT :INT :OFFSET 32))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:396:3"
-(CFFI:DEFCTYPE |BoneInfo| (:STRUCT |BoneInfo|))
+(CFFI:DEFCTYPE BONEINFO (:STRUCT BONEINFO))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:399:16"
-(CFFI:DEFCSTRUCT (|Model| :SIZE 120)
-  (|transform| |Matrix| :OFFSET 0)
-  (|meshCount| :INT :OFFSET 64)
-  (|materialCount| :INT :OFFSET 68)
-  (|meshes| (:POINTER |Mesh|) :OFFSET 72)
-  (|materials| (:POINTER |Material|) :OFFSET 80)
-  (|meshMaterial| (:POINTER :INT) :OFFSET 88)
-  (|boneCount| :INT :OFFSET 96)
-  (|bones| (:POINTER |BoneInfo|) :OFFSET 104)
-  (|bindPose| (:POINTER |Transform|) :OFFSET 112))
+(CFFI:DEFCSTRUCT (MODEL :SIZE 120)
+  (TRANSFORM MATRIX :OFFSET 0)
+  (MESHCOUNT :INT :OFFSET 64)
+  (MATERIALCOUNT :INT :OFFSET 68)
+  (MESHES (:POINTER MESH) :OFFSET 72)
+  (MATERIALS (:POINTER MATERIAL) :OFFSET 80)
+  (MESHMATERIAL (:POINTER :INT) :OFFSET 88)
+  (BONECOUNT :INT :OFFSET 96)
+  (BONES (:POINTER BONEINFO) :OFFSET 104)
+  (BINDPOSE (:POINTER TRANSFORM) :OFFSET 112))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:412:3"
-(CFFI:DEFCTYPE |Model| (:STRUCT |Model|))
+(CFFI:DEFCTYPE MODEL (:STRUCT MODEL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:415:16"
-(CFFI:DEFCSTRUCT (|ModelAnimation| :SIZE 56)
-  (|boneCount| :INT :OFFSET 0)
-  (|frameCount| :INT :OFFSET 4)
-  (|bones| (:POINTER |BoneInfo|) :OFFSET 8)
-  (|framePoses| (:POINTER (:POINTER |Transform|)) :OFFSET 16)
-  (|name| (:ARRAY :CHAR 32) :OFFSET 24))
+(CFFI:DEFCSTRUCT (MODELANIMATION :SIZE 56)
+  (BONECOUNT :INT :OFFSET 0)
+  (FRAMECOUNT :INT :OFFSET 4)
+  (BONES (:POINTER BONEINFO) :OFFSET 8)
+  (FRAMEPOSES (:POINTER (:POINTER TRANSFORM)) :OFFSET 16)
+  (NAME (:ARRAY :CHAR 32) :OFFSET 24))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:421:3"
-(CFFI:DEFCTYPE |ModelAnimation| (:STRUCT |ModelAnimation|))
+(CFFI:DEFCTYPE MODELANIMATION (:STRUCT MODELANIMATION))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:424:16"
-(CFFI:DEFCSTRUCT (|Ray| :SIZE 24)
-  (|position| |Vector3| :OFFSET 0)
-  (|direction| |Vector3| :OFFSET 12))
+(CFFI:DEFCSTRUCT (RAY :SIZE 24)
+  (POSITION VECTOR3 :OFFSET 0)
+  (DIRECTION VECTOR3 :OFFSET 12))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:427:3"
-(CFFI:DEFCTYPE |Ray| (:STRUCT |Ray|))
+(CFFI:DEFCTYPE RAY (:STRUCT RAY))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:430:16"
-(CFFI:DEFCSTRUCT (|RayCollision| :SIZE 32)
-  (|hit| :BOOL :OFFSET 0)
-  (|distance| :FLOAT :OFFSET 4)
-  (|point| |Vector3| :OFFSET 8)
-  (|normal| |Vector3| :OFFSET 20))
+(CFFI:DEFCSTRUCT (RAYCOLLISION :SIZE 32)
+  (HIT :BOOL :OFFSET 0)
+  (DISTANCE :FLOAT :OFFSET 4)
+  (POINT VECTOR3 :OFFSET 8)
+  (NORMAL VECTOR3 :OFFSET 20))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:435:3"
-(CFFI:DEFCTYPE |RayCollision| (:STRUCT |RayCollision|))
+(CFFI:DEFCTYPE RAYCOLLISION (:STRUCT RAYCOLLISION))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:438:16"
-(CFFI:DEFCSTRUCT (|BoundingBox| :SIZE 24)
-  (|min| |Vector3| :OFFSET 0)
-  (|max| |Vector3| :OFFSET 12))
+(CFFI:DEFCSTRUCT (BOUNDINGBOX :SIZE 24)
+  (MIN VECTOR3 :OFFSET 0)
+  (MAX VECTOR3 :OFFSET 12))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:441:3"
-(CFFI:DEFCTYPE |BoundingBox| (:STRUCT |BoundingBox|))
+(CFFI:DEFCTYPE BOUNDINGBOX (:STRUCT BOUNDINGBOX))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:444:16"
-(CFFI:DEFCSTRUCT (|Wave| :SIZE 24)
-  (|frameCount| :UNSIGNED-INT :OFFSET 0)
-  (|sampleRate| :UNSIGNED-INT :OFFSET 4)
-  (|sampleSize| :UNSIGNED-INT :OFFSET 8)
-  (|channels| :UNSIGNED-INT :OFFSET 12)
-  (|data| (:POINTER :VOID) :OFFSET 16))
+(CFFI:DEFCSTRUCT (WAVE :SIZE 24)
+  (FRAMECOUNT :UNSIGNED-INT :OFFSET 0)
+  (SAMPLERATE :UNSIGNED-INT :OFFSET 4)
+  (SAMPLESIZE :UNSIGNED-INT :OFFSET 8)
+  (CHANNELS :UNSIGNED-INT :OFFSET 12)
+  (DATA (:POINTER :VOID) :OFFSET 16))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:450:3"
-(CFFI:DEFCTYPE |Wave| (:STRUCT |Wave|))
+(CFFI:DEFCTYPE WAVE (:STRUCT WAVE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:454:16"
-(CFFI:DEFCSTRUCT (|rAudioBuffer| :SIZE 0))
+(CFFI:DEFCSTRUCT (RAUDIOBUFFER :SIZE 0))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:454:29"
-(CFFI:DEFCSTRUCT (|rAudioBuffer| :SIZE 0))
+(CFFI:DEFCSTRUCT (RAUDIOBUFFER :SIZE 0))
 
-(CFFI:DEFCTYPE |rAudioBuffer| (:STRUCT |rAudioBuffer|))
+(CFFI:DEFCTYPE RAUDIOBUFFER (:STRUCT RAUDIOBUFFER))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:455:16"
-(CFFI:DEFCSTRUCT (|rAudioProcessor| :SIZE 0))
+(CFFI:DEFCSTRUCT (RAUDIOPROCESSOR :SIZE 0))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:455:32"
-(CFFI:DEFCSTRUCT (|rAudioProcessor| :SIZE 0))
+(CFFI:DEFCSTRUCT (RAUDIOPROCESSOR :SIZE 0))
 
-(CFFI:DEFCTYPE |rAudioProcessor| (:STRUCT |rAudioProcessor|))
+(CFFI:DEFCTYPE RAUDIOPROCESSOR (:STRUCT RAUDIOPROCESSOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:458:16"
-(CFFI:DEFCSTRUCT (|AudioStream| :SIZE 32)
-  (|buffer| (:POINTER |rAudioBuffer|) :OFFSET 0)
-  (|processor| (:POINTER |rAudioProcessor|) :OFFSET 8)
-  (|sampleRate| :UNSIGNED-INT :OFFSET 16)
-  (|sampleSize| :UNSIGNED-INT :OFFSET 20)
-  (|channels| :UNSIGNED-INT :OFFSET 24))
+(CFFI:DEFCSTRUCT (AUDIOSTREAM :SIZE 32)
+  (BUFFER (:POINTER RAUDIOBUFFER) :OFFSET 0)
+  (PROCESSOR (:POINTER RAUDIOPROCESSOR) :OFFSET 8)
+  (SAMPLERATE :UNSIGNED-INT :OFFSET 16)
+  (SAMPLESIZE :UNSIGNED-INT :OFFSET 20)
+  (CHANNELS :UNSIGNED-INT :OFFSET 24))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:465:3"
-(CFFI:DEFCTYPE |AudioStream| (:STRUCT |AudioStream|))
+(CFFI:DEFCTYPE AUDIOSTREAM (:STRUCT AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:468:16"
-(CFFI:DEFCSTRUCT (|Sound| :SIZE 40)
-  (|stream| |AudioStream| :OFFSET 0)
-  (|frameCount| :UNSIGNED-INT :OFFSET 32))
+(CFFI:DEFCSTRUCT (SOUND :SIZE 40)
+  (STREAM AUDIOSTREAM :OFFSET 0)
+  (FRAMECOUNT :UNSIGNED-INT :OFFSET 32))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:471:3"
-(CFFI:DEFCTYPE |Sound| (:STRUCT |Sound|))
+(CFFI:DEFCTYPE SOUND (:STRUCT SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:474:16"
-(CFFI:DEFCSTRUCT (|Music| :SIZE 56)
-  (|stream| |AudioStream| :OFFSET 0)
-  (|frameCount| :UNSIGNED-INT :OFFSET 32)
-  (|looping| :BOOL :OFFSET 36)
-  (|ctxType| :INT :OFFSET 40)
-  (|ctxData| (:POINTER :VOID) :OFFSET 48))
+(CFFI:DEFCSTRUCT (MUSIC :SIZE 56)
+  (STREAM AUDIOSTREAM :OFFSET 0)
+  (FRAMECOUNT :UNSIGNED-INT :OFFSET 32)
+  (LOOPING :BOOL :OFFSET 36)
+  (CTXTYPE :INT :OFFSET 40)
+  (CTXDATA (:POINTER :VOID) :OFFSET 48))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:481:3"
-(CFFI:DEFCTYPE |Music| (:STRUCT |Music|))
+(CFFI:DEFCTYPE MUSIC (:STRUCT MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:484:16"
-(CFFI:DEFCSTRUCT (|VrDeviceInfo| :SIZE 60)
-  (|hResolution| :INT :OFFSET 0)
-  (|vResolution| :INT :OFFSET 4)
-  (|hScreenSize| :FLOAT :OFFSET 8)
-  (|vScreenSize| :FLOAT :OFFSET 12)
-  (|eyeToScreenDistance| :FLOAT :OFFSET 16)
-  (|lensSeparationDistance| :FLOAT :OFFSET 20)
-  (|interpupillaryDistance| :FLOAT :OFFSET 24)
-  (|lensDistortionValues| (:ARRAY :FLOAT 4) :OFFSET 28)
-  (|chromaAbCorrection| (:ARRAY :FLOAT 4) :OFFSET 44))
+(CFFI:DEFCSTRUCT (VRDEVICEINFO :SIZE 60)
+  (HRESOLUTION :INT :OFFSET 0)
+  (VRESOLUTION :INT :OFFSET 4)
+  (HSCREENSIZE :FLOAT :OFFSET 8)
+  (VSCREENSIZE :FLOAT :OFFSET 12)
+  (EYETOSCREENDISTANCE :FLOAT :OFFSET 16)
+  (LENSSEPARATIONDISTANCE :FLOAT :OFFSET 20)
+  (INTERPUPILLARYDISTANCE :FLOAT :OFFSET 24)
+  (LENSDISTORTIONVALUES (:ARRAY :FLOAT 4) :OFFSET 28)
+  (CHROMAABCORRECTION (:ARRAY :FLOAT 4) :OFFSET 44))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:494:3"
-(CFFI:DEFCTYPE |VrDeviceInfo| (:STRUCT |VrDeviceInfo|))
+(CFFI:DEFCTYPE VRDEVICEINFO (:STRUCT VRDEVICEINFO))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:497:16"
-(CFFI:DEFCSTRUCT (|VrStereoConfig| :SIZE 304)
-  (|projection| (:ARRAY |Matrix| 2) :OFFSET 0)
-  (|viewOffset| (:ARRAY |Matrix| 2) :OFFSET 128)
-  (|leftLensCenter| (:ARRAY :FLOAT 2) :OFFSET 256)
-  (|rightLensCenter| (:ARRAY :FLOAT 2) :OFFSET 264)
-  (|leftScreenCenter| (:ARRAY :FLOAT 2) :OFFSET 272)
-  (|rightScreenCenter| (:ARRAY :FLOAT 2) :OFFSET 280)
-  (|scale| (:ARRAY :FLOAT 2) :OFFSET 288)
-  (|scaleIn| (:ARRAY :FLOAT 2) :OFFSET 296))
+(CFFI:DEFCSTRUCT (VRSTEREOCONFIG :SIZE 304)
+  (PROJECTION (:ARRAY MATRIX 2) :OFFSET 0)
+  (VIEWOFFSET (:ARRAY MATRIX 2) :OFFSET 128)
+  (LEFTLENSCENTER (:ARRAY :FLOAT 2) :OFFSET 256)
+  (RIGHTLENSCENTER (:ARRAY :FLOAT 2) :OFFSET 264)
+  (LEFTSCREENCENTER (:ARRAY :FLOAT 2) :OFFSET 272)
+  (RIGHTSCREENCENTER (:ARRAY :FLOAT 2) :OFFSET 280)
+  (SCALE (:ARRAY :FLOAT 2) :OFFSET 288)
+  (SCALEIN (:ARRAY :FLOAT 2) :OFFSET 296))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:506:3"
-(CFFI:DEFCTYPE |VrStereoConfig| (:STRUCT |VrStereoConfig|))
+(CFFI:DEFCTYPE VRSTEREOCONFIG (:STRUCT VRSTEREOCONFIG))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:509:16"
-(CFFI:DEFCSTRUCT (|FilePathList| :SIZE 16)
-  (|capacity| :UNSIGNED-INT :OFFSET 0)
-  (|count| :UNSIGNED-INT :OFFSET 4)
-  (|paths| (:POINTER (:POINTER :CHAR)) :OFFSET 8))
+(CFFI:DEFCSTRUCT (FILEPATHLIST :SIZE 16)
+  (CAPACITY :UNSIGNED-INT :OFFSET 0)
+  (COUNT :UNSIGNED-INT :OFFSET 4)
+  (PATHS (:POINTER (:POINTER :CHAR)) :OFFSET 8))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:513:3"
-(CFFI:DEFCTYPE |FilePathList| (:STRUCT |FilePathList|))
+(CFFI:DEFCTYPE FILEPATHLIST (:STRUCT FILEPATHLIST))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:516:16"
-(CFFI:DEFCSTRUCT (|AutomationEvent| :SIZE 24)
-  (|frame| :UNSIGNED-INT :OFFSET 0)
-  (|type| :UNSIGNED-INT :OFFSET 4)
-  (|params| (:ARRAY :INT 4) :OFFSET 8))
+(CFFI:DEFCSTRUCT (AUTOMATIONEVENT :SIZE 24)
+  (FRAME :UNSIGNED-INT :OFFSET 0)
+  (TYPE :UNSIGNED-INT :OFFSET 4)
+  (PARAMS (:ARRAY :INT 4) :OFFSET 8))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:520:3"
-(CFFI:DEFCTYPE |AutomationEvent| (:STRUCT |AutomationEvent|))
+(CFFI:DEFCTYPE AUTOMATIONEVENT (:STRUCT AUTOMATIONEVENT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:523:16"
-(CFFI:DEFCSTRUCT (|AutomationEventList| :SIZE 16)
-  (|capacity| :UNSIGNED-INT :OFFSET 0)
-  (|count| :UNSIGNED-INT :OFFSET 4)
-  (|events| (:POINTER |AutomationEvent|) :OFFSET 8))
+(CFFI:DEFCSTRUCT (AUTOMATIONEVENTLIST :SIZE 16)
+  (CAPACITY :UNSIGNED-INT :OFFSET 0)
+  (COUNT :UNSIGNED-INT :OFFSET 4)
+  (EVENTS (:POINTER AUTOMATIONEVENT) :OFFSET 8))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:527:3"
-(CFFI:DEFCTYPE |AutomationEventList| (:STRUCT |AutomationEventList|))
+(CFFI:DEFCTYPE AUTOMATIONEVENTLIST (:STRUCT AUTOMATIONEVENTLIST))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:535:9"
@@ -521,7 +521,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:552:3"
-(CFFI:DEFCTYPE |ConfigFlags| ANON-ENUM-1)
+(CFFI:DEFCTYPE CONFIGFLAGS ANON-ENUM-1)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:556:9"
@@ -537,7 +537,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:565:3"
-(CFFI:DEFCTYPE |TraceLogLevel| ANON-ENUM-2)
+(CFFI:DEFCTYPE TRACELOGLEVEL ANON-ENUM-2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:570:9"
@@ -655,7 +655,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:685:3"
-(CFFI:DEFCTYPE |KeyboardKey| ANON-ENUM-3)
+(CFFI:DEFCTYPE KEYBOARDKEY ANON-ENUM-3)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:693:9"
@@ -670,7 +670,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:701:3"
-(CFFI:DEFCTYPE |MouseButton| ANON-ENUM-4)
+(CFFI:DEFCTYPE MOUSEBUTTON ANON-ENUM-4)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:704:9"
@@ -689,7 +689,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:716:3"
-(CFFI:DEFCTYPE |MouseCursor| ANON-ENUM-5)
+(CFFI:DEFCTYPE MOUSECURSOR ANON-ENUM-5)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:719:9"
@@ -715,7 +715,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:738:3"
-(CFFI:DEFCTYPE |GamepadButton| ANON-ENUM-6)
+(CFFI:DEFCTYPE GAMEPADBUTTON ANON-ENUM-6)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:741:9"
@@ -729,7 +729,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:748:3"
-(CFFI:DEFCTYPE |GamepadAxis| ANON-ENUM-7)
+(CFFI:DEFCTYPE GAMEPADAXIS ANON-ENUM-7)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:751:9"
@@ -748,7 +748,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:763:3"
-(CFFI:DEFCTYPE |MaterialMapIndex| ANON-ENUM-8)
+(CFFI:DEFCTYPE MATERIALMAPINDEX ANON-ENUM-8)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:769:9"
@@ -785,7 +785,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:799:3"
-(CFFI:DEFCTYPE |ShaderLocationIndex| ANON-ENUM-9)
+(CFFI:DEFCTYPE SHADERLOCATIONINDEX ANON-ENUM-9)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:805:9"
@@ -802,7 +802,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:815:3"
-(CFFI:DEFCTYPE |ShaderUniformDataType| ANON-ENUM-10)
+(CFFI:DEFCTYPE SHADERUNIFORMDATATYPE ANON-ENUM-10)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:818:9"
@@ -814,7 +814,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:823:3"
-(CFFI:DEFCTYPE |ShaderAttributeDataType| ANON-ENUM-11)
+(CFFI:DEFCTYPE SHADERATTRIBUTEDATATYPE ANON-ENUM-11)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:827:9"
@@ -841,12 +841,12 @@
   (PIXELFORMAT_COMPRESSED_ETC2_EAC_RGBA 20)
   (PIXELFORMAT_COMPRESSED_PVRT_RGB 21)
   (PIXELFORMAT_COMPRESSED_PVRT_RGBA 22)
-  (|PIXELFORMAT_COMPRESSED_ASTC_4x4_RGBA| 23)
-  (|PIXELFORMAT_COMPRESSED_ASTC_8x8_RGBA| 24))
+  (PIXELFORMAT_COMPRESSED_ASTC_4X4_RGBA 23)
+  (PIXELFORMAT_COMPRESSED_ASTC_8X8_RGBA 24))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:852:3"
-(CFFI:DEFCTYPE |PixelFormat| ANON-ENUM-12)
+(CFFI:DEFCTYPE PIXELFORMAT ANON-ENUM-12)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:857:9"
@@ -860,7 +860,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:864:3"
-(CFFI:DEFCTYPE |TextureFilter| ANON-ENUM-13)
+(CFFI:DEFCTYPE TEXTUREFILTER ANON-ENUM-13)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:867:9"
@@ -872,7 +872,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:872:3"
-(CFFI:DEFCTYPE |TextureWrap| ANON-ENUM-14)
+(CFFI:DEFCTYPE TEXTUREWRAP ANON-ENUM-14)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:875:9"
@@ -886,7 +886,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:882:3"
-(CFFI:DEFCTYPE |CubemapLayout| ANON-ENUM-15)
+(CFFI:DEFCTYPE CUBEMAPLAYOUT ANON-ENUM-15)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:885:9"
@@ -897,7 +897,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:889:3"
-(CFFI:DEFCTYPE |FontType| ANON-ENUM-16)
+(CFFI:DEFCTYPE FONTTYPE ANON-ENUM-16)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:892:9"
@@ -913,7 +913,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:901:3"
-(CFFI:DEFCTYPE |BlendMode| ANON-ENUM-17)
+(CFFI:DEFCTYPE BLENDMODE ANON-ENUM-17)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:905:9"
@@ -932,7 +932,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:917:3"
-(CFFI:DEFCTYPE |Gesture| ANON-ENUM-18)
+(CFFI:DEFCTYPE GESTURE ANON-ENUM-18)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:920:9"
@@ -945,7 +945,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:926:3"
-(CFFI:DEFCTYPE |CameraMode| ANON-ENUM-19)
+(CFFI:DEFCTYPE CAMERAMODE ANON-ENUM-19)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:929:9"
@@ -955,7 +955,7 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:932:3"
-(CFFI:DEFCTYPE |CameraProjection| ANON-ENUM-20)
+(CFFI:DEFCTYPE CAMERAPROJECTION ANON-ENUM-20)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:935:9"
@@ -966,4209 +966,4209 @@
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:939:3"
-(CFFI:DEFCTYPE |NPatchLayout| ANON-ENUM-21)
+(CFFI:DEFCTYPE NPATCHLAYOUT ANON-ENUM-21)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:943:16"
-(CFFI:DEFCTYPE |TraceLogCallback| FUNCTION-POINTER)
+(CFFI:DEFCTYPE TRACELOGCALLBACK FUNCTION-POINTER)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:944:26"
-(CFFI:DEFCTYPE |LoadFileDataCallback| FUNCTION-POINTER)
+(CFFI:DEFCTYPE LOADFILEDATACALLBACK FUNCTION-POINTER)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:945:16"
-(CFFI:DEFCTYPE |SaveFileDataCallback| FUNCTION-POINTER)
+(CFFI:DEFCTYPE SAVEFILEDATACALLBACK FUNCTION-POINTER)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:946:17"
-(CFFI:DEFCTYPE |LoadFileTextCallback| FUNCTION-POINTER)
+(CFFI:DEFCTYPE LOADFILETEXTCALLBACK FUNCTION-POINTER)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:947:16"
-(CFFI:DEFCTYPE |SaveFileTextCallback| FUNCTION-POINTER)
+(CFFI:DEFCTYPE SAVEFILETEXTCALLBACK FUNCTION-POINTER)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:963:12"
-(CFFI:DEFCFUN ("InitWindow" |InitWindow|)
+(CFFI:DEFCFUN ("InitWindow" INITWINDOW)
     :VOID
-  (|width| :INT)
-  (|height| :INT)
-  (|title| :STRING))
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (TITLE :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:964:12"
-(CFFI:DEFCFUN ("CloseWindow" |CloseWindow|)
+(CFFI:DEFCFUN ("CloseWindow" CLOSEWINDOW)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:965:12"
-(CFFI:DEFCFUN ("WindowShouldClose" |WindowShouldClose|)
+(CFFI:DEFCFUN ("WindowShouldClose" WINDOWSHOULDCLOSE)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:966:12"
-(CFFI:DEFCFUN ("IsWindowReady" |IsWindowReady|)
+(CFFI:DEFCFUN ("IsWindowReady" ISWINDOWREADY)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:967:12"
-(CFFI:DEFCFUN ("IsWindowFullscreen" |IsWindowFullscreen|)
+(CFFI:DEFCFUN ("IsWindowFullscreen" ISWINDOWFULLSCREEN)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:968:12"
-(CFFI:DEFCFUN ("IsWindowHidden" |IsWindowHidden|)
+(CFFI:DEFCFUN ("IsWindowHidden" ISWINDOWHIDDEN)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:969:12"
-(CFFI:DEFCFUN ("IsWindowMinimized" |IsWindowMinimized|)
+(CFFI:DEFCFUN ("IsWindowMinimized" ISWINDOWMINIMIZED)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:970:12"
-(CFFI:DEFCFUN ("IsWindowMaximized" |IsWindowMaximized|)
+(CFFI:DEFCFUN ("IsWindowMaximized" ISWINDOWMAXIMIZED)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:971:12"
-(CFFI:DEFCFUN ("IsWindowFocused" |IsWindowFocused|)
+(CFFI:DEFCFUN ("IsWindowFocused" ISWINDOWFOCUSED)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:972:12"
-(CFFI:DEFCFUN ("IsWindowResized" |IsWindowResized|)
+(CFFI:DEFCFUN ("IsWindowResized" ISWINDOWRESIZED)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:973:12"
-(CFFI:DEFCFUN ("IsWindowState" |IsWindowState|)
+(CFFI:DEFCFUN ("IsWindowState" ISWINDOWSTATE)
     :BOOL
-  (|flag| :UNSIGNED-INT))
+  (FLAG :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:974:12"
-(CFFI:DEFCFUN ("SetWindowState" |SetWindowState|)
+(CFFI:DEFCFUN ("SetWindowState" SETWINDOWSTATE)
     :VOID
-  (|flags| :UNSIGNED-INT))
+  (FLAGS :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:975:12"
-(CFFI:DEFCFUN ("ClearWindowState" |ClearWindowState|)
+(CFFI:DEFCFUN ("ClearWindowState" CLEARWINDOWSTATE)
     :VOID
-  (|flags| :UNSIGNED-INT))
+  (FLAGS :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:976:12"
-(CFFI:DEFCFUN ("ToggleFullscreen" |ToggleFullscreen|)
+(CFFI:DEFCFUN ("ToggleFullscreen" TOGGLEFULLSCREEN)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:977:12"
-(CFFI:DEFCFUN ("ToggleBorderlessWindowed" |ToggleBorderlessWindowed|)
+(CFFI:DEFCFUN ("ToggleBorderlessWindowed" TOGGLEBORDERLESSWINDOWED)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:978:12"
-(CFFI:DEFCFUN ("MaximizeWindow" |MaximizeWindow|)
+(CFFI:DEFCFUN ("MaximizeWindow" MAXIMIZEWINDOW)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:979:12"
-(CFFI:DEFCFUN ("MinimizeWindow" |MinimizeWindow|)
+(CFFI:DEFCFUN ("MinimizeWindow" MINIMIZEWINDOW)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:980:12"
-(CFFI:DEFCFUN ("RestoreWindow" |RestoreWindow|)
+(CFFI:DEFCFUN ("RestoreWindow" RESTOREWINDOW)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:981:12"
-(CFFI:DEFCFUN ("SetWindowIcon" |SetWindowIcon|)
+(CFFI:DEFCFUN ("SetWindowIcon" SETWINDOWICON)
     :VOID
-  (|image| |Image|))
+  (IMAGE IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:982:12"
-(CFFI:DEFCFUN ("SetWindowIcons" |SetWindowIcons|)
+(CFFI:DEFCFUN ("SetWindowIcons" SETWINDOWICONS)
     :VOID
-  (|images| (:POINTER |Image|))
-  (|count| :INT))
+  (IMAGES (:POINTER IMAGE))
+  (COUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:983:12"
-(CFFI:DEFCFUN ("SetWindowTitle" |SetWindowTitle|)
+(CFFI:DEFCFUN ("SetWindowTitle" SETWINDOWTITLE)
     :VOID
-  (|title| :STRING))
+  (TITLE :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:984:12"
-(CFFI:DEFCFUN ("SetWindowPosition" |SetWindowPosition|)
+(CFFI:DEFCFUN ("SetWindowPosition" SETWINDOWPOSITION)
     :VOID
-  (|x| :INT)
-  (|y| :INT))
+  (X :INT)
+  (Y :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:985:12"
-(CFFI:DEFCFUN ("SetWindowMonitor" |SetWindowMonitor|)
+(CFFI:DEFCFUN ("SetWindowMonitor" SETWINDOWMONITOR)
     :VOID
-  (|monitor| :INT))
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:986:12"
-(CFFI:DEFCFUN ("SetWindowMinSize" |SetWindowMinSize|)
+(CFFI:DEFCFUN ("SetWindowMinSize" SETWINDOWMINSIZE)
     :VOID
-  (|width| :INT)
-  (|height| :INT))
+  (WIDTH :INT)
+  (HEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:987:12"
-(CFFI:DEFCFUN ("SetWindowMaxSize" |SetWindowMaxSize|)
+(CFFI:DEFCFUN ("SetWindowMaxSize" SETWINDOWMAXSIZE)
     :VOID
-  (|width| :INT)
-  (|height| :INT))
+  (WIDTH :INT)
+  (HEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:988:12"
-(CFFI:DEFCFUN ("SetWindowSize" |SetWindowSize|)
+(CFFI:DEFCFUN ("SetWindowSize" SETWINDOWSIZE)
     :VOID
-  (|width| :INT)
-  (|height| :INT))
+  (WIDTH :INT)
+  (HEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:989:12"
-(CFFI:DEFCFUN ("SetWindowOpacity" |SetWindowOpacity|)
+(CFFI:DEFCFUN ("SetWindowOpacity" SETWINDOWOPACITY)
     :VOID
-  (|opacity| :FLOAT))
+  (OPACITY :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:990:12"
-(CFFI:DEFCFUN ("SetWindowFocused" |SetWindowFocused|)
+(CFFI:DEFCFUN ("SetWindowFocused" SETWINDOWFOCUSED)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:991:13"
-(CFFI:DEFCFUN ("GetWindowHandle" |GetWindowHandle|)
+(CFFI:DEFCFUN ("GetWindowHandle" GETWINDOWHANDLE)
     (:POINTER :VOID))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:992:11"
-(CFFI:DEFCFUN ("GetScreenWidth" |GetScreenWidth|)
+(CFFI:DEFCFUN ("GetScreenWidth" GETSCREENWIDTH)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:993:11"
-(CFFI:DEFCFUN ("GetScreenHeight" |GetScreenHeight|)
+(CFFI:DEFCFUN ("GetScreenHeight" GETSCREENHEIGHT)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:994:11"
-(CFFI:DEFCFUN ("GetRenderWidth" |GetRenderWidth|)
+(CFFI:DEFCFUN ("GetRenderWidth" GETRENDERWIDTH)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:995:11"
-(CFFI:DEFCFUN ("GetRenderHeight" |GetRenderHeight|)
+(CFFI:DEFCFUN ("GetRenderHeight" GETRENDERHEIGHT)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:996:11"
-(CFFI:DEFCFUN ("GetMonitorCount" |GetMonitorCount|)
+(CFFI:DEFCFUN ("GetMonitorCount" GETMONITORCOUNT)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:997:11"
-(CFFI:DEFCFUN ("GetCurrentMonitor" |GetCurrentMonitor|)
+(CFFI:DEFCFUN ("GetCurrentMonitor" GETCURRENTMONITOR)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:998:15"
-(CFFI:DEFCFUN ("GetMonitorPosition" |GetMonitorPosition|)
-    |Vector2|
-  (|monitor| :INT))
+(CFFI:DEFCFUN ("GetMonitorPosition" GETMONITORPOSITION)
+    VECTOR2
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:999:11"
-(CFFI:DEFCFUN ("GetMonitorWidth" |GetMonitorWidth|)
+(CFFI:DEFCFUN ("GetMonitorWidth" GETMONITORWIDTH)
     :INT
-  (|monitor| :INT))
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1000:11"
-(CFFI:DEFCFUN ("GetMonitorHeight" |GetMonitorHeight|)
+(CFFI:DEFCFUN ("GetMonitorHeight" GETMONITORHEIGHT)
     :INT
-  (|monitor| :INT))
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1001:11"
-(CFFI:DEFCFUN ("GetMonitorPhysicalWidth" |GetMonitorPhysicalWidth|)
+(CFFI:DEFCFUN ("GetMonitorPhysicalWidth" GETMONITORPHYSICALWIDTH)
     :INT
-  (|monitor| :INT))
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1002:11"
-(CFFI:DEFCFUN ("GetMonitorPhysicalHeight" |GetMonitorPhysicalHeight|)
+(CFFI:DEFCFUN ("GetMonitorPhysicalHeight" GETMONITORPHYSICALHEIGHT)
     :INT
-  (|monitor| :INT))
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1003:11"
-(CFFI:DEFCFUN ("GetMonitorRefreshRate" |GetMonitorRefreshRate|)
+(CFFI:DEFCFUN ("GetMonitorRefreshRate" GETMONITORREFRESHRATE)
     :INT
-  (|monitor| :INT))
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1004:15"
-(CFFI:DEFCFUN ("GetWindowPosition" |GetWindowPosition|)
-    |Vector2|)
+(CFFI:DEFCFUN ("GetWindowPosition" GETWINDOWPOSITION)
+    VECTOR2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1005:15"
-(CFFI:DEFCFUN ("GetWindowScaleDPI" |GetWindowScaleDPI|)
-    |Vector2|)
+(CFFI:DEFCFUN ("GetWindowScaleDPI" GETWINDOWSCALEDPI)
+    VECTOR2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1006:19"
-(CFFI:DEFCFUN ("GetMonitorName" |GetMonitorName|)
+(CFFI:DEFCFUN ("GetMonitorName" GETMONITORNAME)
     :STRING
-  (|monitor| :INT))
+  (MONITOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1007:12"
-(CFFI:DEFCFUN ("SetClipboardText" |SetClipboardText|)
+(CFFI:DEFCFUN ("SetClipboardText" SETCLIPBOARDTEXT)
     :VOID
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1008:19"
-(CFFI:DEFCFUN ("GetClipboardText" |GetClipboardText|)
+(CFFI:DEFCFUN ("GetClipboardText" GETCLIPBOARDTEXT)
     :STRING)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1009:12"
-(CFFI:DEFCFUN ("EnableEventWaiting" |EnableEventWaiting|)
+(CFFI:DEFCFUN ("EnableEventWaiting" ENABLEEVENTWAITING)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1010:12"
-(CFFI:DEFCFUN ("DisableEventWaiting" |DisableEventWaiting|)
+(CFFI:DEFCFUN ("DisableEventWaiting" DISABLEEVENTWAITING)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1013:12"
-(CFFI:DEFCFUN ("ShowCursor" |ShowCursor|)
+(CFFI:DEFCFUN ("ShowCursor" SHOWCURSOR)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1014:12"
-(CFFI:DEFCFUN ("HideCursor" |HideCursor|)
+(CFFI:DEFCFUN ("HideCursor" HIDECURSOR)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1015:12"
-(CFFI:DEFCFUN ("IsCursorHidden" |IsCursorHidden|)
+(CFFI:DEFCFUN ("IsCursorHidden" ISCURSORHIDDEN)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1016:12"
-(CFFI:DEFCFUN ("EnableCursor" |EnableCursor|)
+(CFFI:DEFCFUN ("EnableCursor" ENABLECURSOR)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1017:12"
-(CFFI:DEFCFUN ("DisableCursor" |DisableCursor|)
+(CFFI:DEFCFUN ("DisableCursor" DISABLECURSOR)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1018:12"
-(CFFI:DEFCFUN ("IsCursorOnScreen" |IsCursorOnScreen|)
+(CFFI:DEFCFUN ("IsCursorOnScreen" ISCURSORONSCREEN)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1021:12"
-(CFFI:DEFCFUN ("ClearBackground" |ClearBackground|)
+(CFFI:DEFCFUN ("ClearBackground" CLEARBACKGROUND)
     :VOID
-  (|color| |Color|))
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1022:12"
-(CFFI:DEFCFUN ("BeginDrawing" |BeginDrawing|)
+(CFFI:DEFCFUN ("BeginDrawing" BEGINDRAWING)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1023:12"
-(CFFI:DEFCFUN ("EndDrawing" |EndDrawing|)
+(CFFI:DEFCFUN ("EndDrawing" ENDDRAWING)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1024:12"
-(CFFI:DEFCFUN ("BeginMode2D" |BeginMode2D|)
+(CFFI:DEFCFUN ("BeginMode2D" BEGINMODE2D)
     :VOID
-  (|camera| |Camera2D|))
+  (CAMERA CAMERA2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1025:12"
-(CFFI:DEFCFUN ("EndMode2D" |EndMode2D|)
+(CFFI:DEFCFUN ("EndMode2D" ENDMODE2D)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1026:12"
-(CFFI:DEFCFUN ("BeginMode3D" |BeginMode3D|)
+(CFFI:DEFCFUN ("BeginMode3D" BEGINMODE3D)
     :VOID
-  (|camera| |Camera3D|))
+  (CAMERA CAMERA3D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1027:12"
-(CFFI:DEFCFUN ("EndMode3D" |EndMode3D|)
+(CFFI:DEFCFUN ("EndMode3D" ENDMODE3D)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1028:12"
-(CFFI:DEFCFUN ("BeginTextureMode" |BeginTextureMode|)
+(CFFI:DEFCFUN ("BeginTextureMode" BEGINTEXTUREMODE)
     :VOID
-  (|target| |RenderTexture2D|))
+  (TARGET RENDERTEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1029:12"
-(CFFI:DEFCFUN ("EndTextureMode" |EndTextureMode|)
+(CFFI:DEFCFUN ("EndTextureMode" ENDTEXTUREMODE)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1030:12"
-(CFFI:DEFCFUN ("BeginShaderMode" |BeginShaderMode|)
+(CFFI:DEFCFUN ("BeginShaderMode" BEGINSHADERMODE)
     :VOID
-  (|shader| |Shader|))
+  (SHADER SHADER))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1031:12"
-(CFFI:DEFCFUN ("EndShaderMode" |EndShaderMode|)
+(CFFI:DEFCFUN ("EndShaderMode" ENDSHADERMODE)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1032:12"
-(CFFI:DEFCFUN ("BeginBlendMode" |BeginBlendMode|)
+(CFFI:DEFCFUN ("BeginBlendMode" BEGINBLENDMODE)
     :VOID
-  (|mode| :INT))
+  (MODE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1033:12"
-(CFFI:DEFCFUN ("EndBlendMode" |EndBlendMode|)
+(CFFI:DEFCFUN ("EndBlendMode" ENDBLENDMODE)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1034:12"
-(CFFI:DEFCFUN ("BeginScissorMode" |BeginScissorMode|)
+(CFFI:DEFCFUN ("BeginScissorMode" BEGINSCISSORMODE)
     :VOID
-  (|x| :INT)
-  (|y| :INT)
-  (|width| :INT)
-  (|height| :INT))
+  (X :INT)
+  (Y :INT)
+  (WIDTH :INT)
+  (HEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1035:12"
-(CFFI:DEFCFUN ("EndScissorMode" |EndScissorMode|)
+(CFFI:DEFCFUN ("EndScissorMode" ENDSCISSORMODE)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1036:12"
-(CFFI:DEFCFUN ("BeginVrStereoMode" |BeginVrStereoMode|)
+(CFFI:DEFCFUN ("BeginVrStereoMode" BEGINVRSTEREOMODE)
     :VOID
-  (|config| |VrStereoConfig|))
+  (CONFIG VRSTEREOCONFIG))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1037:12"
-(CFFI:DEFCFUN ("EndVrStereoMode" |EndVrStereoMode|)
+(CFFI:DEFCFUN ("EndVrStereoMode" ENDVRSTEREOMODE)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1040:22"
-(CFFI:DEFCFUN ("LoadVrStereoConfig" |LoadVrStereoConfig|)
-    |VrStereoConfig|
-  (|device| |VrDeviceInfo|))
+(CFFI:DEFCFUN ("LoadVrStereoConfig" LOADVRSTEREOCONFIG)
+    VRSTEREOCONFIG
+  (DEVICE VRDEVICEINFO))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1041:12"
-(CFFI:DEFCFUN ("UnloadVrStereoConfig" |UnloadVrStereoConfig|)
+(CFFI:DEFCFUN ("UnloadVrStereoConfig" UNLOADVRSTEREOCONFIG)
     :VOID
-  (|config| |VrStereoConfig|))
+  (CONFIG VRSTEREOCONFIG))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1045:14"
-(CFFI:DEFCFUN ("LoadShader" |LoadShader|)
-    |Shader|
-  (|vsFileName| :STRING)
-  (|fsFileName| :STRING))
+(CFFI:DEFCFUN ("LoadShader" LOADSHADER)
+    SHADER
+  (VSFILENAME :STRING)
+  (FSFILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1046:14"
-(CFFI:DEFCFUN ("LoadShaderFromMemory" |LoadShaderFromMemory|)
-    |Shader|
-  (|vsCode| :STRING)
-  (|fsCode| :STRING))
+(CFFI:DEFCFUN ("LoadShaderFromMemory" LOADSHADERFROMMEMORY)
+    SHADER
+  (VSCODE :STRING)
+  (FSCODE :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1047:12"
-(CFFI:DEFCFUN ("IsShaderReady" |IsShaderReady|)
+(CFFI:DEFCFUN ("IsShaderReady" ISSHADERREADY)
     :BOOL
-  (|shader| |Shader|))
+  (SHADER SHADER))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1048:11"
-(CFFI:DEFCFUN ("GetShaderLocation" |GetShaderLocation|)
+(CFFI:DEFCFUN ("GetShaderLocation" GETSHADERLOCATION)
     :INT
-  (|shader| |Shader|)
-  (|uniformName| :STRING))
+  (SHADER SHADER)
+  (UNIFORMNAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1049:11"
-(CFFI:DEFCFUN ("GetShaderLocationAttrib" |GetShaderLocationAttrib|)
+(CFFI:DEFCFUN ("GetShaderLocationAttrib" GETSHADERLOCATIONATTRIB)
     :INT
-  (|shader| |Shader|)
-  (|attribName| :STRING))
+  (SHADER SHADER)
+  (ATTRIBNAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1050:12"
-(CFFI:DEFCFUN ("SetShaderValue" |SetShaderValue|)
+(CFFI:DEFCFUN ("SetShaderValue" SETSHADERVALUE)
     :VOID
-  (|shader| |Shader|)
-  (|locIndex| :INT)
-  (|value| (:POINTER :VOID))
-  (|uniformType| :INT))
+  (SHADER SHADER)
+  (LOCINDEX :INT)
+  (VALUE (:POINTER :VOID))
+  (UNIFORMTYPE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1051:12"
-(CFFI:DEFCFUN ("SetShaderValueV" |SetShaderValueV|)
+(CFFI:DEFCFUN ("SetShaderValueV" SETSHADERVALUEV)
     :VOID
-  (|shader| |Shader|)
-  (|locIndex| :INT)
-  (|value| (:POINTER :VOID))
-  (|uniformType| :INT)
-  (|count| :INT))
+  (SHADER SHADER)
+  (LOCINDEX :INT)
+  (VALUE (:POINTER :VOID))
+  (UNIFORMTYPE :INT)
+  (COUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1052:12"
-(CFFI:DEFCFUN ("SetShaderValueMatrix" |SetShaderValueMatrix|)
+(CFFI:DEFCFUN ("SetShaderValueMatrix" SETSHADERVALUEMATRIX)
     :VOID
-  (|shader| |Shader|)
-  (|locIndex| :INT)
-  (|mat| |Matrix|))
+  (SHADER SHADER)
+  (LOCINDEX :INT)
+  (MAT MATRIX))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1053:12"
-(CFFI:DEFCFUN ("SetShaderValueTexture" |SetShaderValueTexture|)
+(CFFI:DEFCFUN ("SetShaderValueTexture" SETSHADERVALUETEXTURE)
     :VOID
-  (|shader| |Shader|)
-  (|locIndex| :INT)
-  (|texture| |Texture2D|))
+  (SHADER SHADER)
+  (LOCINDEX :INT)
+  (TEXTURE TEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1054:12"
-(CFFI:DEFCFUN ("UnloadShader" |UnloadShader|)
+(CFFI:DEFCFUN ("UnloadShader" UNLOADSHADER)
     :VOID
-  (|shader| |Shader|))
+  (SHADER SHADER))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1058:11"
-(CFFI:DEFCFUN ("GetScreenToWorldRay" |GetScreenToWorldRay|)
-    |Ray|
-  (|position| |Vector2|)
-  (|camera| |Camera|))
+(CFFI:DEFCFUN ("GetScreenToWorldRay" GETSCREENTOWORLDRAY)
+    RAY
+  (POSITION VECTOR2)
+  (CAMERA CAMERA))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1059:11"
-(CFFI:DEFCFUN ("GetScreenToWorldRayEx" |GetScreenToWorldRayEx|)
-    |Ray|
-  (|position| |Vector2|)
-  (|camera| |Camera|)
-  (|width| :INT)
-  (|height| :INT))
+(CFFI:DEFCFUN ("GetScreenToWorldRayEx" GETSCREENTOWORLDRAYEX)
+    RAY
+  (POSITION VECTOR2)
+  (CAMERA CAMERA)
+  (WIDTH :INT)
+  (HEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1060:15"
-(CFFI:DEFCFUN ("GetWorldToScreen" |GetWorldToScreen|)
-    |Vector2|
-  (|position| |Vector3|)
-  (|camera| |Camera|))
+(CFFI:DEFCFUN ("GetWorldToScreen" GETWORLDTOSCREEN)
+    VECTOR2
+  (POSITION VECTOR3)
+  (CAMERA CAMERA))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1061:15"
-(CFFI:DEFCFUN ("GetWorldToScreenEx" |GetWorldToScreenEx|)
-    |Vector2|
-  (|position| |Vector3|)
-  (|camera| |Camera|)
-  (|width| :INT)
-  (|height| :INT))
+(CFFI:DEFCFUN ("GetWorldToScreenEx" GETWORLDTOSCREENEX)
+    VECTOR2
+  (POSITION VECTOR3)
+  (CAMERA CAMERA)
+  (WIDTH :INT)
+  (HEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1062:15"
-(CFFI:DEFCFUN ("GetWorldToScreen2D" |GetWorldToScreen2D|)
-    |Vector2|
-  (|position| |Vector2|)
-  (|camera| |Camera2D|))
+(CFFI:DEFCFUN ("GetWorldToScreen2D" GETWORLDTOSCREEN2D)
+    VECTOR2
+  (POSITION VECTOR2)
+  (CAMERA CAMERA2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1063:15"
-(CFFI:DEFCFUN ("GetScreenToWorld2D" |GetScreenToWorld2D|)
-    |Vector2|
-  (|position| |Vector2|)
-  (|camera| |Camera2D|))
+(CFFI:DEFCFUN ("GetScreenToWorld2D" GETSCREENTOWORLD2D)
+    VECTOR2
+  (POSITION VECTOR2)
+  (CAMERA CAMERA2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1064:14"
-(CFFI:DEFCFUN ("GetCameraMatrix" |GetCameraMatrix|)
-    |Matrix|
-  (|camera| |Camera|))
+(CFFI:DEFCFUN ("GetCameraMatrix" GETCAMERAMATRIX)
+    MATRIX
+  (CAMERA CAMERA))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1065:14"
-(CFFI:DEFCFUN ("GetCameraMatrix2D" |GetCameraMatrix2D|)
-    |Matrix|
-  (|camera| |Camera2D|))
+(CFFI:DEFCFUN ("GetCameraMatrix2D" GETCAMERAMATRIX2D)
+    MATRIX
+  (CAMERA CAMERA2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1068:12"
-(CFFI:DEFCFUN ("SetTargetFPS" |SetTargetFPS|)
+(CFFI:DEFCFUN ("SetTargetFPS" SETTARGETFPS)
     :VOID
-  (|fps| :INT))
+  (FPS :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1069:13"
-(CFFI:DEFCFUN ("GetFrameTime" |GetFrameTime|)
+(CFFI:DEFCFUN ("GetFrameTime" GETFRAMETIME)
     :FLOAT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1070:14"
-(CFFI:DEFCFUN ("GetTime" |GetTime|)
+(CFFI:DEFCFUN ("GetTime" GETTIME)
     :DOUBLE)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1071:11"
-(CFFI:DEFCFUN ("GetFPS" |GetFPS|)
+(CFFI:DEFCFUN ("GetFPS" GETFPS)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1077:12"
-(CFFI:DEFCFUN ("SwapScreenBuffer" |SwapScreenBuffer|)
+(CFFI:DEFCFUN ("SwapScreenBuffer" SWAPSCREENBUFFER)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1078:12"
-(CFFI:DEFCFUN ("PollInputEvents" |PollInputEvents|)
+(CFFI:DEFCFUN ("PollInputEvents" POLLINPUTEVENTS)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1079:12"
-(CFFI:DEFCFUN ("WaitTime" |WaitTime|)
+(CFFI:DEFCFUN ("WaitTime" WAITTIME)
     :VOID
-  (|seconds| :DOUBLE))
+  (SECONDS :DOUBLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1082:12"
-(CFFI:DEFCFUN ("SetRandomSeed" |SetRandomSeed|)
+(CFFI:DEFCFUN ("SetRandomSeed" SETRANDOMSEED)
     :VOID
-  (|seed| :UNSIGNED-INT))
+  (SEED :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1083:11"
-(CFFI:DEFCFUN ("GetRandomValue" |GetRandomValue|)
+(CFFI:DEFCFUN ("GetRandomValue" GETRANDOMVALUE)
     :INT
-  (|min| :INT)
-  (|max| :INT))
+  (MIN :INT)
+  (MAX :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1084:12"
-(CFFI:DEFCFUN ("LoadRandomSequence" |LoadRandomSequence|)
+(CFFI:DEFCFUN ("LoadRandomSequence" LOADRANDOMSEQUENCE)
     (:POINTER :INT)
-  (|count| :UNSIGNED-INT)
-  (|min| :INT)
-  (|max| :INT))
+  (COUNT :UNSIGNED-INT)
+  (MIN :INT)
+  (MAX :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1085:12"
-(CFFI:DEFCFUN ("UnloadRandomSequence" |UnloadRandomSequence|)
+(CFFI:DEFCFUN ("UnloadRandomSequence" UNLOADRANDOMSEQUENCE)
     :VOID
-  (|sequence| (:POINTER :INT)))
+  (SEQUENCE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1088:12"
-(CFFI:DEFCFUN ("TakeScreenshot" |TakeScreenshot|)
+(CFFI:DEFCFUN ("TakeScreenshot" TAKESCREENSHOT)
     :VOID
-  (|fileName| :STRING))
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1089:12"
-(CFFI:DEFCFUN ("SetConfigFlags" |SetConfigFlags|)
+(CFFI:DEFCFUN ("SetConfigFlags" SETCONFIGFLAGS)
     :VOID
-  (|flags| :UNSIGNED-INT))
+  (FLAGS :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1090:12"
-(CFFI:DEFCFUN ("OpenURL" |OpenURL|)
+(CFFI:DEFCFUN ("OpenURL" OPENURL)
     :VOID
-  (|url| :STRING))
+  (URL :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1094:12"
-(CFFI:DEFCFUN ("TraceLog" |TraceLog|)
+(CFFI:DEFCFUN ("TraceLog" TRACELOG)
     :VOID
-  (|logLevel| :INT)
-  (|text| :STRING)
+  (LOGLEVEL :INT)
+  (TEXT :STRING)
   COMMON-LISP:&REST)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1095:12"
-(CFFI:DEFCFUN ("SetTraceLogLevel" |SetTraceLogLevel|)
+(CFFI:DEFCFUN ("SetTraceLogLevel" SETTRACELOGLEVEL)
     :VOID
-  (|logLevel| :INT))
+  (LOGLEVEL :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1096:13"
-(CFFI:DEFCFUN ("MemAlloc" |MemAlloc|)
+(CFFI:DEFCFUN ("MemAlloc" MEMALLOC)
     (:POINTER :VOID)
-  (|size| :UNSIGNED-INT))
+  (SIZE :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1097:13"
-(CFFI:DEFCFUN ("MemRealloc" |MemRealloc|)
+(CFFI:DEFCFUN ("MemRealloc" MEMREALLOC)
     (:POINTER :VOID)
-  (|ptr| (:POINTER :VOID))
-  (|size| :UNSIGNED-INT))
+  (PTR (:POINTER :VOID))
+  (SIZE :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1098:12"
-(CFFI:DEFCFUN ("MemFree" |MemFree|)
+(CFFI:DEFCFUN ("MemFree" MEMFREE)
     :VOID
-  (|ptr| (:POINTER :VOID)))
+  (PTR (:POINTER :VOID)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1102:12"
-(CFFI:DEFCFUN ("SetTraceLogCallback" |SetTraceLogCallback|)
+(CFFI:DEFCFUN ("SetTraceLogCallback" SETTRACELOGCALLBACK)
     :VOID
-  (|callback| |TraceLogCallback|))
+  (CALLBACK TRACELOGCALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1103:12"
-(CFFI:DEFCFUN ("SetLoadFileDataCallback" |SetLoadFileDataCallback|)
+(CFFI:DEFCFUN ("SetLoadFileDataCallback" SETLOADFILEDATACALLBACK)
     :VOID
-  (|callback| |LoadFileDataCallback|))
+  (CALLBACK LOADFILEDATACALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1104:12"
-(CFFI:DEFCFUN ("SetSaveFileDataCallback" |SetSaveFileDataCallback|)
+(CFFI:DEFCFUN ("SetSaveFileDataCallback" SETSAVEFILEDATACALLBACK)
     :VOID
-  (|callback| |SaveFileDataCallback|))
+  (CALLBACK SAVEFILEDATACALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1105:12"
-(CFFI:DEFCFUN ("SetLoadFileTextCallback" |SetLoadFileTextCallback|)
+(CFFI:DEFCFUN ("SetLoadFileTextCallback" SETLOADFILETEXTCALLBACK)
     :VOID
-  (|callback| |LoadFileTextCallback|))
+  (CALLBACK LOADFILETEXTCALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1106:12"
-(CFFI:DEFCFUN ("SetSaveFileTextCallback" |SetSaveFileTextCallback|)
+(CFFI:DEFCFUN ("SetSaveFileTextCallback" SETSAVEFILETEXTCALLBACK)
     :VOID
-  (|callback| |SaveFileTextCallback|))
+  (CALLBACK SAVEFILETEXTCALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1109:22"
-(CFFI:DEFCFUN ("LoadFileData" |LoadFileData|)
+(CFFI:DEFCFUN ("LoadFileData" LOADFILEDATA)
     (:POINTER :UNSIGNED-CHAR)
-  (|fileName| :STRING)
-  (|dataSize| (:POINTER :INT)))
+  (FILENAME :STRING)
+  (DATASIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1110:12"
-(CFFI:DEFCFUN ("UnloadFileData" |UnloadFileData|)
+(CFFI:DEFCFUN ("UnloadFileData" UNLOADFILEDATA)
     :VOID
-  (|data| (:POINTER :UNSIGNED-CHAR)))
+  (DATA (:POINTER :UNSIGNED-CHAR)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1111:12"
-(CFFI:DEFCFUN ("SaveFileData" |SaveFileData|)
+(CFFI:DEFCFUN ("SaveFileData" SAVEFILEDATA)
     :BOOL
-  (|fileName| :STRING)
-  (|data| (:POINTER :VOID))
-  (|dataSize| :INT))
+  (FILENAME :STRING)
+  (DATA (:POINTER :VOID))
+  (DATASIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1112:12"
-(CFFI:DEFCFUN ("ExportDataAsCode" |ExportDataAsCode|)
+(CFFI:DEFCFUN ("ExportDataAsCode" EXPORTDATAASCODE)
     :BOOL
-  (|data| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT)
-  (|fileName| :STRING))
+  (DATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1113:13"
-(CFFI:DEFCFUN ("LoadFileText" |LoadFileText|)
+(CFFI:DEFCFUN ("LoadFileText" LOADFILETEXT)
     :STRING
-  (|fileName| :STRING))
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1114:12"
-(CFFI:DEFCFUN ("UnloadFileText" |UnloadFileText|)
+(CFFI:DEFCFUN ("UnloadFileText" UNLOADFILETEXT)
     :VOID
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1115:12"
-(CFFI:DEFCFUN ("SaveFileText" |SaveFileText|)
+(CFFI:DEFCFUN ("SaveFileText" SAVEFILETEXT)
     :BOOL
-  (|fileName| :STRING)
-  (|text| :STRING))
+  (FILENAME :STRING)
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1119:12"
-(CFFI:DEFCFUN ("FileExists" |FileExists|)
+(CFFI:DEFCFUN ("FileExists" FILEEXISTS)
     :BOOL
-  (|fileName| :STRING))
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1120:12"
-(CFFI:DEFCFUN ("DirectoryExists" |DirectoryExists|)
+(CFFI:DEFCFUN ("DirectoryExists" DIRECTORYEXISTS)
     :BOOL
-  (|dirPath| :STRING))
+  (DIRPATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1121:12"
-(CFFI:DEFCFUN ("IsFileExtension" |IsFileExtension|)
+(CFFI:DEFCFUN ("IsFileExtension" ISFILEEXTENSION)
     :BOOL
-  (|fileName| :STRING)
-  (|ext| :STRING))
+  (FILENAME :STRING)
+  (EXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1122:11"
-(CFFI:DEFCFUN ("GetFileLength" |GetFileLength|)
+(CFFI:DEFCFUN ("GetFileLength" GETFILELENGTH)
     :INT
-  (|fileName| :STRING))
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1123:19"
-(CFFI:DEFCFUN ("GetFileExtension" |GetFileExtension|)
+(CFFI:DEFCFUN ("GetFileExtension" GETFILEEXTENSION)
     :STRING
-  (|fileName| :STRING))
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1124:19"
-(CFFI:DEFCFUN ("GetFileName" |GetFileName|)
+(CFFI:DEFCFUN ("GetFileName" GETFILENAME)
     :STRING
-  (|filePath| :STRING))
+  (FILEPATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1125:19"
-(CFFI:DEFCFUN ("GetFileNameWithoutExt" |GetFileNameWithoutExt|)
+(CFFI:DEFCFUN ("GetFileNameWithoutExt" GETFILENAMEWITHOUTEXT)
     :STRING
-  (|filePath| :STRING))
+  (FILEPATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1126:19"
-(CFFI:DEFCFUN ("GetDirectoryPath" |GetDirectoryPath|)
+(CFFI:DEFCFUN ("GetDirectoryPath" GETDIRECTORYPATH)
     :STRING
-  (|filePath| :STRING))
+  (FILEPATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1127:19"
-(CFFI:DEFCFUN ("GetPrevDirectoryPath" |GetPrevDirectoryPath|)
+(CFFI:DEFCFUN ("GetPrevDirectoryPath" GETPREVDIRECTORYPATH)
     :STRING
-  (|dirPath| :STRING))
+  (DIRPATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1128:19"
-(CFFI:DEFCFUN ("GetWorkingDirectory" |GetWorkingDirectory|)
+(CFFI:DEFCFUN ("GetWorkingDirectory" GETWORKINGDIRECTORY)
     :STRING)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1129:19"
-(CFFI:DEFCFUN ("GetApplicationDirectory" |GetApplicationDirectory|)
+(CFFI:DEFCFUN ("GetApplicationDirectory" GETAPPLICATIONDIRECTORY)
     :STRING)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1130:11"
-(CFFI:DEFCFUN ("MakeDirectory" |MakeDirectory|)
+(CFFI:DEFCFUN ("MakeDirectory" MAKEDIRECTORY)
     :INT
-  (|dirPath| :STRING))
+  (DIRPATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1131:12"
-(CFFI:DEFCFUN ("ChangeDirectory" |ChangeDirectory|)
+(CFFI:DEFCFUN ("ChangeDirectory" CHANGEDIRECTORY)
     :BOOL
-  (|dir| :STRING))
+  (DIR :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1132:12"
-(CFFI:DEFCFUN ("IsPathFile" |IsPathFile|)
+(CFFI:DEFCFUN ("IsPathFile" ISPATHFILE)
     :BOOL
-  (|path| :STRING))
+  (PATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1133:12"
-(CFFI:DEFCFUN ("IsFileNameValid" |IsFileNameValid|)
+(CFFI:DEFCFUN ("IsFileNameValid" ISFILENAMEVALID)
     :BOOL
-  (|fileName| :STRING))
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1134:20"
-(CFFI:DEFCFUN ("LoadDirectoryFiles" |LoadDirectoryFiles|)
-    |FilePathList|
-  (|dirPath| :STRING))
+(CFFI:DEFCFUN ("LoadDirectoryFiles" LOADDIRECTORYFILES)
+    FILEPATHLIST
+  (DIRPATH :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1135:20"
-(CFFI:DEFCFUN ("LoadDirectoryFilesEx" |LoadDirectoryFilesEx|)
-    |FilePathList|
-  (|basePath| :STRING)
-  (|filter| :STRING)
-  (|scanSubdirs| :BOOL))
+(CFFI:DEFCFUN ("LoadDirectoryFilesEx" LOADDIRECTORYFILESEX)
+    FILEPATHLIST
+  (BASEPATH :STRING)
+  (FILTER :STRING)
+  (SCANSUBDIRS :BOOL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1136:12"
-(CFFI:DEFCFUN ("UnloadDirectoryFiles" |UnloadDirectoryFiles|)
+(CFFI:DEFCFUN ("UnloadDirectoryFiles" UNLOADDIRECTORYFILES)
     :VOID
-  (|files| |FilePathList|))
+  (FILES FILEPATHLIST))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1137:12"
-(CFFI:DEFCFUN ("IsFileDropped" |IsFileDropped|)
+(CFFI:DEFCFUN ("IsFileDropped" ISFILEDROPPED)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1138:20"
-(CFFI:DEFCFUN ("LoadDroppedFiles" |LoadDroppedFiles|)
-    |FilePathList|)
+(CFFI:DEFCFUN ("LoadDroppedFiles" LOADDROPPEDFILES)
+    FILEPATHLIST)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1139:12"
-(CFFI:DEFCFUN ("UnloadDroppedFiles" |UnloadDroppedFiles|)
+(CFFI:DEFCFUN ("UnloadDroppedFiles" UNLOADDROPPEDFILES)
     :VOID
-  (|files| |FilePathList|))
+  (FILES FILEPATHLIST))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1140:12"
-(CFFI:DEFCFUN ("GetFileModTime" |GetFileModTime|)
+(CFFI:DEFCFUN ("GetFileModTime" GETFILEMODTIME)
     :LONG
-  (|fileName| :STRING))
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1143:22"
-(CFFI:DEFCFUN ("CompressData" |CompressData|)
+(CFFI:DEFCFUN ("CompressData" COMPRESSDATA)
     (:POINTER :UNSIGNED-CHAR)
-  (|data| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT)
-  (|compDataSize| (:POINTER :INT)))
+  (DATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT)
+  (COMPDATASIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1144:22"
-(CFFI:DEFCFUN ("DecompressData" |DecompressData|)
+(CFFI:DEFCFUN ("DecompressData" DECOMPRESSDATA)
     (:POINTER :UNSIGNED-CHAR)
-  (|compData| (:POINTER :UNSIGNED-CHAR))
-  (|compDataSize| :INT)
-  (|dataSize| (:POINTER :INT)))
+  (COMPDATA (:POINTER :UNSIGNED-CHAR))
+  (COMPDATASIZE :INT)
+  (DATASIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1145:13"
-(CFFI:DEFCFUN ("EncodeDataBase64" |EncodeDataBase64|)
+(CFFI:DEFCFUN ("EncodeDataBase64" ENCODEDATABASE64)
     :STRING
-  (|data| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT)
-  (|outputSize| (:POINTER :INT)))
+  (DATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT)
+  (OUTPUTSIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1146:22"
-(CFFI:DEFCFUN ("DecodeDataBase64" |DecodeDataBase64|)
+(CFFI:DEFCFUN ("DecodeDataBase64" DECODEDATABASE64)
     (:POINTER :UNSIGNED-CHAR)
-  (|data| (:POINTER :UNSIGNED-CHAR))
-  (|outputSize| (:POINTER :INT)))
+  (DATA (:POINTER :UNSIGNED-CHAR))
+  (OUTPUTSIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1147:20"
-(CFFI:DEFCFUN ("ComputeCRC32" |ComputeCRC32|)
+(CFFI:DEFCFUN ("ComputeCRC32" COMPUTECRC32)
     :UNSIGNED-INT
-  (|data| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT))
+  (DATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1148:21"
-(CFFI:DEFCFUN ("ComputeMD5" |ComputeMD5|)
+(CFFI:DEFCFUN ("ComputeMD5" COMPUTEMD5)
     (:POINTER :UNSIGNED-INT)
-  (|data| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT))
+  (DATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1151:27"
-(CFFI:DEFCFUN ("LoadAutomationEventList" |LoadAutomationEventList|)
-    |AutomationEventList|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadAutomationEventList" LOADAUTOMATIONEVENTLIST)
+    AUTOMATIONEVENTLIST
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1152:12"
-(CFFI:DEFCFUN ("UnloadAutomationEventList" |UnloadAutomationEventList|)
+(CFFI:DEFCFUN ("UnloadAutomationEventList" UNLOADAUTOMATIONEVENTLIST)
     :VOID
-  (|list| |AutomationEventList|))
+  (LIST AUTOMATIONEVENTLIST))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1153:12"
-(CFFI:DEFCFUN ("ExportAutomationEventList" |ExportAutomationEventList|)
+(CFFI:DEFCFUN ("ExportAutomationEventList" EXPORTAUTOMATIONEVENTLIST)
     :BOOL
-  (|list| |AutomationEventList|)
-  (|fileName| :STRING))
+  (LIST AUTOMATIONEVENTLIST)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1154:12"
-(CFFI:DEFCFUN ("SetAutomationEventList" |SetAutomationEventList|)
+(CFFI:DEFCFUN ("SetAutomationEventList" SETAUTOMATIONEVENTLIST)
     :VOID
-  (|list| (:POINTER |AutomationEventList|)))
+  (LIST (:POINTER AUTOMATIONEVENTLIST)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1155:12"
-(CFFI:DEFCFUN ("SetAutomationEventBaseFrame" |SetAutomationEventBaseFrame|)
+(CFFI:DEFCFUN ("SetAutomationEventBaseFrame" SETAUTOMATIONEVENTBASEFRAME)
     :VOID
-  (|frame| :INT))
+  (FRAME :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1156:12"
-(CFFI:DEFCFUN ("StartAutomationEventRecording" |StartAutomationEventRecording|)
+(CFFI:DEFCFUN ("StartAutomationEventRecording" STARTAUTOMATIONEVENTRECORDING)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1157:12"
-(CFFI:DEFCFUN ("StopAutomationEventRecording" |StopAutomationEventRecording|)
+(CFFI:DEFCFUN ("StopAutomationEventRecording" STOPAUTOMATIONEVENTRECORDING)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1158:12"
-(CFFI:DEFCFUN ("PlayAutomationEvent" |PlayAutomationEvent|)
+(CFFI:DEFCFUN ("PlayAutomationEvent" PLAYAUTOMATIONEVENT)
     :VOID
-  (|event| |AutomationEvent|))
+  (EVENT AUTOMATIONEVENT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1165:12"
-(CFFI:DEFCFUN ("IsKeyPressed" |IsKeyPressed|)
+(CFFI:DEFCFUN ("IsKeyPressed" ISKEYPRESSED)
     :BOOL
-  (|key| :INT))
+  (KEY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1166:12"
-(CFFI:DEFCFUN ("IsKeyPressedRepeat" |IsKeyPressedRepeat|)
+(CFFI:DEFCFUN ("IsKeyPressedRepeat" ISKEYPRESSEDREPEAT)
     :BOOL
-  (|key| :INT))
+  (KEY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1167:12"
-(CFFI:DEFCFUN ("IsKeyDown" |IsKeyDown|)
+(CFFI:DEFCFUN ("IsKeyDown" ISKEYDOWN)
     :BOOL
-  (|key| :INT))
+  (KEY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1168:12"
-(CFFI:DEFCFUN ("IsKeyReleased" |IsKeyReleased|)
+(CFFI:DEFCFUN ("IsKeyReleased" ISKEYRELEASED)
     :BOOL
-  (|key| :INT))
+  (KEY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1169:12"
-(CFFI:DEFCFUN ("IsKeyUp" |IsKeyUp|)
+(CFFI:DEFCFUN ("IsKeyUp" ISKEYUP)
     :BOOL
-  (|key| :INT))
+  (KEY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1170:11"
-(CFFI:DEFCFUN ("GetKeyPressed" |GetKeyPressed|)
+(CFFI:DEFCFUN ("GetKeyPressed" GETKEYPRESSED)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1171:11"
-(CFFI:DEFCFUN ("GetCharPressed" |GetCharPressed|)
+(CFFI:DEFCFUN ("GetCharPressed" GETCHARPRESSED)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1172:12"
-(CFFI:DEFCFUN ("SetExitKey" |SetExitKey|)
+(CFFI:DEFCFUN ("SetExitKey" SETEXITKEY)
     :VOID
-  (|key| :INT))
+  (KEY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1175:12"
-(CFFI:DEFCFUN ("IsGamepadAvailable" |IsGamepadAvailable|)
+(CFFI:DEFCFUN ("IsGamepadAvailable" ISGAMEPADAVAILABLE)
     :BOOL
-  (|gamepad| :INT))
+  (GAMEPAD :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1176:19"
-(CFFI:DEFCFUN ("GetGamepadName" |GetGamepadName|)
+(CFFI:DEFCFUN ("GetGamepadName" GETGAMEPADNAME)
     :STRING
-  (|gamepad| :INT))
+  (GAMEPAD :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1177:12"
-(CFFI:DEFCFUN ("IsGamepadButtonPressed" |IsGamepadButtonPressed|)
+(CFFI:DEFCFUN ("IsGamepadButtonPressed" ISGAMEPADBUTTONPRESSED)
     :BOOL
-  (|gamepad| :INT)
-  (|button| :INT))
+  (GAMEPAD :INT)
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1178:12"
-(CFFI:DEFCFUN ("IsGamepadButtonDown" |IsGamepadButtonDown|)
+(CFFI:DEFCFUN ("IsGamepadButtonDown" ISGAMEPADBUTTONDOWN)
     :BOOL
-  (|gamepad| :INT)
-  (|button| :INT))
+  (GAMEPAD :INT)
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1179:12"
-(CFFI:DEFCFUN ("IsGamepadButtonReleased" |IsGamepadButtonReleased|)
+(CFFI:DEFCFUN ("IsGamepadButtonReleased" ISGAMEPADBUTTONRELEASED)
     :BOOL
-  (|gamepad| :INT)
-  (|button| :INT))
+  (GAMEPAD :INT)
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1180:12"
-(CFFI:DEFCFUN ("IsGamepadButtonUp" |IsGamepadButtonUp|)
+(CFFI:DEFCFUN ("IsGamepadButtonUp" ISGAMEPADBUTTONUP)
     :BOOL
-  (|gamepad| :INT)
-  (|button| :INT))
+  (GAMEPAD :INT)
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1181:11"
-(CFFI:DEFCFUN ("GetGamepadButtonPressed" |GetGamepadButtonPressed|)
+(CFFI:DEFCFUN ("GetGamepadButtonPressed" GETGAMEPADBUTTONPRESSED)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1182:11"
-(CFFI:DEFCFUN ("GetGamepadAxisCount" |GetGamepadAxisCount|)
+(CFFI:DEFCFUN ("GetGamepadAxisCount" GETGAMEPADAXISCOUNT)
     :INT
-  (|gamepad| :INT))
+  (GAMEPAD :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1183:13"
-(CFFI:DEFCFUN ("GetGamepadAxisMovement" |GetGamepadAxisMovement|)
+(CFFI:DEFCFUN ("GetGamepadAxisMovement" GETGAMEPADAXISMOVEMENT)
     :FLOAT
-  (|gamepad| :INT)
-  (|axis| :INT))
+  (GAMEPAD :INT)
+  (AXIS :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1184:11"
-(CFFI:DEFCFUN ("SetGamepadMappings" |SetGamepadMappings|)
+(CFFI:DEFCFUN ("SetGamepadMappings" SETGAMEPADMAPPINGS)
     :INT
-  (|mappings| :STRING))
+  (MAPPINGS :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1185:12"
-(CFFI:DEFCFUN ("SetGamepadVibration" |SetGamepadVibration|)
+(CFFI:DEFCFUN ("SetGamepadVibration" SETGAMEPADVIBRATION)
     :VOID
-  (|gamepad| :INT)
-  (|leftMotor| :FLOAT)
-  (|rightMotor| :FLOAT))
+  (GAMEPAD :INT)
+  (LEFTMOTOR :FLOAT)
+  (RIGHTMOTOR :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1188:12"
-(CFFI:DEFCFUN ("IsMouseButtonPressed" |IsMouseButtonPressed|)
+(CFFI:DEFCFUN ("IsMouseButtonPressed" ISMOUSEBUTTONPRESSED)
     :BOOL
-  (|button| :INT))
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1189:12"
-(CFFI:DEFCFUN ("IsMouseButtonDown" |IsMouseButtonDown|)
+(CFFI:DEFCFUN ("IsMouseButtonDown" ISMOUSEBUTTONDOWN)
     :BOOL
-  (|button| :INT))
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1190:12"
-(CFFI:DEFCFUN ("IsMouseButtonReleased" |IsMouseButtonReleased|)
+(CFFI:DEFCFUN ("IsMouseButtonReleased" ISMOUSEBUTTONRELEASED)
     :BOOL
-  (|button| :INT))
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1191:12"
-(CFFI:DEFCFUN ("IsMouseButtonUp" |IsMouseButtonUp|)
+(CFFI:DEFCFUN ("IsMouseButtonUp" ISMOUSEBUTTONUP)
     :BOOL
-  (|button| :INT))
+  (BUTTON :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1192:11"
-(CFFI:DEFCFUN ("GetMouseX" |GetMouseX|)
+(CFFI:DEFCFUN ("GetMouseX" GETMOUSEX)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1193:11"
-(CFFI:DEFCFUN ("GetMouseY" |GetMouseY|)
+(CFFI:DEFCFUN ("GetMouseY" GETMOUSEY)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1194:15"
-(CFFI:DEFCFUN ("GetMousePosition" |GetMousePosition|)
-    |Vector2|)
+(CFFI:DEFCFUN ("GetMousePosition" GETMOUSEPOSITION)
+    VECTOR2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1195:15"
-(CFFI:DEFCFUN ("GetMouseDelta" |GetMouseDelta|)
-    |Vector2|)
+(CFFI:DEFCFUN ("GetMouseDelta" GETMOUSEDELTA)
+    VECTOR2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1196:12"
-(CFFI:DEFCFUN ("SetMousePosition" |SetMousePosition|)
+(CFFI:DEFCFUN ("SetMousePosition" SETMOUSEPOSITION)
     :VOID
-  (|x| :INT)
-  (|y| :INT))
+  (X :INT)
+  (Y :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1197:12"
-(CFFI:DEFCFUN ("SetMouseOffset" |SetMouseOffset|)
+(CFFI:DEFCFUN ("SetMouseOffset" SETMOUSEOFFSET)
     :VOID
-  (|offsetX| :INT)
-  (|offsetY| :INT))
+  (OFFSETX :INT)
+  (OFFSETY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1198:12"
-(CFFI:DEFCFUN ("SetMouseScale" |SetMouseScale|)
+(CFFI:DEFCFUN ("SetMouseScale" SETMOUSESCALE)
     :VOID
-  (|scaleX| :FLOAT)
-  (|scaleY| :FLOAT))
+  (SCALEX :FLOAT)
+  (SCALEY :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1199:13"
-(CFFI:DEFCFUN ("GetMouseWheelMove" |GetMouseWheelMove|)
+(CFFI:DEFCFUN ("GetMouseWheelMove" GETMOUSEWHEELMOVE)
     :FLOAT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1200:15"
-(CFFI:DEFCFUN ("GetMouseWheelMoveV" |GetMouseWheelMoveV|)
-    |Vector2|)
+(CFFI:DEFCFUN ("GetMouseWheelMoveV" GETMOUSEWHEELMOVEV)
+    VECTOR2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1201:12"
-(CFFI:DEFCFUN ("SetMouseCursor" |SetMouseCursor|)
+(CFFI:DEFCFUN ("SetMouseCursor" SETMOUSECURSOR)
     :VOID
-  (|cursor| :INT))
+  (CURSOR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1204:11"
-(CFFI:DEFCFUN ("GetTouchX" |GetTouchX|)
+(CFFI:DEFCFUN ("GetTouchX" GETTOUCHX)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1205:11"
-(CFFI:DEFCFUN ("GetTouchY" |GetTouchY|)
+(CFFI:DEFCFUN ("GetTouchY" GETTOUCHY)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1206:15"
-(CFFI:DEFCFUN ("GetTouchPosition" |GetTouchPosition|)
-    |Vector2|
-  (|index| :INT))
+(CFFI:DEFCFUN ("GetTouchPosition" GETTOUCHPOSITION)
+    VECTOR2
+  (INDEX :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1207:11"
-(CFFI:DEFCFUN ("GetTouchPointId" |GetTouchPointId|)
+(CFFI:DEFCFUN ("GetTouchPointId" GETTOUCHPOINTID)
     :INT
-  (|index| :INT))
+  (INDEX :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1208:11"
-(CFFI:DEFCFUN ("GetTouchPointCount" |GetTouchPointCount|)
+(CFFI:DEFCFUN ("GetTouchPointCount" GETTOUCHPOINTCOUNT)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1213:12"
-(CFFI:DEFCFUN ("SetGesturesEnabled" |SetGesturesEnabled|)
+(CFFI:DEFCFUN ("SetGesturesEnabled" SETGESTURESENABLED)
     :VOID
-  (|flags| :UNSIGNED-INT))
+  (FLAGS :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1214:12"
-(CFFI:DEFCFUN ("IsGestureDetected" |IsGestureDetected|)
+(CFFI:DEFCFUN ("IsGestureDetected" ISGESTUREDETECTED)
     :BOOL
-  (|gesture| :UNSIGNED-INT))
+  (GESTURE :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1215:11"
-(CFFI:DEFCFUN ("GetGestureDetected" |GetGestureDetected|)
+(CFFI:DEFCFUN ("GetGestureDetected" GETGESTUREDETECTED)
     :INT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1216:13"
-(CFFI:DEFCFUN ("GetGestureHoldDuration" |GetGestureHoldDuration|)
+(CFFI:DEFCFUN ("GetGestureHoldDuration" GETGESTUREHOLDDURATION)
     :FLOAT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1217:15"
-(CFFI:DEFCFUN ("GetGestureDragVector" |GetGestureDragVector|)
-    |Vector2|)
+(CFFI:DEFCFUN ("GetGestureDragVector" GETGESTUREDRAGVECTOR)
+    VECTOR2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1218:13"
-(CFFI:DEFCFUN ("GetGestureDragAngle" |GetGestureDragAngle|)
+(CFFI:DEFCFUN ("GetGestureDragAngle" GETGESTUREDRAGANGLE)
     :FLOAT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1219:15"
-(CFFI:DEFCFUN ("GetGesturePinchVector" |GetGesturePinchVector|)
-    |Vector2|)
+(CFFI:DEFCFUN ("GetGesturePinchVector" GETGESTUREPINCHVECTOR)
+    VECTOR2)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1220:13"
-(CFFI:DEFCFUN ("GetGesturePinchAngle" |GetGesturePinchAngle|)
+(CFFI:DEFCFUN ("GetGesturePinchAngle" GETGESTUREPINCHANGLE)
     :FLOAT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1225:12"
-(CFFI:DEFCFUN ("UpdateCamera" |UpdateCamera|)
+(CFFI:DEFCFUN ("UpdateCamera" UPDATECAMERA)
     :VOID
-  (|camera| (:POINTER |Camera|))
-  (|mode| :INT))
+  (CAMERA (:POINTER CAMERA))
+  (MODE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1226:12"
-(CFFI:DEFCFUN ("UpdateCameraPro" |UpdateCameraPro|)
+(CFFI:DEFCFUN ("UpdateCameraPro" UPDATECAMERAPRO)
     :VOID
-  (|camera| (:POINTER |Camera|))
-  (|movement| |Vector3|)
-  (|rotation| |Vector3|)
-  (|zoom| :FLOAT))
+  (CAMERA (:POINTER CAMERA))
+  (MOVEMENT VECTOR3)
+  (ROTATION VECTOR3)
+  (ZOOM :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1234:12"
-(CFFI:DEFCFUN ("SetShapesTexture" |SetShapesTexture|)
+(CFFI:DEFCFUN ("SetShapesTexture" SETSHAPESTEXTURE)
     :VOID
-  (|texture| |Texture2D|)
-  (|source| |Rectangle|))
+  (TEXTURE TEXTURE2D)
+  (SOURCE RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1235:17"
-(CFFI:DEFCFUN ("GetShapesTexture" |GetShapesTexture|)
-    |Texture2D|)
+(CFFI:DEFCFUN ("GetShapesTexture" GETSHAPESTEXTURE)
+    TEXTURE2D)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1236:17"
-(CFFI:DEFCFUN ("GetShapesTextureRectangle" |GetShapesTextureRectangle|)
-    |Rectangle|)
+(CFFI:DEFCFUN ("GetShapesTextureRectangle" GETSHAPESTEXTURERECTANGLE)
+    RECTANGLE)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1239:12"
-(CFFI:DEFCFUN ("DrawPixel" |DrawPixel|)
+(CFFI:DEFCFUN ("DrawPixel" DRAWPIXEL)
     :VOID
-  (|posX| :INT)
-  (|posY| :INT)
-  (|color| |Color|))
+  (POSX :INT)
+  (POSY :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1240:12"
-(CFFI:DEFCFUN ("DrawPixelV" |DrawPixelV|)
+(CFFI:DEFCFUN ("DrawPixelV" DRAWPIXELV)
     :VOID
-  (|position| |Vector2|)
-  (|color| |Color|))
+  (POSITION VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1241:12"
-(CFFI:DEFCFUN ("DrawLine" |DrawLine|)
+(CFFI:DEFCFUN ("DrawLine" DRAWLINE)
     :VOID
-  (|startPosX| :INT)
-  (|startPosY| :INT)
-  (|endPosX| :INT)
-  (|endPosY| :INT)
-  (|color| |Color|))
+  (STARTPOSX :INT)
+  (STARTPOSY :INT)
+  (ENDPOSX :INT)
+  (ENDPOSY :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1242:12"
-(CFFI:DEFCFUN ("DrawLineV" |DrawLineV|)
+(CFFI:DEFCFUN ("DrawLineV" DRAWLINEV)
     :VOID
-  (|startPos| |Vector2|)
-  (|endPos| |Vector2|)
-  (|color| |Color|))
+  (STARTPOS VECTOR2)
+  (ENDPOS VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1243:12"
-(CFFI:DEFCFUN ("DrawLineEx" |DrawLineEx|)
+(CFFI:DEFCFUN ("DrawLineEx" DRAWLINEEX)
     :VOID
-  (|startPos| |Vector2|)
-  (|endPos| |Vector2|)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (STARTPOS VECTOR2)
+  (ENDPOS VECTOR2)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1244:12"
-(CFFI:DEFCFUN ("DrawLineStrip" |DrawLineStrip|)
+(CFFI:DEFCFUN ("DrawLineStrip" DRAWLINESTRIP)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1245:12"
-(CFFI:DEFCFUN ("DrawLineBezier" |DrawLineBezier|)
+(CFFI:DEFCFUN ("DrawLineBezier" DRAWLINEBEZIER)
     :VOID
-  (|startPos| |Vector2|)
-  (|endPos| |Vector2|)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (STARTPOS VECTOR2)
+  (ENDPOS VECTOR2)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1246:12"
-(CFFI:DEFCFUN ("DrawCircle" |DrawCircle|)
+(CFFI:DEFCFUN ("DrawCircle" DRAWCIRCLE)
     :VOID
-  (|centerX| :INT)
-  (|centerY| :INT)
-  (|radius| :FLOAT)
-  (|color| |Color|))
+  (CENTERX :INT)
+  (CENTERY :INT)
+  (RADIUS :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1247:12"
-(CFFI:DEFCFUN ("DrawCircleSector" |DrawCircleSector|)
+(CFFI:DEFCFUN ("DrawCircleSector" DRAWCIRCLESECTOR)
     :VOID
-  (|center| |Vector2|)
-  (|radius| :FLOAT)
-  (|startAngle| :FLOAT)
-  (|endAngle| :FLOAT)
-  (|segments| :INT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (RADIUS :FLOAT)
+  (STARTANGLE :FLOAT)
+  (ENDANGLE :FLOAT)
+  (SEGMENTS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1248:12"
-(CFFI:DEFCFUN ("DrawCircleSectorLines" |DrawCircleSectorLines|)
+(CFFI:DEFCFUN ("DrawCircleSectorLines" DRAWCIRCLESECTORLINES)
     :VOID
-  (|center| |Vector2|)
-  (|radius| :FLOAT)
-  (|startAngle| :FLOAT)
-  (|endAngle| :FLOAT)
-  (|segments| :INT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (RADIUS :FLOAT)
+  (STARTANGLE :FLOAT)
+  (ENDANGLE :FLOAT)
+  (SEGMENTS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1249:12"
-(CFFI:DEFCFUN ("DrawCircleGradient" |DrawCircleGradient|)
+(CFFI:DEFCFUN ("DrawCircleGradient" DRAWCIRCLEGRADIENT)
     :VOID
-  (|centerX| :INT)
-  (|centerY| :INT)
-  (|radius| :FLOAT)
-  (|inner| |Color|)
-  (|outer| |Color|))
+  (CENTERX :INT)
+  (CENTERY :INT)
+  (RADIUS :FLOAT)
+  (INNER COLOR)
+  (OUTER COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1250:12"
-(CFFI:DEFCFUN ("DrawCircleV" |DrawCircleV|)
+(CFFI:DEFCFUN ("DrawCircleV" DRAWCIRCLEV)
     :VOID
-  (|center| |Vector2|)
-  (|radius| :FLOAT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (RADIUS :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1251:12"
-(CFFI:DEFCFUN ("DrawCircleLines" |DrawCircleLines|)
+(CFFI:DEFCFUN ("DrawCircleLines" DRAWCIRCLELINES)
     :VOID
-  (|centerX| :INT)
-  (|centerY| :INT)
-  (|radius| :FLOAT)
-  (|color| |Color|))
+  (CENTERX :INT)
+  (CENTERY :INT)
+  (RADIUS :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1252:12"
-(CFFI:DEFCFUN ("DrawCircleLinesV" |DrawCircleLinesV|)
+(CFFI:DEFCFUN ("DrawCircleLinesV" DRAWCIRCLELINESV)
     :VOID
-  (|center| |Vector2|)
-  (|radius| :FLOAT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (RADIUS :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1253:12"
-(CFFI:DEFCFUN ("DrawEllipse" |DrawEllipse|)
+(CFFI:DEFCFUN ("DrawEllipse" DRAWELLIPSE)
     :VOID
-  (|centerX| :INT)
-  (|centerY| :INT)
-  (|radiusH| :FLOAT)
-  (|radiusV| :FLOAT)
-  (|color| |Color|))
+  (CENTERX :INT)
+  (CENTERY :INT)
+  (RADIUSH :FLOAT)
+  (RADIUSV :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1254:12"
-(CFFI:DEFCFUN ("DrawEllipseLines" |DrawEllipseLines|)
+(CFFI:DEFCFUN ("DrawEllipseLines" DRAWELLIPSELINES)
     :VOID
-  (|centerX| :INT)
-  (|centerY| :INT)
-  (|radiusH| :FLOAT)
-  (|radiusV| :FLOAT)
-  (|color| |Color|))
+  (CENTERX :INT)
+  (CENTERY :INT)
+  (RADIUSH :FLOAT)
+  (RADIUSV :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1255:12"
-(CFFI:DEFCFUN ("DrawRing" |DrawRing|)
+(CFFI:DEFCFUN ("DrawRing" DRAWRING)
     :VOID
-  (|center| |Vector2|)
-  (|innerRadius| :FLOAT)
-  (|outerRadius| :FLOAT)
-  (|startAngle| :FLOAT)
-  (|endAngle| :FLOAT)
-  (|segments| :INT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (INNERRADIUS :FLOAT)
+  (OUTERRADIUS :FLOAT)
+  (STARTANGLE :FLOAT)
+  (ENDANGLE :FLOAT)
+  (SEGMENTS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1256:12"
-(CFFI:DEFCFUN ("DrawRingLines" |DrawRingLines|)
+(CFFI:DEFCFUN ("DrawRingLines" DRAWRINGLINES)
     :VOID
-  (|center| |Vector2|)
-  (|innerRadius| :FLOAT)
-  (|outerRadius| :FLOAT)
-  (|startAngle| :FLOAT)
-  (|endAngle| :FLOAT)
-  (|segments| :INT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (INNERRADIUS :FLOAT)
+  (OUTERRADIUS :FLOAT)
+  (STARTANGLE :FLOAT)
+  (ENDANGLE :FLOAT)
+  (SEGMENTS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1257:12"
-(CFFI:DEFCFUN ("DrawRectangle" |DrawRectangle|)
+(CFFI:DEFCFUN ("DrawRectangle" DRAWRECTANGLE)
     :VOID
-  (|posX| :INT)
-  (|posY| :INT)
-  (|width| :INT)
-  (|height| :INT)
-  (|color| |Color|))
+  (POSX :INT)
+  (POSY :INT)
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1258:12"
-(CFFI:DEFCFUN ("DrawRectangleV" |DrawRectangleV|)
+(CFFI:DEFCFUN ("DrawRectangleV" DRAWRECTANGLEV)
     :VOID
-  (|position| |Vector2|)
-  (|size| |Vector2|)
-  (|color| |Color|))
+  (POSITION VECTOR2)
+  (SIZE VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1259:12"
-(CFFI:DEFCFUN ("DrawRectangleRec" |DrawRectangleRec|)
+(CFFI:DEFCFUN ("DrawRectangleRec" DRAWRECTANGLEREC)
     :VOID
-  (|rec| |Rectangle|)
-  (|color| |Color|))
+  (REC RECTANGLE)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1260:12"
-(CFFI:DEFCFUN ("DrawRectanglePro" |DrawRectanglePro|)
+(CFFI:DEFCFUN ("DrawRectanglePro" DRAWRECTANGLEPRO)
     :VOID
-  (|rec| |Rectangle|)
-  (|origin| |Vector2|)
-  (|rotation| :FLOAT)
-  (|color| |Color|))
+  (REC RECTANGLE)
+  (ORIGIN VECTOR2)
+  (ROTATION :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1261:12"
-(CFFI:DEFCFUN ("DrawRectangleGradientV" |DrawRectangleGradientV|)
+(CFFI:DEFCFUN ("DrawRectangleGradientV" DRAWRECTANGLEGRADIENTV)
     :VOID
-  (|posX| :INT)
-  (|posY| :INT)
-  (|width| :INT)
-  (|height| :INT)
-  (|top| |Color|)
-  (|bottom| |Color|))
+  (POSX :INT)
+  (POSY :INT)
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (TOP COLOR)
+  (BOTTOM COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1262:12"
-(CFFI:DEFCFUN ("DrawRectangleGradientH" |DrawRectangleGradientH|)
+(CFFI:DEFCFUN ("DrawRectangleGradientH" DRAWRECTANGLEGRADIENTH)
     :VOID
-  (|posX| :INT)
-  (|posY| :INT)
-  (|width| :INT)
-  (|height| :INT)
-  (|left| |Color|)
-  (|right| |Color|))
+  (POSX :INT)
+  (POSY :INT)
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (LEFT COLOR)
+  (RIGHT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1263:12"
-(CFFI:DEFCFUN ("DrawRectangleGradientEx" |DrawRectangleGradientEx|)
+(CFFI:DEFCFUN ("DrawRectangleGradientEx" DRAWRECTANGLEGRADIENTEX)
     :VOID
-  (|rec| |Rectangle|)
-  (|topLeft| |Color|)
-  (|bottomLeft| |Color|)
-  (|topRight| |Color|)
-  (|bottomRight| |Color|))
+  (REC RECTANGLE)
+  (TOPLEFT COLOR)
+  (BOTTOMLEFT COLOR)
+  (TOPRIGHT COLOR)
+  (BOTTOMRIGHT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1264:12"
-(CFFI:DEFCFUN ("DrawRectangleLines" |DrawRectangleLines|)
+(CFFI:DEFCFUN ("DrawRectangleLines" DRAWRECTANGLELINES)
     :VOID
-  (|posX| :INT)
-  (|posY| :INT)
-  (|width| :INT)
-  (|height| :INT)
-  (|color| |Color|))
+  (POSX :INT)
+  (POSY :INT)
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1265:12"
-(CFFI:DEFCFUN ("DrawRectangleLinesEx" |DrawRectangleLinesEx|)
+(CFFI:DEFCFUN ("DrawRectangleLinesEx" DRAWRECTANGLELINESEX)
     :VOID
-  (|rec| |Rectangle|)
-  (|lineThick| :FLOAT)
-  (|color| |Color|))
+  (REC RECTANGLE)
+  (LINETHICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1266:12"
-(CFFI:DEFCFUN ("DrawRectangleRounded" |DrawRectangleRounded|)
+(CFFI:DEFCFUN ("DrawRectangleRounded" DRAWRECTANGLEROUNDED)
     :VOID
-  (|rec| |Rectangle|)
-  (|roundness| :FLOAT)
-  (|segments| :INT)
-  (|color| |Color|))
+  (REC RECTANGLE)
+  (ROUNDNESS :FLOAT)
+  (SEGMENTS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1267:12"
-(CFFI:DEFCFUN ("DrawRectangleRoundedLines" |DrawRectangleRoundedLines|)
+(CFFI:DEFCFUN ("DrawRectangleRoundedLines" DRAWRECTANGLEROUNDEDLINES)
     :VOID
-  (|rec| |Rectangle|)
-  (|roundness| :FLOAT)
-  (|segments| :INT)
-  (|color| |Color|))
+  (REC RECTANGLE)
+  (ROUNDNESS :FLOAT)
+  (SEGMENTS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1268:12"
-(CFFI:DEFCFUN ("DrawRectangleRoundedLinesEx" |DrawRectangleRoundedLinesEx|)
+(CFFI:DEFCFUN ("DrawRectangleRoundedLinesEx" DRAWRECTANGLEROUNDEDLINESEX)
     :VOID
-  (|rec| |Rectangle|)
-  (|roundness| :FLOAT)
-  (|segments| :INT)
-  (|lineThick| :FLOAT)
-  (|color| |Color|))
+  (REC RECTANGLE)
+  (ROUNDNESS :FLOAT)
+  (SEGMENTS :INT)
+  (LINETHICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1269:12"
-(CFFI:DEFCFUN ("DrawTriangle" |DrawTriangle|)
+(CFFI:DEFCFUN ("DrawTriangle" DRAWTRIANGLE)
     :VOID
-  (|v1| |Vector2|)
-  (|v2| |Vector2|)
-  (|v3| |Vector2|)
-  (|color| |Color|))
+  (V1 VECTOR2)
+  (V2 VECTOR2)
+  (V3 VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1270:12"
-(CFFI:DEFCFUN ("DrawTriangleLines" |DrawTriangleLines|)
+(CFFI:DEFCFUN ("DrawTriangleLines" DRAWTRIANGLELINES)
     :VOID
-  (|v1| |Vector2|)
-  (|v2| |Vector2|)
-  (|v3| |Vector2|)
-  (|color| |Color|))
+  (V1 VECTOR2)
+  (V2 VECTOR2)
+  (V3 VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1271:12"
-(CFFI:DEFCFUN ("DrawTriangleFan" |DrawTriangleFan|)
+(CFFI:DEFCFUN ("DrawTriangleFan" DRAWTRIANGLEFAN)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1272:12"
-(CFFI:DEFCFUN ("DrawTriangleStrip" |DrawTriangleStrip|)
+(CFFI:DEFCFUN ("DrawTriangleStrip" DRAWTRIANGLESTRIP)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1273:12"
-(CFFI:DEFCFUN ("DrawPoly" |DrawPoly|)
+(CFFI:DEFCFUN ("DrawPoly" DRAWPOLY)
     :VOID
-  (|center| |Vector2|)
-  (|sides| :INT)
-  (|radius| :FLOAT)
-  (|rotation| :FLOAT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (SIDES :INT)
+  (RADIUS :FLOAT)
+  (ROTATION :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1274:12"
-(CFFI:DEFCFUN ("DrawPolyLines" |DrawPolyLines|)
+(CFFI:DEFCFUN ("DrawPolyLines" DRAWPOLYLINES)
     :VOID
-  (|center| |Vector2|)
-  (|sides| :INT)
-  (|radius| :FLOAT)
-  (|rotation| :FLOAT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (SIDES :INT)
+  (RADIUS :FLOAT)
+  (ROTATION :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1275:12"
-(CFFI:DEFCFUN ("DrawPolyLinesEx" |DrawPolyLinesEx|)
+(CFFI:DEFCFUN ("DrawPolyLinesEx" DRAWPOLYLINESEX)
     :VOID
-  (|center| |Vector2|)
-  (|sides| :INT)
-  (|radius| :FLOAT)
-  (|rotation| :FLOAT)
-  (|lineThick| :FLOAT)
-  (|color| |Color|))
+  (CENTER VECTOR2)
+  (SIDES :INT)
+  (RADIUS :FLOAT)
+  (ROTATION :FLOAT)
+  (LINETHICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1278:12"
-(CFFI:DEFCFUN ("DrawSplineLinear" |DrawSplineLinear|)
+(CFFI:DEFCFUN ("DrawSplineLinear" DRAWSPLINELINEAR)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1279:12"
-(CFFI:DEFCFUN ("DrawSplineBasis" |DrawSplineBasis|)
+(CFFI:DEFCFUN ("DrawSplineBasis" DRAWSPLINEBASIS)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1280:12"
-(CFFI:DEFCFUN ("DrawSplineCatmullRom" |DrawSplineCatmullRom|)
+(CFFI:DEFCFUN ("DrawSplineCatmullRom" DRAWSPLINECATMULLROM)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1281:12"
-(CFFI:DEFCFUN ("DrawSplineBezierQuadratic" |DrawSplineBezierQuadratic|)
+(CFFI:DEFCFUN ("DrawSplineBezierQuadratic" DRAWSPLINEBEZIERQUADRATIC)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1282:12"
-(CFFI:DEFCFUN ("DrawSplineBezierCubic" |DrawSplineBezierCubic|)
+(CFFI:DEFCFUN ("DrawSplineBezierCubic" DRAWSPLINEBEZIERCUBIC)
     :VOID
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1283:12"
-(CFFI:DEFCFUN ("DrawSplineSegmentLinear" |DrawSplineSegmentLinear|)
+(CFFI:DEFCFUN ("DrawSplineSegmentLinear" DRAWSPLINESEGMENTLINEAR)
     :VOID
-  (|p1| |Vector2|)
-  (|p2| |Vector2|)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (P1 VECTOR2)
+  (P2 VECTOR2)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1284:12"
-(CFFI:DEFCFUN ("DrawSplineSegmentBasis" |DrawSplineSegmentBasis|)
+(CFFI:DEFCFUN ("DrawSplineSegmentBasis" DRAWSPLINESEGMENTBASIS)
     :VOID
-  (|p1| |Vector2|)
-  (|p2| |Vector2|)
-  (|p3| |Vector2|)
-  (|p4| |Vector2|)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (P1 VECTOR2)
+  (P2 VECTOR2)
+  (P3 VECTOR2)
+  (P4 VECTOR2)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1285:12"
-(CFFI:DEFCFUN ("DrawSplineSegmentCatmullRom" |DrawSplineSegmentCatmullRom|)
+(CFFI:DEFCFUN ("DrawSplineSegmentCatmullRom" DRAWSPLINESEGMENTCATMULLROM)
     :VOID
-  (|p1| |Vector2|)
-  (|p2| |Vector2|)
-  (|p3| |Vector2|)
-  (|p4| |Vector2|)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (P1 VECTOR2)
+  (P2 VECTOR2)
+  (P3 VECTOR2)
+  (P4 VECTOR2)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1286:12"
 (CFFI:DEFCFUN ("DrawSplineSegmentBezierQuadratic"
-               |DrawSplineSegmentBezierQuadratic|)
+               DRAWSPLINESEGMENTBEZIERQUADRATIC)
     :VOID
-  (|p1| |Vector2|)
-  (|c2| |Vector2|)
-  (|p3| |Vector2|)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (P1 VECTOR2)
+  (C2 VECTOR2)
+  (P3 VECTOR2)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1287:12"
-(CFFI:DEFCFUN ("DrawSplineSegmentBezierCubic" |DrawSplineSegmentBezierCubic|)
+(CFFI:DEFCFUN ("DrawSplineSegmentBezierCubic" DRAWSPLINESEGMENTBEZIERCUBIC)
     :VOID
-  (|p1| |Vector2|)
-  (|c2| |Vector2|)
-  (|c3| |Vector2|)
-  (|p4| |Vector2|)
-  (|thick| :FLOAT)
-  (|color| |Color|))
+  (P1 VECTOR2)
+  (C2 VECTOR2)
+  (C3 VECTOR2)
+  (P4 VECTOR2)
+  (THICK :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1290:15"
-(CFFI:DEFCFUN ("GetSplinePointLinear" |GetSplinePointLinear|)
-    |Vector2|
-  (|startPos| |Vector2|)
-  (|endPos| |Vector2|)
-  (|t| :FLOAT))
+(CFFI:DEFCFUN ("GetSplinePointLinear" GETSPLINEPOINTLINEAR)
+    VECTOR2
+  (STARTPOS VECTOR2)
+  (ENDPOS VECTOR2)
+  (T :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1291:15"
-(CFFI:DEFCFUN ("GetSplinePointBasis" |GetSplinePointBasis|)
-    |Vector2|
-  (|p1| |Vector2|)
-  (|p2| |Vector2|)
-  (|p3| |Vector2|)
-  (|p4| |Vector2|)
-  (|t| :FLOAT))
+(CFFI:DEFCFUN ("GetSplinePointBasis" GETSPLINEPOINTBASIS)
+    VECTOR2
+  (P1 VECTOR2)
+  (P2 VECTOR2)
+  (P3 VECTOR2)
+  (P4 VECTOR2)
+  (T :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1292:15"
-(CFFI:DEFCFUN ("GetSplinePointCatmullRom" |GetSplinePointCatmullRom|)
-    |Vector2|
-  (|p1| |Vector2|)
-  (|p2| |Vector2|)
-  (|p3| |Vector2|)
-  (|p4| |Vector2|)
-  (|t| :FLOAT))
+(CFFI:DEFCFUN ("GetSplinePointCatmullRom" GETSPLINEPOINTCATMULLROM)
+    VECTOR2
+  (P1 VECTOR2)
+  (P2 VECTOR2)
+  (P3 VECTOR2)
+  (P4 VECTOR2)
+  (T :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1293:15"
-(CFFI:DEFCFUN ("GetSplinePointBezierQuad" |GetSplinePointBezierQuad|)
-    |Vector2|
-  (|p1| |Vector2|)
-  (|c2| |Vector2|)
-  (|p3| |Vector2|)
-  (|t| :FLOAT))
+(CFFI:DEFCFUN ("GetSplinePointBezierQuad" GETSPLINEPOINTBEZIERQUAD)
+    VECTOR2
+  (P1 VECTOR2)
+  (C2 VECTOR2)
+  (P3 VECTOR2)
+  (T :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1294:15"
-(CFFI:DEFCFUN ("GetSplinePointBezierCubic" |GetSplinePointBezierCubic|)
-    |Vector2|
-  (|p1| |Vector2|)
-  (|c2| |Vector2|)
-  (|c3| |Vector2|)
-  (|p4| |Vector2|)
-  (|t| :FLOAT))
+(CFFI:DEFCFUN ("GetSplinePointBezierCubic" GETSPLINEPOINTBEZIERCUBIC)
+    VECTOR2
+  (P1 VECTOR2)
+  (C2 VECTOR2)
+  (C3 VECTOR2)
+  (P4 VECTOR2)
+  (T :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1297:12"
-(CFFI:DEFCFUN ("CheckCollisionRecs" |CheckCollisionRecs|)
+(CFFI:DEFCFUN ("CheckCollisionRecs" CHECKCOLLISIONRECS)
     :BOOL
-  (|rec1| |Rectangle|)
-  (|rec2| |Rectangle|))
+  (REC1 RECTANGLE)
+  (REC2 RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1298:12"
-(CFFI:DEFCFUN ("CheckCollisionCircles" |CheckCollisionCircles|)
+(CFFI:DEFCFUN ("CheckCollisionCircles" CHECKCOLLISIONCIRCLES)
     :BOOL
-  (|center1| |Vector2|)
-  (|radius1| :FLOAT)
-  (|center2| |Vector2|)
-  (|radius2| :FLOAT))
+  (CENTER1 VECTOR2)
+  (RADIUS1 :FLOAT)
+  (CENTER2 VECTOR2)
+  (RADIUS2 :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1299:12"
-(CFFI:DEFCFUN ("CheckCollisionCircleRec" |CheckCollisionCircleRec|)
+(CFFI:DEFCFUN ("CheckCollisionCircleRec" CHECKCOLLISIONCIRCLEREC)
     :BOOL
-  (|center| |Vector2|)
-  (|radius| :FLOAT)
-  (|rec| |Rectangle|))
+  (CENTER VECTOR2)
+  (RADIUS :FLOAT)
+  (REC RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1300:12"
-(CFFI:DEFCFUN ("CheckCollisionPointRec" |CheckCollisionPointRec|)
+(CFFI:DEFCFUN ("CheckCollisionPointRec" CHECKCOLLISIONPOINTREC)
     :BOOL
-  (|point| |Vector2|)
-  (|rec| |Rectangle|))
+  (POINT VECTOR2)
+  (REC RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1301:12"
-(CFFI:DEFCFUN ("CheckCollisionPointCircle" |CheckCollisionPointCircle|)
+(CFFI:DEFCFUN ("CheckCollisionPointCircle" CHECKCOLLISIONPOINTCIRCLE)
     :BOOL
-  (|point| |Vector2|)
-  (|center| |Vector2|)
-  (|radius| :FLOAT))
+  (POINT VECTOR2)
+  (CENTER VECTOR2)
+  (RADIUS :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1302:12"
-(CFFI:DEFCFUN ("CheckCollisionPointTriangle" |CheckCollisionPointTriangle|)
+(CFFI:DEFCFUN ("CheckCollisionPointTriangle" CHECKCOLLISIONPOINTTRIANGLE)
     :BOOL
-  (|point| |Vector2|)
-  (|p1| |Vector2|)
-  (|p2| |Vector2|)
-  (|p3| |Vector2|))
+  (POINT VECTOR2)
+  (P1 VECTOR2)
+  (P2 VECTOR2)
+  (P3 VECTOR2))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1303:12"
-(CFFI:DEFCFUN ("CheckCollisionPointPoly" |CheckCollisionPointPoly|)
+(CFFI:DEFCFUN ("CheckCollisionPointPoly" CHECKCOLLISIONPOINTPOLY)
     :BOOL
-  (|point| |Vector2|)
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT))
+  (POINT VECTOR2)
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1304:12"
-(CFFI:DEFCFUN ("CheckCollisionLines" |CheckCollisionLines|)
+(CFFI:DEFCFUN ("CheckCollisionLines" CHECKCOLLISIONLINES)
     :BOOL
-  (|startPos1| |Vector2|)
-  (|endPos1| |Vector2|)
-  (|startPos2| |Vector2|)
-  (|endPos2| |Vector2|)
-  (|collisionPoint| (:POINTER |Vector2|)))
+  (STARTPOS1 VECTOR2)
+  (ENDPOS1 VECTOR2)
+  (STARTPOS2 VECTOR2)
+  (ENDPOS2 VECTOR2)
+  (COLLISIONPOINT (:POINTER VECTOR2)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1305:12"
-(CFFI:DEFCFUN ("CheckCollisionPointLine" |CheckCollisionPointLine|)
+(CFFI:DEFCFUN ("CheckCollisionPointLine" CHECKCOLLISIONPOINTLINE)
     :BOOL
-  (|point| |Vector2|)
-  (|p1| |Vector2|)
-  (|p2| |Vector2|)
-  (|threshold| :INT))
+  (POINT VECTOR2)
+  (P1 VECTOR2)
+  (P2 VECTOR2)
+  (THRESHOLD :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1306:12"
-(CFFI:DEFCFUN ("CheckCollisionCircleLine" |CheckCollisionCircleLine|)
+(CFFI:DEFCFUN ("CheckCollisionCircleLine" CHECKCOLLISIONCIRCLELINE)
     :BOOL
-  (|center| |Vector2|)
-  (|radius| :FLOAT)
-  (|p1| |Vector2|)
-  (|p2| |Vector2|))
+  (CENTER VECTOR2)
+  (RADIUS :FLOAT)
+  (P1 VECTOR2)
+  (P2 VECTOR2))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1307:17"
-(CFFI:DEFCFUN ("GetCollisionRec" |GetCollisionRec|)
-    |Rectangle|
-  (|rec1| |Rectangle|)
-  (|rec2| |Rectangle|))
+(CFFI:DEFCFUN ("GetCollisionRec" GETCOLLISIONREC)
+    RECTANGLE
+  (REC1 RECTANGLE)
+  (REC2 RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1315:13"
-(CFFI:DEFCFUN ("LoadImage" |LoadImage|)
-    |Image|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadImage" LOADIMAGE)
+    IMAGE
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1316:13"
-(CFFI:DEFCFUN ("LoadImageRaw" |LoadImageRaw|)
-    |Image|
-  (|fileName| :STRING)
-  (|width| :INT)
-  (|height| :INT)
-  (|format| :INT)
-  (|headerSize| :INT))
+(CFFI:DEFCFUN ("LoadImageRaw" LOADIMAGERAW)
+    IMAGE
+  (FILENAME :STRING)
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (FORMAT :INT)
+  (HEADERSIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1317:13"
-(CFFI:DEFCFUN ("LoadImageAnim" |LoadImageAnim|)
-    |Image|
-  (|fileName| :STRING)
-  (|frames| (:POINTER :INT)))
+(CFFI:DEFCFUN ("LoadImageAnim" LOADIMAGEANIM)
+    IMAGE
+  (FILENAME :STRING)
+  (FRAMES (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1318:13"
-(CFFI:DEFCFUN ("LoadImageAnimFromMemory" |LoadImageAnimFromMemory|)
-    |Image|
-  (|fileType| :STRING)
-  (|fileData| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT)
-  (|frames| (:POINTER :INT)))
+(CFFI:DEFCFUN ("LoadImageAnimFromMemory" LOADIMAGEANIMFROMMEMORY)
+    IMAGE
+  (FILETYPE :STRING)
+  (FILEDATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT)
+  (FRAMES (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1319:13"
-(CFFI:DEFCFUN ("LoadImageFromMemory" |LoadImageFromMemory|)
-    |Image|
-  (|fileType| :STRING)
-  (|fileData| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT))
+(CFFI:DEFCFUN ("LoadImageFromMemory" LOADIMAGEFROMMEMORY)
+    IMAGE
+  (FILETYPE :STRING)
+  (FILEDATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1320:13"
-(CFFI:DEFCFUN ("LoadImageFromTexture" |LoadImageFromTexture|)
-    |Image|
-  (|texture| |Texture2D|))
+(CFFI:DEFCFUN ("LoadImageFromTexture" LOADIMAGEFROMTEXTURE)
+    IMAGE
+  (TEXTURE TEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1321:13"
-(CFFI:DEFCFUN ("LoadImageFromScreen" |LoadImageFromScreen|)
-    |Image|)
+(CFFI:DEFCFUN ("LoadImageFromScreen" LOADIMAGEFROMSCREEN)
+    IMAGE)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1322:12"
-(CFFI:DEFCFUN ("IsImageReady" |IsImageReady|)
+(CFFI:DEFCFUN ("IsImageReady" ISIMAGEREADY)
     :BOOL
-  (|image| |Image|))
+  (IMAGE IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1323:12"
-(CFFI:DEFCFUN ("UnloadImage" |UnloadImage|)
+(CFFI:DEFCFUN ("UnloadImage" UNLOADIMAGE)
     :VOID
-  (|image| |Image|))
+  (IMAGE IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1324:12"
-(CFFI:DEFCFUN ("ExportImage" |ExportImage|)
+(CFFI:DEFCFUN ("ExportImage" EXPORTIMAGE)
     :BOOL
-  (|image| |Image|)
-  (|fileName| :STRING))
+  (IMAGE IMAGE)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1325:22"
-(CFFI:DEFCFUN ("ExportImageToMemory" |ExportImageToMemory|)
+(CFFI:DEFCFUN ("ExportImageToMemory" EXPORTIMAGETOMEMORY)
     (:POINTER :UNSIGNED-CHAR)
-  (|image| |Image|)
-  (|fileType| :STRING)
-  (|fileSize| (:POINTER :INT)))
+  (IMAGE IMAGE)
+  (FILETYPE :STRING)
+  (FILESIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1326:12"
-(CFFI:DEFCFUN ("ExportImageAsCode" |ExportImageAsCode|)
+(CFFI:DEFCFUN ("ExportImageAsCode" EXPORTIMAGEASCODE)
     :BOOL
-  (|image| |Image|)
-  (|fileName| :STRING))
+  (IMAGE IMAGE)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1329:13"
-(CFFI:DEFCFUN ("GenImageColor" |GenImageColor|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|color| |Color|))
+(CFFI:DEFCFUN ("GenImageColor" GENIMAGECOLOR)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1330:13"
-(CFFI:DEFCFUN ("GenImageGradientLinear" |GenImageGradientLinear|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|direction| :INT)
-  (|start| |Color|)
-  (|end| |Color|))
+(CFFI:DEFCFUN ("GenImageGradientLinear" GENIMAGEGRADIENTLINEAR)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (DIRECTION :INT)
+  (START COLOR)
+  (END COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1331:13"
-(CFFI:DEFCFUN ("GenImageGradientRadial" |GenImageGradientRadial|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|density| :FLOAT)
-  (|inner| |Color|)
-  (|outer| |Color|))
+(CFFI:DEFCFUN ("GenImageGradientRadial" GENIMAGEGRADIENTRADIAL)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (DENSITY :FLOAT)
+  (INNER COLOR)
+  (OUTER COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1332:13"
-(CFFI:DEFCFUN ("GenImageGradientSquare" |GenImageGradientSquare|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|density| :FLOAT)
-  (|inner| |Color|)
-  (|outer| |Color|))
+(CFFI:DEFCFUN ("GenImageGradientSquare" GENIMAGEGRADIENTSQUARE)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (DENSITY :FLOAT)
+  (INNER COLOR)
+  (OUTER COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1333:13"
-(CFFI:DEFCFUN ("GenImageChecked" |GenImageChecked|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|checksX| :INT)
-  (|checksY| :INT)
-  (|col1| |Color|)
-  (|col2| |Color|))
+(CFFI:DEFCFUN ("GenImageChecked" GENIMAGECHECKED)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (CHECKSX :INT)
+  (CHECKSY :INT)
+  (COL1 COLOR)
+  (COL2 COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1334:13"
-(CFFI:DEFCFUN ("GenImageWhiteNoise" |GenImageWhiteNoise|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|factor| :FLOAT))
+(CFFI:DEFCFUN ("GenImageWhiteNoise" GENIMAGEWHITENOISE)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (FACTOR :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1335:13"
-(CFFI:DEFCFUN ("GenImagePerlinNoise" |GenImagePerlinNoise|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|offsetX| :INT)
-  (|offsetY| :INT)
-  (|scale| :FLOAT))
+(CFFI:DEFCFUN ("GenImagePerlinNoise" GENIMAGEPERLINNOISE)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (OFFSETX :INT)
+  (OFFSETY :INT)
+  (SCALE :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1336:13"
-(CFFI:DEFCFUN ("GenImageCellular" |GenImageCellular|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|tileSize| :INT))
+(CFFI:DEFCFUN ("GenImageCellular" GENIMAGECELLULAR)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (TILESIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1337:13"
-(CFFI:DEFCFUN ("GenImageText" |GenImageText|)
-    |Image|
-  (|width| :INT)
-  (|height| :INT)
-  (|text| :STRING))
+(CFFI:DEFCFUN ("GenImageText" GENIMAGETEXT)
+    IMAGE
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1340:13"
-(CFFI:DEFCFUN ("ImageCopy" |ImageCopy|)
-    |Image|
-  (|image| |Image|))
+(CFFI:DEFCFUN ("ImageCopy" IMAGECOPY)
+    IMAGE
+  (IMAGE IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1341:13"
-(CFFI:DEFCFUN ("ImageFromImage" |ImageFromImage|)
-    |Image|
-  (|image| |Image|)
-  (|rec| |Rectangle|))
+(CFFI:DEFCFUN ("ImageFromImage" IMAGEFROMIMAGE)
+    IMAGE
+  (IMAGE IMAGE)
+  (REC RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1342:13"
-(CFFI:DEFCFUN ("ImageFromChannel" |ImageFromChannel|)
-    |Image|
-  (|image| |Image|)
-  (|selectedChannel| :INT))
+(CFFI:DEFCFUN ("ImageFromChannel" IMAGEFROMCHANNEL)
+    IMAGE
+  (IMAGE IMAGE)
+  (SELECTEDCHANNEL :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1343:13"
-(CFFI:DEFCFUN ("ImageText" |ImageText|)
-    |Image|
-  (|text| :STRING)
-  (|fontSize| :INT)
-  (|color| |Color|))
+(CFFI:DEFCFUN ("ImageText" IMAGETEXT)
+    IMAGE
+  (TEXT :STRING)
+  (FONTSIZE :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1344:13"
-(CFFI:DEFCFUN ("ImageTextEx" |ImageTextEx|)
-    |Image|
-  (|font| |Font|)
-  (|text| :STRING)
-  (|fontSize| :FLOAT)
-  (|spacing| :FLOAT)
-  (|tint| |Color|))
+(CFFI:DEFCFUN ("ImageTextEx" IMAGETEXTEX)
+    IMAGE
+  (FONT FONT)
+  (TEXT :STRING)
+  (FONTSIZE :FLOAT)
+  (SPACING :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1345:12"
-(CFFI:DEFCFUN ("ImageFormat" |ImageFormat|)
+(CFFI:DEFCFUN ("ImageFormat" IMAGEFORMAT)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|newFormat| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (NEWFORMAT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1346:12"
-(CFFI:DEFCFUN ("ImageToPOT" |ImageToPOT|)
+(CFFI:DEFCFUN ("ImageToPOT" IMAGETOPOT)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|fill| |Color|))
+  (IMAGE (:POINTER IMAGE))
+  (FILL COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1347:12"
-(CFFI:DEFCFUN ("ImageCrop" |ImageCrop|)
+(CFFI:DEFCFUN ("ImageCrop" IMAGECROP)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|crop| |Rectangle|))
+  (IMAGE (:POINTER IMAGE))
+  (CROP RECTANGLE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1348:12"
-(CFFI:DEFCFUN ("ImageAlphaCrop" |ImageAlphaCrop|)
+(CFFI:DEFCFUN ("ImageAlphaCrop" IMAGEALPHACROP)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|threshold| :FLOAT))
+  (IMAGE (:POINTER IMAGE))
+  (THRESHOLD :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1349:12"
-(CFFI:DEFCFUN ("ImageAlphaClear" |ImageAlphaClear|)
+(CFFI:DEFCFUN ("ImageAlphaClear" IMAGEALPHACLEAR)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|color| |Color|)
-  (|threshold| :FLOAT))
+  (IMAGE (:POINTER IMAGE))
+  (COLOR COLOR)
+  (THRESHOLD :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1350:12"
-(CFFI:DEFCFUN ("ImageAlphaMask" |ImageAlphaMask|)
+(CFFI:DEFCFUN ("ImageAlphaMask" IMAGEALPHAMASK)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|alphaMask| |Image|))
+  (IMAGE (:POINTER IMAGE))
+  (ALPHAMASK IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1351:12"
-(CFFI:DEFCFUN ("ImageAlphaPremultiply" |ImageAlphaPremultiply|)
+(CFFI:DEFCFUN ("ImageAlphaPremultiply" IMAGEALPHAPREMULTIPLY)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1352:12"
-(CFFI:DEFCFUN ("ImageBlurGaussian" |ImageBlurGaussian|)
+(CFFI:DEFCFUN ("ImageBlurGaussian" IMAGEBLURGAUSSIAN)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|blurSize| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (BLURSIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1353:12"
-(CFFI:DEFCFUN ("ImageKernelConvolution" |ImageKernelConvolution|)
+(CFFI:DEFCFUN ("ImageKernelConvolution" IMAGEKERNELCONVOLUTION)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|kernel| (:POINTER :FLOAT))
-  (|kernelSize| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (KERNEL (:POINTER :FLOAT))
+  (KERNELSIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1354:12"
-(CFFI:DEFCFUN ("ImageResize" |ImageResize|)
+(CFFI:DEFCFUN ("ImageResize" IMAGERESIZE)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|newWidth| :INT)
-  (|newHeight| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (NEWWIDTH :INT)
+  (NEWHEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1355:12"
-(CFFI:DEFCFUN ("ImageResizeNN" |ImageResizeNN|)
+(CFFI:DEFCFUN ("ImageResizeNN" IMAGERESIZENN)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|newWidth| :INT)
-  (|newHeight| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (NEWWIDTH :INT)
+  (NEWHEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1356:12"
-(CFFI:DEFCFUN ("ImageResizeCanvas" |ImageResizeCanvas|)
+(CFFI:DEFCFUN ("ImageResizeCanvas" IMAGERESIZECANVAS)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|newWidth| :INT)
-  (|newHeight| :INT)
-  (|offsetX| :INT)
-  (|offsetY| :INT)
-  (|fill| |Color|))
+  (IMAGE (:POINTER IMAGE))
+  (NEWWIDTH :INT)
+  (NEWHEIGHT :INT)
+  (OFFSETX :INT)
+  (OFFSETY :INT)
+  (FILL COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1357:12"
-(CFFI:DEFCFUN ("ImageMipmaps" |ImageMipmaps|)
+(CFFI:DEFCFUN ("ImageMipmaps" IMAGEMIPMAPS)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1358:12"
-(CFFI:DEFCFUN ("ImageDither" |ImageDither|)
+(CFFI:DEFCFUN ("ImageDither" IMAGEDITHER)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|rBpp| :INT)
-  (|gBpp| :INT)
-  (|bBpp| :INT)
-  (|aBpp| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (RBPP :INT)
+  (GBPP :INT)
+  (BBPP :INT)
+  (ABPP :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1359:12"
-(CFFI:DEFCFUN ("ImageFlipVertical" |ImageFlipVertical|)
+(CFFI:DEFCFUN ("ImageFlipVertical" IMAGEFLIPVERTICAL)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1360:12"
-(CFFI:DEFCFUN ("ImageFlipHorizontal" |ImageFlipHorizontal|)
+(CFFI:DEFCFUN ("ImageFlipHorizontal" IMAGEFLIPHORIZONTAL)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1361:12"
-(CFFI:DEFCFUN ("ImageRotate" |ImageRotate|)
+(CFFI:DEFCFUN ("ImageRotate" IMAGEROTATE)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|degrees| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (DEGREES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1362:12"
-(CFFI:DEFCFUN ("ImageRotateCW" |ImageRotateCW|)
+(CFFI:DEFCFUN ("ImageRotateCW" IMAGEROTATECW)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1363:12"
-(CFFI:DEFCFUN ("ImageRotateCCW" |ImageRotateCCW|)
+(CFFI:DEFCFUN ("ImageRotateCCW" IMAGEROTATECCW)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1364:12"
-(CFFI:DEFCFUN ("ImageColorTint" |ImageColorTint|)
+(CFFI:DEFCFUN ("ImageColorTint" IMAGECOLORTINT)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|color| |Color|))
+  (IMAGE (:POINTER IMAGE))
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1365:12"
-(CFFI:DEFCFUN ("ImageColorInvert" |ImageColorInvert|)
+(CFFI:DEFCFUN ("ImageColorInvert" IMAGECOLORINVERT)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1366:12"
-(CFFI:DEFCFUN ("ImageColorGrayscale" |ImageColorGrayscale|)
+(CFFI:DEFCFUN ("ImageColorGrayscale" IMAGECOLORGRAYSCALE)
     :VOID
-  (|image| (:POINTER |Image|)))
+  (IMAGE (:POINTER IMAGE)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1367:12"
-(CFFI:DEFCFUN ("ImageColorContrast" |ImageColorContrast|)
+(CFFI:DEFCFUN ("ImageColorContrast" IMAGECOLORCONTRAST)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|contrast| :FLOAT))
+  (IMAGE (:POINTER IMAGE))
+  (CONTRAST :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1368:12"
-(CFFI:DEFCFUN ("ImageColorBrightness" |ImageColorBrightness|)
+(CFFI:DEFCFUN ("ImageColorBrightness" IMAGECOLORBRIGHTNESS)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|brightness| :INT))
+  (IMAGE (:POINTER IMAGE))
+  (BRIGHTNESS :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1369:12"
-(CFFI:DEFCFUN ("ImageColorReplace" |ImageColorReplace|)
+(CFFI:DEFCFUN ("ImageColorReplace" IMAGECOLORREPLACE)
     :VOID
-  (|image| (:POINTER |Image|))
-  (|color| |Color|)
-  (|replace| |Color|))
+  (IMAGE (:POINTER IMAGE))
+  (COLOR COLOR)
+  (REPLACE COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1370:14"
-(CFFI:DEFCFUN ("LoadImageColors" |LoadImageColors|)
-    (:POINTER |Color|)
-  (|image| |Image|))
+(CFFI:DEFCFUN ("LoadImageColors" LOADIMAGECOLORS)
+    (:POINTER COLOR)
+  (IMAGE IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1371:14"
-(CFFI:DEFCFUN ("LoadImagePalette" |LoadImagePalette|)
-    (:POINTER |Color|)
-  (|image| |Image|)
-  (|maxPaletteSize| :INT)
-  (|colorCount| (:POINTER :INT)))
+(CFFI:DEFCFUN ("LoadImagePalette" LOADIMAGEPALETTE)
+    (:POINTER COLOR)
+  (IMAGE IMAGE)
+  (MAXPALETTESIZE :INT)
+  (COLORCOUNT (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1372:12"
-(CFFI:DEFCFUN ("UnloadImageColors" |UnloadImageColors|)
+(CFFI:DEFCFUN ("UnloadImageColors" UNLOADIMAGECOLORS)
     :VOID
-  (|colors| (:POINTER |Color|)))
+  (COLORS (:POINTER COLOR)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1373:12"
-(CFFI:DEFCFUN ("UnloadImagePalette" |UnloadImagePalette|)
+(CFFI:DEFCFUN ("UnloadImagePalette" UNLOADIMAGEPALETTE)
     :VOID
-  (|colors| (:POINTER |Color|)))
+  (COLORS (:POINTER COLOR)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1374:17"
-(CFFI:DEFCFUN ("GetImageAlphaBorder" |GetImageAlphaBorder|)
-    |Rectangle|
-  (|image| |Image|)
-  (|threshold| :FLOAT))
+(CFFI:DEFCFUN ("GetImageAlphaBorder" GETIMAGEALPHABORDER)
+    RECTANGLE
+  (IMAGE IMAGE)
+  (THRESHOLD :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1375:13"
-(CFFI:DEFCFUN ("GetImageColor" |GetImageColor|)
-    |Color|
-  (|image| |Image|)
-  (|x| :INT)
-  (|y| :INT))
+(CFFI:DEFCFUN ("GetImageColor" GETIMAGECOLOR)
+    COLOR
+  (IMAGE IMAGE)
+  (X :INT)
+  (Y :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1379:12"
-(CFFI:DEFCFUN ("ImageClearBackground" |ImageClearBackground|)
+(CFFI:DEFCFUN ("ImageClearBackground" IMAGECLEARBACKGROUND)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1380:12"
-(CFFI:DEFCFUN ("ImageDrawPixel" |ImageDrawPixel|)
+(CFFI:DEFCFUN ("ImageDrawPixel" IMAGEDRAWPIXEL)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|posX| :INT)
-  (|posY| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (POSX :INT)
+  (POSY :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1381:12"
-(CFFI:DEFCFUN ("ImageDrawPixelV" |ImageDrawPixelV|)
+(CFFI:DEFCFUN ("ImageDrawPixelV" IMAGEDRAWPIXELV)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|position| |Vector2|)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (POSITION VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1382:12"
-(CFFI:DEFCFUN ("ImageDrawLine" |ImageDrawLine|)
+(CFFI:DEFCFUN ("ImageDrawLine" IMAGEDRAWLINE)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|startPosX| :INT)
-  (|startPosY| :INT)
-  (|endPosX| :INT)
-  (|endPosY| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (STARTPOSX :INT)
+  (STARTPOSY :INT)
+  (ENDPOSX :INT)
+  (ENDPOSY :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1383:12"
-(CFFI:DEFCFUN ("ImageDrawLineV" |ImageDrawLineV|)
+(CFFI:DEFCFUN ("ImageDrawLineV" IMAGEDRAWLINEV)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|start| |Vector2|)
-  (|end| |Vector2|)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (START VECTOR2)
+  (END VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1384:12"
-(CFFI:DEFCFUN ("ImageDrawLineEx" |ImageDrawLineEx|)
+(CFFI:DEFCFUN ("ImageDrawLineEx" IMAGEDRAWLINEEX)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|start| |Vector2|)
-  (|end| |Vector2|)
-  (|thick| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (START VECTOR2)
+  (END VECTOR2)
+  (THICK :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1385:12"
-(CFFI:DEFCFUN ("ImageDrawCircle" |ImageDrawCircle|)
+(CFFI:DEFCFUN ("ImageDrawCircle" IMAGEDRAWCIRCLE)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|centerX| :INT)
-  (|centerY| :INT)
-  (|radius| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (CENTERX :INT)
+  (CENTERY :INT)
+  (RADIUS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1386:12"
-(CFFI:DEFCFUN ("ImageDrawCircleV" |ImageDrawCircleV|)
+(CFFI:DEFCFUN ("ImageDrawCircleV" IMAGEDRAWCIRCLEV)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|center| |Vector2|)
-  (|radius| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (CENTER VECTOR2)
+  (RADIUS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1387:12"
-(CFFI:DEFCFUN ("ImageDrawCircleLines" |ImageDrawCircleLines|)
+(CFFI:DEFCFUN ("ImageDrawCircleLines" IMAGEDRAWCIRCLELINES)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|centerX| :INT)
-  (|centerY| :INT)
-  (|radius| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (CENTERX :INT)
+  (CENTERY :INT)
+  (RADIUS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1388:12"
-(CFFI:DEFCFUN ("ImageDrawCircleLinesV" |ImageDrawCircleLinesV|)
+(CFFI:DEFCFUN ("ImageDrawCircleLinesV" IMAGEDRAWCIRCLELINESV)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|center| |Vector2|)
-  (|radius| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (CENTER VECTOR2)
+  (RADIUS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1389:12"
-(CFFI:DEFCFUN ("ImageDrawRectangle" |ImageDrawRectangle|)
+(CFFI:DEFCFUN ("ImageDrawRectangle" IMAGEDRAWRECTANGLE)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|posX| :INT)
-  (|posY| :INT)
-  (|width| :INT)
-  (|height| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (POSX :INT)
+  (POSY :INT)
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1390:12"
-(CFFI:DEFCFUN ("ImageDrawRectangleV" |ImageDrawRectangleV|)
+(CFFI:DEFCFUN ("ImageDrawRectangleV" IMAGEDRAWRECTANGLEV)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|position| |Vector2|)
-  (|size| |Vector2|)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (POSITION VECTOR2)
+  (SIZE VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1391:12"
-(CFFI:DEFCFUN ("ImageDrawRectangleRec" |ImageDrawRectangleRec|)
+(CFFI:DEFCFUN ("ImageDrawRectangleRec" IMAGEDRAWRECTANGLEREC)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|rec| |Rectangle|)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (REC RECTANGLE)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1392:12"
-(CFFI:DEFCFUN ("ImageDrawRectangleLines" |ImageDrawRectangleLines|)
+(CFFI:DEFCFUN ("ImageDrawRectangleLines" IMAGEDRAWRECTANGLELINES)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|rec| |Rectangle|)
-  (|thick| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (REC RECTANGLE)
+  (THICK :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1393:12"
-(CFFI:DEFCFUN ("ImageDrawTriangle" |ImageDrawTriangle|)
+(CFFI:DEFCFUN ("ImageDrawTriangle" IMAGEDRAWTRIANGLE)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|v1| |Vector2|)
-  (|v2| |Vector2|)
-  (|v3| |Vector2|)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (V1 VECTOR2)
+  (V2 VECTOR2)
+  (V3 VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1394:12"
-(CFFI:DEFCFUN ("ImageDrawTriangleEx" |ImageDrawTriangleEx|)
+(CFFI:DEFCFUN ("ImageDrawTriangleEx" IMAGEDRAWTRIANGLEEX)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|v1| |Vector2|)
-  (|v2| |Vector2|)
-  (|v3| |Vector2|)
-  (|c1| |Color|)
-  (|c2| |Color|)
-  (|c3| |Color|))
+  (DST (:POINTER IMAGE))
+  (V1 VECTOR2)
+  (V2 VECTOR2)
+  (V3 VECTOR2)
+  (C1 COLOR)
+  (C2 COLOR)
+  (C3 COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1395:12"
-(CFFI:DEFCFUN ("ImageDrawTriangleLines" |ImageDrawTriangleLines|)
+(CFFI:DEFCFUN ("ImageDrawTriangleLines" IMAGEDRAWTRIANGLELINES)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|v1| |Vector2|)
-  (|v2| |Vector2|)
-  (|v3| |Vector2|)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (V1 VECTOR2)
+  (V2 VECTOR2)
+  (V3 VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1396:12"
-(CFFI:DEFCFUN ("ImageDrawTriangleFan" |ImageDrawTriangleFan|)
+(CFFI:DEFCFUN ("ImageDrawTriangleFan" IMAGEDRAWTRIANGLEFAN)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1397:12"
-(CFFI:DEFCFUN ("ImageDrawTriangleStrip" |ImageDrawTriangleStrip|)
+(CFFI:DEFCFUN ("ImageDrawTriangleStrip" IMAGEDRAWTRIANGLESTRIP)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|points| (:POINTER |Vector2|))
-  (|pointCount| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (POINTS (:POINTER VECTOR2))
+  (POINTCOUNT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1398:12"
-(CFFI:DEFCFUN ("ImageDraw" |ImageDraw|)
+(CFFI:DEFCFUN ("ImageDraw" IMAGEDRAW)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|src| |Image|)
-  (|srcRec| |Rectangle|)
-  (|dstRec| |Rectangle|)
-  (|tint| |Color|))
+  (DST (:POINTER IMAGE))
+  (SRC IMAGE)
+  (SRCREC RECTANGLE)
+  (DSTREC RECTANGLE)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1399:12"
-(CFFI:DEFCFUN ("ImageDrawText" |ImageDrawText|)
+(CFFI:DEFCFUN ("ImageDrawText" IMAGEDRAWTEXT)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|text| :STRING)
-  (|posX| :INT)
-  (|posY| :INT)
-  (|fontSize| :INT)
-  (|color| |Color|))
+  (DST (:POINTER IMAGE))
+  (TEXT :STRING)
+  (POSX :INT)
+  (POSY :INT)
+  (FONTSIZE :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1400:12"
-(CFFI:DEFCFUN ("ImageDrawTextEx" |ImageDrawTextEx|)
+(CFFI:DEFCFUN ("ImageDrawTextEx" IMAGEDRAWTEXTEX)
     :VOID
-  (|dst| (:POINTER |Image|))
-  (|font| |Font|)
-  (|text| :STRING)
-  (|position| |Vector2|)
-  (|fontSize| :FLOAT)
-  (|spacing| :FLOAT)
-  (|tint| |Color|))
+  (DST (:POINTER IMAGE))
+  (FONT FONT)
+  (TEXT :STRING)
+  (POSITION VECTOR2)
+  (FONTSIZE :FLOAT)
+  (SPACING :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1404:17"
-(CFFI:DEFCFUN ("LoadTexture" |LoadTexture|)
-    |Texture2D|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadTexture" LOADTEXTURE)
+    TEXTURE2D
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1405:17"
-(CFFI:DEFCFUN ("LoadTextureFromImage" |LoadTextureFromImage|)
-    |Texture2D|
-  (|image| |Image|))
+(CFFI:DEFCFUN ("LoadTextureFromImage" LOADTEXTUREFROMIMAGE)
+    TEXTURE2D
+  (IMAGE IMAGE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1406:22"
-(CFFI:DEFCFUN ("LoadTextureCubemap" |LoadTextureCubemap|)
-    |TextureCubemap|
-  (|image| |Image|)
-  (|layout| :INT))
+(CFFI:DEFCFUN ("LoadTextureCubemap" LOADTEXTURECUBEMAP)
+    TEXTURECUBEMAP
+  (IMAGE IMAGE)
+  (LAYOUT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1407:23"
-(CFFI:DEFCFUN ("LoadRenderTexture" |LoadRenderTexture|)
-    |RenderTexture2D|
-  (|width| :INT)
-  (|height| :INT))
+(CFFI:DEFCFUN ("LoadRenderTexture" LOADRENDERTEXTURE)
+    RENDERTEXTURE2D
+  (WIDTH :INT)
+  (HEIGHT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1408:12"
-(CFFI:DEFCFUN ("IsTextureReady" |IsTextureReady|)
+(CFFI:DEFCFUN ("IsTextureReady" ISTEXTUREREADY)
     :BOOL
-  (|texture| |Texture2D|))
+  (TEXTURE TEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1409:12"
-(CFFI:DEFCFUN ("UnloadTexture" |UnloadTexture|)
+(CFFI:DEFCFUN ("UnloadTexture" UNLOADTEXTURE)
     :VOID
-  (|texture| |Texture2D|))
+  (TEXTURE TEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1410:12"
-(CFFI:DEFCFUN ("IsRenderTextureReady" |IsRenderTextureReady|)
+(CFFI:DEFCFUN ("IsRenderTextureReady" ISRENDERTEXTUREREADY)
     :BOOL
-  (|target| |RenderTexture2D|))
+  (TARGET RENDERTEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1411:12"
-(CFFI:DEFCFUN ("UnloadRenderTexture" |UnloadRenderTexture|)
+(CFFI:DEFCFUN ("UnloadRenderTexture" UNLOADRENDERTEXTURE)
     :VOID
-  (|target| |RenderTexture2D|))
+  (TARGET RENDERTEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1412:12"
-(CFFI:DEFCFUN ("UpdateTexture" |UpdateTexture|)
+(CFFI:DEFCFUN ("UpdateTexture" UPDATETEXTURE)
     :VOID
-  (|texture| |Texture2D|)
-  (|pixels| (:POINTER :VOID)))
+  (TEXTURE TEXTURE2D)
+  (PIXELS (:POINTER :VOID)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1413:12"
-(CFFI:DEFCFUN ("UpdateTextureRec" |UpdateTextureRec|)
+(CFFI:DEFCFUN ("UpdateTextureRec" UPDATETEXTUREREC)
     :VOID
-  (|texture| |Texture2D|)
-  (|rec| |Rectangle|)
-  (|pixels| (:POINTER :VOID)))
+  (TEXTURE TEXTURE2D)
+  (REC RECTANGLE)
+  (PIXELS (:POINTER :VOID)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1416:12"
-(CFFI:DEFCFUN ("GenTextureMipmaps" |GenTextureMipmaps|)
+(CFFI:DEFCFUN ("GenTextureMipmaps" GENTEXTUREMIPMAPS)
     :VOID
-  (|texture| (:POINTER |Texture2D|)))
+  (TEXTURE (:POINTER TEXTURE2D)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1417:12"
-(CFFI:DEFCFUN ("SetTextureFilter" |SetTextureFilter|)
+(CFFI:DEFCFUN ("SetTextureFilter" SETTEXTUREFILTER)
     :VOID
-  (|texture| |Texture2D|)
-  (|filter| :INT))
+  (TEXTURE TEXTURE2D)
+  (FILTER :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1418:12"
-(CFFI:DEFCFUN ("SetTextureWrap" |SetTextureWrap|)
+(CFFI:DEFCFUN ("SetTextureWrap" SETTEXTUREWRAP)
     :VOID
-  (|texture| |Texture2D|)
-  (|wrap| :INT))
+  (TEXTURE TEXTURE2D)
+  (WRAP :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1421:12"
-(CFFI:DEFCFUN ("DrawTexture" |DrawTexture|)
+(CFFI:DEFCFUN ("DrawTexture" DRAWTEXTURE)
     :VOID
-  (|texture| |Texture2D|)
-  (|posX| :INT)
-  (|posY| :INT)
-  (|tint| |Color|))
+  (TEXTURE TEXTURE2D)
+  (POSX :INT)
+  (POSY :INT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1422:12"
-(CFFI:DEFCFUN ("DrawTextureV" |DrawTextureV|)
+(CFFI:DEFCFUN ("DrawTextureV" DRAWTEXTUREV)
     :VOID
-  (|texture| |Texture2D|)
-  (|position| |Vector2|)
-  (|tint| |Color|))
+  (TEXTURE TEXTURE2D)
+  (POSITION VECTOR2)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1423:12"
-(CFFI:DEFCFUN ("DrawTextureEx" |DrawTextureEx|)
+(CFFI:DEFCFUN ("DrawTextureEx" DRAWTEXTUREEX)
     :VOID
-  (|texture| |Texture2D|)
-  (|position| |Vector2|)
-  (|rotation| :FLOAT)
-  (|scale| :FLOAT)
-  (|tint| |Color|))
+  (TEXTURE TEXTURE2D)
+  (POSITION VECTOR2)
+  (ROTATION :FLOAT)
+  (SCALE :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1424:12"
-(CFFI:DEFCFUN ("DrawTextureRec" |DrawTextureRec|)
+(CFFI:DEFCFUN ("DrawTextureRec" DRAWTEXTUREREC)
     :VOID
-  (|texture| |Texture2D|)
-  (|source| |Rectangle|)
-  (|position| |Vector2|)
-  (|tint| |Color|))
+  (TEXTURE TEXTURE2D)
+  (SOURCE RECTANGLE)
+  (POSITION VECTOR2)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1425:12"
-(CFFI:DEFCFUN ("DrawTexturePro" |DrawTexturePro|)
+(CFFI:DEFCFUN ("DrawTexturePro" DRAWTEXTUREPRO)
     :VOID
-  (|texture| |Texture2D|)
-  (|source| |Rectangle|)
-  (|dest| |Rectangle|)
-  (|origin| |Vector2|)
-  (|rotation| :FLOAT)
-  (|tint| |Color|))
+  (TEXTURE TEXTURE2D)
+  (SOURCE RECTANGLE)
+  (DEST RECTANGLE)
+  (ORIGIN VECTOR2)
+  (ROTATION :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1426:12"
-(CFFI:DEFCFUN ("DrawTextureNPatch" |DrawTextureNPatch|)
+(CFFI:DEFCFUN ("DrawTextureNPatch" DRAWTEXTURENPATCH)
     :VOID
-  (|texture| |Texture2D|)
-  (|nPatchInfo| |NPatchInfo|)
-  (|dest| |Rectangle|)
-  (|origin| |Vector2|)
-  (|rotation| :FLOAT)
-  (|tint| |Color|))
+  (TEXTURE TEXTURE2D)
+  (NPATCHINFO NPATCHINFO)
+  (DEST RECTANGLE)
+  (ORIGIN VECTOR2)
+  (ROTATION :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1429:12"
-(CFFI:DEFCFUN ("ColorIsEqual" |ColorIsEqual|)
+(CFFI:DEFCFUN ("ColorIsEqual" COLORISEQUAL)
     :BOOL
-  (|col1| |Color|)
-  (|col2| |Color|))
+  (COL1 COLOR)
+  (COL2 COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1430:13"
-(CFFI:DEFCFUN ("Fade" |Fade|)
-    |Color|
-  (|color| |Color|)
-  (|alpha| :FLOAT))
+(CFFI:DEFCFUN ("Fade" FADE)
+    COLOR
+  (COLOR COLOR)
+  (ALPHA :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1431:11"
-(CFFI:DEFCFUN ("ColorToInt" |ColorToInt|)
+(CFFI:DEFCFUN ("ColorToInt" COLORTOINT)
     :INT
-  (|color| |Color|))
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1432:15"
-(CFFI:DEFCFUN ("ColorNormalize" |ColorNormalize|)
-    |Vector4|
-  (|color| |Color|))
+(CFFI:DEFCFUN ("ColorNormalize" COLORNORMALIZE)
+    VECTOR4
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1433:13"
-(CFFI:DEFCFUN ("ColorFromNormalized" |ColorFromNormalized|)
-    |Color|
-  (|normalized| |Vector4|))
+(CFFI:DEFCFUN ("ColorFromNormalized" COLORFROMNORMALIZED)
+    COLOR
+  (NORMALIZED VECTOR4))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1434:15"
-(CFFI:DEFCFUN ("ColorToHSV" |ColorToHSV|)
-    |Vector3|
-  (|color| |Color|))
+(CFFI:DEFCFUN ("ColorToHSV" COLORTOHSV)
+    VECTOR3
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1435:13"
-(CFFI:DEFCFUN ("ColorFromHSV" |ColorFromHSV|)
-    |Color|
-  (|hue| :FLOAT)
-  (|saturation| :FLOAT)
-  (|value| :FLOAT))
+(CFFI:DEFCFUN ("ColorFromHSV" COLORFROMHSV)
+    COLOR
+  (HUE :FLOAT)
+  (SATURATION :FLOAT)
+  (VALUE :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1436:13"
-(CFFI:DEFCFUN ("ColorTint" |ColorTint|)
-    |Color|
-  (|color| |Color|)
-  (|tint| |Color|))
+(CFFI:DEFCFUN ("ColorTint" COLORTINT)
+    COLOR
+  (COLOR COLOR)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1437:13"
-(CFFI:DEFCFUN ("ColorBrightness" |ColorBrightness|)
-    |Color|
-  (|color| |Color|)
-  (|factor| :FLOAT))
+(CFFI:DEFCFUN ("ColorBrightness" COLORBRIGHTNESS)
+    COLOR
+  (COLOR COLOR)
+  (FACTOR :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1438:13"
-(CFFI:DEFCFUN ("ColorContrast" |ColorContrast|)
-    |Color|
-  (|color| |Color|)
-  (|contrast| :FLOAT))
+(CFFI:DEFCFUN ("ColorContrast" COLORCONTRAST)
+    COLOR
+  (COLOR COLOR)
+  (CONTRAST :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1439:13"
-(CFFI:DEFCFUN ("ColorAlpha" |ColorAlpha|)
-    |Color|
-  (|color| |Color|)
-  (|alpha| :FLOAT))
+(CFFI:DEFCFUN ("ColorAlpha" COLORALPHA)
+    COLOR
+  (COLOR COLOR)
+  (ALPHA :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1440:13"
-(CFFI:DEFCFUN ("ColorAlphaBlend" |ColorAlphaBlend|)
-    |Color|
-  (|dst| |Color|)
-  (|src| |Color|)
-  (|tint| |Color|))
+(CFFI:DEFCFUN ("ColorAlphaBlend" COLORALPHABLEND)
+    COLOR
+  (DST COLOR)
+  (SRC COLOR)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1441:13"
-(CFFI:DEFCFUN ("ColorLerp" |ColorLerp|)
-    |Color|
-  (|color1| |Color|)
-  (|color2| |Color|)
-  (|factor| :FLOAT))
+(CFFI:DEFCFUN ("ColorLerp" COLORLERP)
+    COLOR
+  (COLOR1 COLOR)
+  (COLOR2 COLOR)
+  (FACTOR :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1442:13"
-(CFFI:DEFCFUN ("GetColor" |GetColor|)
-    |Color|
-  (|hexValue| :UNSIGNED-INT))
+(CFFI:DEFCFUN ("GetColor" GETCOLOR)
+    COLOR
+  (HEXVALUE :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1443:13"
-(CFFI:DEFCFUN ("GetPixelColor" |GetPixelColor|)
-    |Color|
-  (|srcPtr| (:POINTER :VOID))
-  (|format| :INT))
+(CFFI:DEFCFUN ("GetPixelColor" GETPIXELCOLOR)
+    COLOR
+  (SRCPTR (:POINTER :VOID))
+  (FORMAT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1444:12"
-(CFFI:DEFCFUN ("SetPixelColor" |SetPixelColor|)
+(CFFI:DEFCFUN ("SetPixelColor" SETPIXELCOLOR)
     :VOID
-  (|dstPtr| (:POINTER :VOID))
-  (|color| |Color|)
-  (|format| :INT))
+  (DSTPTR (:POINTER :VOID))
+  (COLOR COLOR)
+  (FORMAT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1445:11"
-(CFFI:DEFCFUN ("GetPixelDataSize" |GetPixelDataSize|)
+(CFFI:DEFCFUN ("GetPixelDataSize" GETPIXELDATASIZE)
     :INT
-  (|width| :INT)
-  (|height| :INT)
-  (|format| :INT))
+  (WIDTH :INT)
+  (HEIGHT :INT)
+  (FORMAT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1452:12"
-(CFFI:DEFCFUN ("GetFontDefault" |GetFontDefault|)
-    |Font|)
+(CFFI:DEFCFUN ("GetFontDefault" GETFONTDEFAULT)
+    FONT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1453:12"
-(CFFI:DEFCFUN ("LoadFont" |LoadFont|)
-    |Font|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadFont" LOADFONT)
+    FONT
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1454:12"
-(CFFI:DEFCFUN ("LoadFontEx" |LoadFontEx|)
-    |Font|
-  (|fileName| :STRING)
-  (|fontSize| :INT)
-  (|codepoints| (:POINTER :INT))
-  (|codepointCount| :INT))
+(CFFI:DEFCFUN ("LoadFontEx" LOADFONTEX)
+    FONT
+  (FILENAME :STRING)
+  (FONTSIZE :INT)
+  (CODEPOINTS (:POINTER :INT))
+  (CODEPOINTCOUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1455:12"
-(CFFI:DEFCFUN ("LoadFontFromImage" |LoadFontFromImage|)
-    |Font|
-  (|image| |Image|)
-  (|key| |Color|)
-  (|firstChar| :INT))
+(CFFI:DEFCFUN ("LoadFontFromImage" LOADFONTFROMIMAGE)
+    FONT
+  (IMAGE IMAGE)
+  (KEY COLOR)
+  (FIRSTCHAR :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1456:12"
-(CFFI:DEFCFUN ("LoadFontFromMemory" |LoadFontFromMemory|)
-    |Font|
-  (|fileType| :STRING)
-  (|fileData| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT)
-  (|fontSize| :INT)
-  (|codepoints| (:POINTER :INT))
-  (|codepointCount| :INT))
+(CFFI:DEFCFUN ("LoadFontFromMemory" LOADFONTFROMMEMORY)
+    FONT
+  (FILETYPE :STRING)
+  (FILEDATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT)
+  (FONTSIZE :INT)
+  (CODEPOINTS (:POINTER :INT))
+  (CODEPOINTCOUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1457:12"
-(CFFI:DEFCFUN ("IsFontReady" |IsFontReady|)
+(CFFI:DEFCFUN ("IsFontReady" ISFONTREADY)
     :BOOL
-  (|font| |Font|))
+  (FONT FONT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1458:18"
-(CFFI:DEFCFUN ("LoadFontData" |LoadFontData|)
-    (:POINTER |GlyphInfo|)
-  (|fileData| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT)
-  (|fontSize| :INT)
-  (|codepoints| (:POINTER :INT))
-  (|codepointCount| :INT)
-  (|type| :INT))
+(CFFI:DEFCFUN ("LoadFontData" LOADFONTDATA)
+    (:POINTER GLYPHINFO)
+  (FILEDATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT)
+  (FONTSIZE :INT)
+  (CODEPOINTS (:POINTER :INT))
+  (CODEPOINTCOUNT :INT)
+  (TYPE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1459:13"
-(CFFI:DEFCFUN ("GenImageFontAtlas" |GenImageFontAtlas|)
-    |Image|
-  (|glyphs| (:POINTER |GlyphInfo|))
-  (|glyphRecs| (:POINTER (:POINTER |Rectangle|)))
-  (|glyphCount| :INT)
-  (|fontSize| :INT)
-  (|padding| :INT)
-  (|packMethod| :INT))
+(CFFI:DEFCFUN ("GenImageFontAtlas" GENIMAGEFONTATLAS)
+    IMAGE
+  (GLYPHS (:POINTER GLYPHINFO))
+  (GLYPHRECS (:POINTER (:POINTER RECTANGLE)))
+  (GLYPHCOUNT :INT)
+  (FONTSIZE :INT)
+  (PADDING :INT)
+  (PACKMETHOD :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1460:12"
-(CFFI:DEFCFUN ("UnloadFontData" |UnloadFontData|)
+(CFFI:DEFCFUN ("UnloadFontData" UNLOADFONTDATA)
     :VOID
-  (|glyphs| (:POINTER |GlyphInfo|))
-  (|glyphCount| :INT))
+  (GLYPHS (:POINTER GLYPHINFO))
+  (GLYPHCOUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1461:12"
-(CFFI:DEFCFUN ("UnloadFont" |UnloadFont|)
+(CFFI:DEFCFUN ("UnloadFont" UNLOADFONT)
     :VOID
-  (|font| |Font|))
+  (FONT FONT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1462:12"
-(CFFI:DEFCFUN ("ExportFontAsCode" |ExportFontAsCode|)
+(CFFI:DEFCFUN ("ExportFontAsCode" EXPORTFONTASCODE)
     :BOOL
-  (|font| |Font|)
-  (|fileName| :STRING))
+  (FONT FONT)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1465:12"
-(CFFI:DEFCFUN ("DrawFPS" |DrawFPS|)
+(CFFI:DEFCFUN ("DrawFPS" DRAWFPS)
     :VOID
-  (|posX| :INT)
-  (|posY| :INT))
+  (POSX :INT)
+  (POSY :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1466:12"
-(CFFI:DEFCFUN ("DrawText" |DrawText|)
+(CFFI:DEFCFUN ("DrawText" DRAWTEXT)
     :VOID
-  (|text| :STRING)
-  (|posX| :INT)
-  (|posY| :INT)
-  (|fontSize| :INT)
-  (|color| |Color|))
+  (TEXT :STRING)
+  (POSX :INT)
+  (POSY :INT)
+  (FONTSIZE :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1467:12"
-(CFFI:DEFCFUN ("DrawTextEx" |DrawTextEx|)
+(CFFI:DEFCFUN ("DrawTextEx" DRAWTEXTEX)
     :VOID
-  (|font| |Font|)
-  (|text| :STRING)
-  (|position| |Vector2|)
-  (|fontSize| :FLOAT)
-  (|spacing| :FLOAT)
-  (|tint| |Color|))
+  (FONT FONT)
+  (TEXT :STRING)
+  (POSITION VECTOR2)
+  (FONTSIZE :FLOAT)
+  (SPACING :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1468:12"
-(CFFI:DEFCFUN ("DrawTextPro" |DrawTextPro|)
+(CFFI:DEFCFUN ("DrawTextPro" DRAWTEXTPRO)
     :VOID
-  (|font| |Font|)
-  (|text| :STRING)
-  (|position| |Vector2|)
-  (|origin| |Vector2|)
-  (|rotation| :FLOAT)
-  (|fontSize| :FLOAT)
-  (|spacing| :FLOAT)
-  (|tint| |Color|))
+  (FONT FONT)
+  (TEXT :STRING)
+  (POSITION VECTOR2)
+  (ORIGIN VECTOR2)
+  (ROTATION :FLOAT)
+  (FONTSIZE :FLOAT)
+  (SPACING :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1469:12"
-(CFFI:DEFCFUN ("DrawTextCodepoint" |DrawTextCodepoint|)
+(CFFI:DEFCFUN ("DrawTextCodepoint" DRAWTEXTCODEPOINT)
     :VOID
-  (|font| |Font|)
-  (|codepoint| :INT)
-  (|position| |Vector2|)
-  (|fontSize| :FLOAT)
-  (|tint| |Color|))
+  (FONT FONT)
+  (CODEPOINT :INT)
+  (POSITION VECTOR2)
+  (FONTSIZE :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1470:12"
-(CFFI:DEFCFUN ("DrawTextCodepoints" |DrawTextCodepoints|)
+(CFFI:DEFCFUN ("DrawTextCodepoints" DRAWTEXTCODEPOINTS)
     :VOID
-  (|font| |Font|)
-  (|codepoints| (:POINTER :INT))
-  (|codepointCount| :INT)
-  (|position| |Vector2|)
-  (|fontSize| :FLOAT)
-  (|spacing| :FLOAT)
-  (|tint| |Color|))
+  (FONT FONT)
+  (CODEPOINTS (:POINTER :INT))
+  (CODEPOINTCOUNT :INT)
+  (POSITION VECTOR2)
+  (FONTSIZE :FLOAT)
+  (SPACING :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1473:12"
-(CFFI:DEFCFUN ("SetTextLineSpacing" |SetTextLineSpacing|)
+(CFFI:DEFCFUN ("SetTextLineSpacing" SETTEXTLINESPACING)
     :VOID
-  (|spacing| :INT))
+  (SPACING :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1474:11"
-(CFFI:DEFCFUN ("MeasureText" |MeasureText|)
+(CFFI:DEFCFUN ("MeasureText" MEASURETEXT)
     :INT
-  (|text| :STRING)
-  (|fontSize| :INT))
+  (TEXT :STRING)
+  (FONTSIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1475:15"
-(CFFI:DEFCFUN ("MeasureTextEx" |MeasureTextEx|)
-    |Vector2|
-  (|font| |Font|)
-  (|text| :STRING)
-  (|fontSize| :FLOAT)
-  (|spacing| :FLOAT))
+(CFFI:DEFCFUN ("MeasureTextEx" MEASURETEXTEX)
+    VECTOR2
+  (FONT FONT)
+  (TEXT :STRING)
+  (FONTSIZE :FLOAT)
+  (SPACING :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1476:11"
-(CFFI:DEFCFUN ("GetGlyphIndex" |GetGlyphIndex|)
+(CFFI:DEFCFUN ("GetGlyphIndex" GETGLYPHINDEX)
     :INT
-  (|font| |Font|)
-  (|codepoint| :INT))
+  (FONT FONT)
+  (CODEPOINT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1477:17"
-(CFFI:DEFCFUN ("GetGlyphInfo" |GetGlyphInfo|)
-    |GlyphInfo|
-  (|font| |Font|)
-  (|codepoint| :INT))
+(CFFI:DEFCFUN ("GetGlyphInfo" GETGLYPHINFO)
+    GLYPHINFO
+  (FONT FONT)
+  (CODEPOINT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1478:17"
-(CFFI:DEFCFUN ("GetGlyphAtlasRec" |GetGlyphAtlasRec|)
-    |Rectangle|
-  (|font| |Font|)
-  (|codepoint| :INT))
+(CFFI:DEFCFUN ("GetGlyphAtlasRec" GETGLYPHATLASREC)
+    RECTANGLE
+  (FONT FONT)
+  (CODEPOINT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1481:13"
-(CFFI:DEFCFUN ("LoadUTF8" |LoadUTF8|)
+(CFFI:DEFCFUN ("LoadUTF8" LOADUTF8)
     :STRING
-  (|codepoints| (:POINTER :INT))
-  (|length| :INT))
+  (CODEPOINTS (:POINTER :INT))
+  (LENGTH :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1482:12"
-(CFFI:DEFCFUN ("UnloadUTF8" |UnloadUTF8|)
+(CFFI:DEFCFUN ("UnloadUTF8" UNLOADUTF8)
     :VOID
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1483:12"
-(CFFI:DEFCFUN ("LoadCodepoints" |LoadCodepoints|)
+(CFFI:DEFCFUN ("LoadCodepoints" LOADCODEPOINTS)
     (:POINTER :INT)
-  (|text| :STRING)
-  (|count| (:POINTER :INT)))
+  (TEXT :STRING)
+  (COUNT (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1484:12"
-(CFFI:DEFCFUN ("UnloadCodepoints" |UnloadCodepoints|)
+(CFFI:DEFCFUN ("UnloadCodepoints" UNLOADCODEPOINTS)
     :VOID
-  (|codepoints| (:POINTER :INT)))
+  (CODEPOINTS (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1485:11"
-(CFFI:DEFCFUN ("GetCodepointCount" |GetCodepointCount|)
+(CFFI:DEFCFUN ("GetCodepointCount" GETCODEPOINTCOUNT)
     :INT
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1486:11"
-(CFFI:DEFCFUN ("GetCodepoint" |GetCodepoint|)
+(CFFI:DEFCFUN ("GetCodepoint" GETCODEPOINT)
     :INT
-  (|text| :STRING)
-  (|codepointSize| (:POINTER :INT)))
+  (TEXT :STRING)
+  (CODEPOINTSIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1487:11"
-(CFFI:DEFCFUN ("GetCodepointNext" |GetCodepointNext|)
+(CFFI:DEFCFUN ("GetCodepointNext" GETCODEPOINTNEXT)
     :INT
-  (|text| :STRING)
-  (|codepointSize| (:POINTER :INT)))
+  (TEXT :STRING)
+  (CODEPOINTSIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1488:11"
-(CFFI:DEFCFUN ("GetCodepointPrevious" |GetCodepointPrevious|)
+(CFFI:DEFCFUN ("GetCodepointPrevious" GETCODEPOINTPREVIOUS)
     :INT
-  (|text| :STRING)
-  (|codepointSize| (:POINTER :INT)))
+  (TEXT :STRING)
+  (CODEPOINTSIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1489:19"
-(CFFI:DEFCFUN ("CodepointToUTF8" |CodepointToUTF8|)
+(CFFI:DEFCFUN ("CodepointToUTF8" CODEPOINTTOUTF8)
     :STRING
-  (|codepoint| :INT)
-  (|utf8Size| (:POINTER :INT)))
+  (CODEPOINT :INT)
+  (UTF8SIZE (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1493:11"
-(CFFI:DEFCFUN ("TextCopy" |TextCopy|)
+(CFFI:DEFCFUN ("TextCopy" TEXTCOPY)
     :INT
-  (|dst| :STRING)
-  (|src| :STRING))
+  (DST :STRING)
+  (SRC :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1494:12"
-(CFFI:DEFCFUN ("TextIsEqual" |TextIsEqual|)
+(CFFI:DEFCFUN ("TextIsEqual" TEXTISEQUAL)
     :BOOL
-  (|text1| :STRING)
-  (|text2| :STRING))
+  (TEXT1 :STRING)
+  (TEXT2 :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1495:20"
-(CFFI:DEFCFUN ("TextLength" |TextLength|)
+(CFFI:DEFCFUN ("TextLength" TEXTLENGTH)
     :UNSIGNED-INT
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1496:19"
-(CFFI:DEFCFUN ("TextFormat" |TextFormat|)
+(CFFI:DEFCFUN ("TextFormat" TEXTFORMAT)
     :STRING
-  (|text| :STRING)
+  (TEXT :STRING)
   COMMON-LISP:&REST)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1497:19"
-(CFFI:DEFCFUN ("TextSubtext" |TextSubtext|)
+(CFFI:DEFCFUN ("TextSubtext" TEXTSUBTEXT)
     :STRING
-  (|text| :STRING)
-  (|position| :INT)
-  (|length| :INT))
+  (TEXT :STRING)
+  (POSITION :INT)
+  (LENGTH :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1498:13"
-(CFFI:DEFCFUN ("TextReplace" |TextReplace|)
+(CFFI:DEFCFUN ("TextReplace" TEXTREPLACE)
     :STRING
-  (|text| :STRING)
-  (|replace| :STRING)
-  (|by| :STRING))
+  (TEXT :STRING)
+  (REPLACE :STRING)
+  (BY :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1499:13"
-(CFFI:DEFCFUN ("TextInsert" |TextInsert|)
+(CFFI:DEFCFUN ("TextInsert" TEXTINSERT)
     :STRING
-  (|text| :STRING)
-  (|insert| :STRING)
-  (|position| :INT))
+  (TEXT :STRING)
+  (INSERT :STRING)
+  (POSITION :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1500:19"
-(CFFI:DEFCFUN ("TextJoin" |TextJoin|)
+(CFFI:DEFCFUN ("TextJoin" TEXTJOIN)
     :STRING
-  (|textList| (:POINTER (:POINTER :CHAR)))
-  (|count| :INT)
-  (|delimiter| :STRING))
+  (TEXTLIST (:POINTER (:POINTER :CHAR)))
+  (COUNT :INT)
+  (DELIMITER :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1501:20"
-(CFFI:DEFCFUN ("TextSplit" |TextSplit|)
+(CFFI:DEFCFUN ("TextSplit" TEXTSPLIT)
     (:POINTER (:POINTER :CHAR))
-  (|text| :STRING)
-  (|delimiter| :CHAR)
-  (|count| (:POINTER :INT)))
+  (TEXT :STRING)
+  (DELIMITER :CHAR)
+  (COUNT (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1502:12"
-(CFFI:DEFCFUN ("TextAppend" |TextAppend|)
+(CFFI:DEFCFUN ("TextAppend" TEXTAPPEND)
     :VOID
-  (|text| :STRING)
-  (|append| :STRING)
-  (|position| (:POINTER :INT)))
+  (TEXT :STRING)
+  (APPEND :STRING)
+  (POSITION (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1503:11"
-(CFFI:DEFCFUN ("TextFindIndex" |TextFindIndex|)
+(CFFI:DEFCFUN ("TextFindIndex" TEXTFINDINDEX)
     :INT
-  (|text| :STRING)
-  (|find| :STRING))
+  (TEXT :STRING)
+  (FIND :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1504:19"
-(CFFI:DEFCFUN ("TextToUpper" |TextToUpper|)
+(CFFI:DEFCFUN ("TextToUpper" TEXTTOUPPER)
     :STRING
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1505:19"
-(CFFI:DEFCFUN ("TextToLower" |TextToLower|)
+(CFFI:DEFCFUN ("TextToLower" TEXTTOLOWER)
     :STRING
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1506:19"
-(CFFI:DEFCFUN ("TextToPascal" |TextToPascal|)
+(CFFI:DEFCFUN ("TextToPascal" TEXTTOPASCAL)
     :STRING
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1507:19"
-(CFFI:DEFCFUN ("TextToSnake" |TextToSnake|)
+(CFFI:DEFCFUN ("TextToSnake" TEXTTOSNAKE)
     :STRING
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1508:19"
-(CFFI:DEFCFUN ("TextToCamel" |TextToCamel|)
+(CFFI:DEFCFUN ("TextToCamel" TEXTTOCAMEL)
     :STRING
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1510:11"
-(CFFI:DEFCFUN ("TextToInteger" |TextToInteger|)
+(CFFI:DEFCFUN ("TextToInteger" TEXTTOINTEGER)
     :INT
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1511:13"
-(CFFI:DEFCFUN ("TextToFloat" |TextToFloat|)
+(CFFI:DEFCFUN ("TextToFloat" TEXTTOFLOAT)
     :FLOAT
-  (|text| :STRING))
+  (TEXT :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1518:12"
-(CFFI:DEFCFUN ("DrawLine3D" |DrawLine3D|)
+(CFFI:DEFCFUN ("DrawLine3D" DRAWLINE3D)
     :VOID
-  (|startPos| |Vector3|)
-  (|endPos| |Vector3|)
-  (|color| |Color|))
+  (STARTPOS VECTOR3)
+  (ENDPOS VECTOR3)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1519:12"
-(CFFI:DEFCFUN ("DrawPoint3D" |DrawPoint3D|)
+(CFFI:DEFCFUN ("DrawPoint3D" DRAWPOINT3D)
     :VOID
-  (|position| |Vector3|)
-  (|color| |Color|))
+  (POSITION VECTOR3)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1520:12"
-(CFFI:DEFCFUN ("DrawCircle3D" |DrawCircle3D|)
+(CFFI:DEFCFUN ("DrawCircle3D" DRAWCIRCLE3D)
     :VOID
-  (|center| |Vector3|)
-  (|radius| :FLOAT)
-  (|rotationAxis| |Vector3|)
-  (|rotationAngle| :FLOAT)
-  (|color| |Color|))
+  (CENTER VECTOR3)
+  (RADIUS :FLOAT)
+  (ROTATIONAXIS VECTOR3)
+  (ROTATIONANGLE :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1521:12"
-(CFFI:DEFCFUN ("DrawTriangle3D" |DrawTriangle3D|)
+(CFFI:DEFCFUN ("DrawTriangle3D" DRAWTRIANGLE3D)
     :VOID
-  (|v1| |Vector3|)
-  (|v2| |Vector3|)
-  (|v3| |Vector3|)
-  (|color| |Color|))
+  (V1 VECTOR3)
+  (V2 VECTOR3)
+  (V3 VECTOR3)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1522:12"
-(CFFI:DEFCFUN ("DrawTriangleStrip3D" |DrawTriangleStrip3D|)
+(CFFI:DEFCFUN ("DrawTriangleStrip3D" DRAWTRIANGLESTRIP3D)
     :VOID
-  (|points| (:POINTER |Vector3|))
-  (|pointCount| :INT)
-  (|color| |Color|))
+  (POINTS (:POINTER VECTOR3))
+  (POINTCOUNT :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1523:12"
-(CFFI:DEFCFUN ("DrawCube" |DrawCube|)
+(CFFI:DEFCFUN ("DrawCube" DRAWCUBE)
     :VOID
-  (|position| |Vector3|)
-  (|width| :FLOAT)
-  (|height| :FLOAT)
-  (|length| :FLOAT)
-  (|color| |Color|))
+  (POSITION VECTOR3)
+  (WIDTH :FLOAT)
+  (HEIGHT :FLOAT)
+  (LENGTH :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1524:12"
-(CFFI:DEFCFUN ("DrawCubeV" |DrawCubeV|)
+(CFFI:DEFCFUN ("DrawCubeV" DRAWCUBEV)
     :VOID
-  (|position| |Vector3|)
-  (|size| |Vector3|)
-  (|color| |Color|))
+  (POSITION VECTOR3)
+  (SIZE VECTOR3)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1525:12"
-(CFFI:DEFCFUN ("DrawCubeWires" |DrawCubeWires|)
+(CFFI:DEFCFUN ("DrawCubeWires" DRAWCUBEWIRES)
     :VOID
-  (|position| |Vector3|)
-  (|width| :FLOAT)
-  (|height| :FLOAT)
-  (|length| :FLOAT)
-  (|color| |Color|))
+  (POSITION VECTOR3)
+  (WIDTH :FLOAT)
+  (HEIGHT :FLOAT)
+  (LENGTH :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1526:12"
-(CFFI:DEFCFUN ("DrawCubeWiresV" |DrawCubeWiresV|)
+(CFFI:DEFCFUN ("DrawCubeWiresV" DRAWCUBEWIRESV)
     :VOID
-  (|position| |Vector3|)
-  (|size| |Vector3|)
-  (|color| |Color|))
+  (POSITION VECTOR3)
+  (SIZE VECTOR3)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1527:12"
-(CFFI:DEFCFUN ("DrawSphere" |DrawSphere|)
+(CFFI:DEFCFUN ("DrawSphere" DRAWSPHERE)
     :VOID
-  (|centerPos| |Vector3|)
-  (|radius| :FLOAT)
-  (|color| |Color|))
+  (CENTERPOS VECTOR3)
+  (RADIUS :FLOAT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1528:12"
-(CFFI:DEFCFUN ("DrawSphereEx" |DrawSphereEx|)
+(CFFI:DEFCFUN ("DrawSphereEx" DRAWSPHEREEX)
     :VOID
-  (|centerPos| |Vector3|)
-  (|radius| :FLOAT)
-  (|rings| :INT)
-  (|slices| :INT)
-  (|color| |Color|))
+  (CENTERPOS VECTOR3)
+  (RADIUS :FLOAT)
+  (RINGS :INT)
+  (SLICES :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1529:12"
-(CFFI:DEFCFUN ("DrawSphereWires" |DrawSphereWires|)
+(CFFI:DEFCFUN ("DrawSphereWires" DRAWSPHEREWIRES)
     :VOID
-  (|centerPos| |Vector3|)
-  (|radius| :FLOAT)
-  (|rings| :INT)
-  (|slices| :INT)
-  (|color| |Color|))
+  (CENTERPOS VECTOR3)
+  (RADIUS :FLOAT)
+  (RINGS :INT)
+  (SLICES :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1530:12"
-(CFFI:DEFCFUN ("DrawCylinder" |DrawCylinder|)
+(CFFI:DEFCFUN ("DrawCylinder" DRAWCYLINDER)
     :VOID
-  (|position| |Vector3|)
-  (|radiusTop| :FLOAT)
-  (|radiusBottom| :FLOAT)
-  (|height| :FLOAT)
-  (|slices| :INT)
-  (|color| |Color|))
+  (POSITION VECTOR3)
+  (RADIUSTOP :FLOAT)
+  (RADIUSBOTTOM :FLOAT)
+  (HEIGHT :FLOAT)
+  (SLICES :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1531:12"
-(CFFI:DEFCFUN ("DrawCylinderEx" |DrawCylinderEx|)
+(CFFI:DEFCFUN ("DrawCylinderEx" DRAWCYLINDEREX)
     :VOID
-  (|startPos| |Vector3|)
-  (|endPos| |Vector3|)
-  (|startRadius| :FLOAT)
-  (|endRadius| :FLOAT)
-  (|sides| :INT)
-  (|color| |Color|))
+  (STARTPOS VECTOR3)
+  (ENDPOS VECTOR3)
+  (STARTRADIUS :FLOAT)
+  (ENDRADIUS :FLOAT)
+  (SIDES :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1532:12"
-(CFFI:DEFCFUN ("DrawCylinderWires" |DrawCylinderWires|)
+(CFFI:DEFCFUN ("DrawCylinderWires" DRAWCYLINDERWIRES)
     :VOID
-  (|position| |Vector3|)
-  (|radiusTop| :FLOAT)
-  (|radiusBottom| :FLOAT)
-  (|height| :FLOAT)
-  (|slices| :INT)
-  (|color| |Color|))
+  (POSITION VECTOR3)
+  (RADIUSTOP :FLOAT)
+  (RADIUSBOTTOM :FLOAT)
+  (HEIGHT :FLOAT)
+  (SLICES :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1533:12"
-(CFFI:DEFCFUN ("DrawCylinderWiresEx" |DrawCylinderWiresEx|)
+(CFFI:DEFCFUN ("DrawCylinderWiresEx" DRAWCYLINDERWIRESEX)
     :VOID
-  (|startPos| |Vector3|)
-  (|endPos| |Vector3|)
-  (|startRadius| :FLOAT)
-  (|endRadius| :FLOAT)
-  (|sides| :INT)
-  (|color| |Color|))
+  (STARTPOS VECTOR3)
+  (ENDPOS VECTOR3)
+  (STARTRADIUS :FLOAT)
+  (ENDRADIUS :FLOAT)
+  (SIDES :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1534:12"
-(CFFI:DEFCFUN ("DrawCapsule" |DrawCapsule|)
+(CFFI:DEFCFUN ("DrawCapsule" DRAWCAPSULE)
     :VOID
-  (|startPos| |Vector3|)
-  (|endPos| |Vector3|)
-  (|radius| :FLOAT)
-  (|slices| :INT)
-  (|rings| :INT)
-  (|color| |Color|))
+  (STARTPOS VECTOR3)
+  (ENDPOS VECTOR3)
+  (RADIUS :FLOAT)
+  (SLICES :INT)
+  (RINGS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1535:12"
-(CFFI:DEFCFUN ("DrawCapsuleWires" |DrawCapsuleWires|)
+(CFFI:DEFCFUN ("DrawCapsuleWires" DRAWCAPSULEWIRES)
     :VOID
-  (|startPos| |Vector3|)
-  (|endPos| |Vector3|)
-  (|radius| :FLOAT)
-  (|slices| :INT)
-  (|rings| :INT)
-  (|color| |Color|))
+  (STARTPOS VECTOR3)
+  (ENDPOS VECTOR3)
+  (RADIUS :FLOAT)
+  (SLICES :INT)
+  (RINGS :INT)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1536:12"
-(CFFI:DEFCFUN ("DrawPlane" |DrawPlane|)
+(CFFI:DEFCFUN ("DrawPlane" DRAWPLANE)
     :VOID
-  (|centerPos| |Vector3|)
-  (|size| |Vector2|)
-  (|color| |Color|))
+  (CENTERPOS VECTOR3)
+  (SIZE VECTOR2)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1537:12"
-(CFFI:DEFCFUN ("DrawRay" |DrawRay|)
+(CFFI:DEFCFUN ("DrawRay" DRAWRAY)
     :VOID
-  (|ray| |Ray|)
-  (|color| |Color|))
+  (RAY RAY)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1538:12"
-(CFFI:DEFCFUN ("DrawGrid" |DrawGrid|)
+(CFFI:DEFCFUN ("DrawGrid" DRAWGRID)
     :VOID
-  (|slices| :INT)
-  (|spacing| :FLOAT))
+  (SLICES :INT)
+  (SPACING :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1545:13"
-(CFFI:DEFCFUN ("LoadModel" |LoadModel|)
-    |Model|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadModel" LOADMODEL)
+    MODEL
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1546:13"
-(CFFI:DEFCFUN ("LoadModelFromMesh" |LoadModelFromMesh|)
-    |Model|
-  (|mesh| |Mesh|))
+(CFFI:DEFCFUN ("LoadModelFromMesh" LOADMODELFROMMESH)
+    MODEL
+  (MESH MESH))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1547:12"
-(CFFI:DEFCFUN ("IsModelReady" |IsModelReady|)
+(CFFI:DEFCFUN ("IsModelReady" ISMODELREADY)
     :BOOL
-  (|model| |Model|))
+  (MODEL MODEL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1548:12"
-(CFFI:DEFCFUN ("UnloadModel" |UnloadModel|)
+(CFFI:DEFCFUN ("UnloadModel" UNLOADMODEL)
     :VOID
-  (|model| |Model|))
+  (MODEL MODEL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1549:19"
-(CFFI:DEFCFUN ("GetModelBoundingBox" |GetModelBoundingBox|)
-    |BoundingBox|
-  (|model| |Model|))
+(CFFI:DEFCFUN ("GetModelBoundingBox" GETMODELBOUNDINGBOX)
+    BOUNDINGBOX
+  (MODEL MODEL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1552:12"
-(CFFI:DEFCFUN ("DrawModel" |DrawModel|)
+(CFFI:DEFCFUN ("DrawModel" DRAWMODEL)
     :VOID
-  (|model| |Model|)
-  (|position| |Vector3|)
-  (|scale| :FLOAT)
-  (|tint| |Color|))
+  (MODEL MODEL)
+  (POSITION VECTOR3)
+  (SCALE :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1553:12"
-(CFFI:DEFCFUN ("DrawModelEx" |DrawModelEx|)
+(CFFI:DEFCFUN ("DrawModelEx" DRAWMODELEX)
     :VOID
-  (|model| |Model|)
-  (|position| |Vector3|)
-  (|rotationAxis| |Vector3|)
-  (|rotationAngle| :FLOAT)
-  (|scale| |Vector3|)
-  (|tint| |Color|))
+  (MODEL MODEL)
+  (POSITION VECTOR3)
+  (ROTATIONAXIS VECTOR3)
+  (ROTATIONANGLE :FLOAT)
+  (SCALE VECTOR3)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1554:12"
-(CFFI:DEFCFUN ("DrawModelWires" |DrawModelWires|)
+(CFFI:DEFCFUN ("DrawModelWires" DRAWMODELWIRES)
     :VOID
-  (|model| |Model|)
-  (|position| |Vector3|)
-  (|scale| :FLOAT)
-  (|tint| |Color|))
+  (MODEL MODEL)
+  (POSITION VECTOR3)
+  (SCALE :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1555:12"
-(CFFI:DEFCFUN ("DrawModelWiresEx" |DrawModelWiresEx|)
+(CFFI:DEFCFUN ("DrawModelWiresEx" DRAWMODELWIRESEX)
     :VOID
-  (|model| |Model|)
-  (|position| |Vector3|)
-  (|rotationAxis| |Vector3|)
-  (|rotationAngle| :FLOAT)
-  (|scale| |Vector3|)
-  (|tint| |Color|))
+  (MODEL MODEL)
+  (POSITION VECTOR3)
+  (ROTATIONAXIS VECTOR3)
+  (ROTATIONANGLE :FLOAT)
+  (SCALE VECTOR3)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1556:12"
-(CFFI:DEFCFUN ("DrawModelPoints" |DrawModelPoints|)
+(CFFI:DEFCFUN ("DrawModelPoints" DRAWMODELPOINTS)
     :VOID
-  (|model| |Model|)
-  (|position| |Vector3|)
-  (|scale| :FLOAT)
-  (|tint| |Color|))
+  (MODEL MODEL)
+  (POSITION VECTOR3)
+  (SCALE :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1557:12"
-(CFFI:DEFCFUN ("DrawModelPointsEx" |DrawModelPointsEx|)
+(CFFI:DEFCFUN ("DrawModelPointsEx" DRAWMODELPOINTSEX)
     :VOID
-  (|model| |Model|)
-  (|position| |Vector3|)
-  (|rotationAxis| |Vector3|)
-  (|rotationAngle| :FLOAT)
-  (|scale| |Vector3|)
-  (|tint| |Color|))
+  (MODEL MODEL)
+  (POSITION VECTOR3)
+  (ROTATIONAXIS VECTOR3)
+  (ROTATIONANGLE :FLOAT)
+  (SCALE VECTOR3)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1558:12"
-(CFFI:DEFCFUN ("DrawBoundingBox" |DrawBoundingBox|)
+(CFFI:DEFCFUN ("DrawBoundingBox" DRAWBOUNDINGBOX)
     :VOID
-  (|box| |BoundingBox|)
-  (|color| |Color|))
+  (BOX BOUNDINGBOX)
+  (COLOR COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1559:12"
-(CFFI:DEFCFUN ("DrawBillboard" |DrawBillboard|)
+(CFFI:DEFCFUN ("DrawBillboard" DRAWBILLBOARD)
     :VOID
-  (|camera| |Camera|)
-  (|texture| |Texture2D|)
-  (|position| |Vector3|)
-  (|scale| :FLOAT)
-  (|tint| |Color|))
+  (CAMERA CAMERA)
+  (TEXTURE TEXTURE2D)
+  (POSITION VECTOR3)
+  (SCALE :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1560:12"
-(CFFI:DEFCFUN ("DrawBillboardRec" |DrawBillboardRec|)
+(CFFI:DEFCFUN ("DrawBillboardRec" DRAWBILLBOARDREC)
     :VOID
-  (|camera| |Camera|)
-  (|texture| |Texture2D|)
-  (|source| |Rectangle|)
-  (|position| |Vector3|)
-  (|size| |Vector2|)
-  (|tint| |Color|))
+  (CAMERA CAMERA)
+  (TEXTURE TEXTURE2D)
+  (SOURCE RECTANGLE)
+  (POSITION VECTOR3)
+  (SIZE VECTOR2)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1561:12"
-(CFFI:DEFCFUN ("DrawBillboardPro" |DrawBillboardPro|)
+(CFFI:DEFCFUN ("DrawBillboardPro" DRAWBILLBOARDPRO)
     :VOID
-  (|camera| |Camera|)
-  (|texture| |Texture2D|)
-  (|source| |Rectangle|)
-  (|position| |Vector3|)
-  (|up| |Vector3|)
-  (|size| |Vector2|)
-  (|origin| |Vector2|)
-  (|rotation| :FLOAT)
-  (|tint| |Color|))
+  (CAMERA CAMERA)
+  (TEXTURE TEXTURE2D)
+  (SOURCE RECTANGLE)
+  (POSITION VECTOR3)
+  (UP VECTOR3)
+  (SIZE VECTOR2)
+  (ORIGIN VECTOR2)
+  (ROTATION :FLOAT)
+  (TINT COLOR))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1564:12"
-(CFFI:DEFCFUN ("UploadMesh" |UploadMesh|)
+(CFFI:DEFCFUN ("UploadMesh" UPLOADMESH)
     :VOID
-  (|mesh| (:POINTER |Mesh|))
-  (|dynamic| :BOOL))
+  (MESH (:POINTER MESH))
+  (DYNAMIC :BOOL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1565:12"
-(CFFI:DEFCFUN ("UpdateMeshBuffer" |UpdateMeshBuffer|)
+(CFFI:DEFCFUN ("UpdateMeshBuffer" UPDATEMESHBUFFER)
     :VOID
-  (|mesh| |Mesh|)
-  (|index| :INT)
-  (|data| (:POINTER :VOID))
-  (|dataSize| :INT)
-  (|offset| :INT))
+  (MESH MESH)
+  (INDEX :INT)
+  (DATA (:POINTER :VOID))
+  (DATASIZE :INT)
+  (OFFSET :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1566:12"
-(CFFI:DEFCFUN ("UnloadMesh" |UnloadMesh|)
+(CFFI:DEFCFUN ("UnloadMesh" UNLOADMESH)
     :VOID
-  (|mesh| |Mesh|))
+  (MESH MESH))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1567:12"
-(CFFI:DEFCFUN ("DrawMesh" |DrawMesh|)
+(CFFI:DEFCFUN ("DrawMesh" DRAWMESH)
     :VOID
-  (|mesh| |Mesh|)
-  (|material| |Material|)
-  (|transform| |Matrix|))
+  (MESH MESH)
+  (MATERIAL MATERIAL)
+  (TRANSFORM MATRIX))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1568:12"
-(CFFI:DEFCFUN ("DrawMeshInstanced" |DrawMeshInstanced|)
+(CFFI:DEFCFUN ("DrawMeshInstanced" DRAWMESHINSTANCED)
     :VOID
-  (|mesh| |Mesh|)
-  (|material| |Material|)
-  (|transforms| (:POINTER |Matrix|))
-  (|instances| :INT))
+  (MESH MESH)
+  (MATERIAL MATERIAL)
+  (TRANSFORMS (:POINTER MATRIX))
+  (INSTANCES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1569:19"
-(CFFI:DEFCFUN ("GetMeshBoundingBox" |GetMeshBoundingBox|)
-    |BoundingBox|
-  (|mesh| |Mesh|))
+(CFFI:DEFCFUN ("GetMeshBoundingBox" GETMESHBOUNDINGBOX)
+    BOUNDINGBOX
+  (MESH MESH))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1570:12"
-(CFFI:DEFCFUN ("GenMeshTangents" |GenMeshTangents|)
+(CFFI:DEFCFUN ("GenMeshTangents" GENMESHTANGENTS)
     :VOID
-  (|mesh| (:POINTER |Mesh|)))
+  (MESH (:POINTER MESH)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1571:12"
-(CFFI:DEFCFUN ("ExportMesh" |ExportMesh|)
+(CFFI:DEFCFUN ("ExportMesh" EXPORTMESH)
     :BOOL
-  (|mesh| |Mesh|)
-  (|fileName| :STRING))
+  (MESH MESH)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1572:12"
-(CFFI:DEFCFUN ("ExportMeshAsCode" |ExportMeshAsCode|)
+(CFFI:DEFCFUN ("ExportMeshAsCode" EXPORTMESHASCODE)
     :BOOL
-  (|mesh| |Mesh|)
-  (|fileName| :STRING))
+  (MESH MESH)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1575:12"
-(CFFI:DEFCFUN ("GenMeshPoly" |GenMeshPoly|)
-    |Mesh|
-  (|sides| :INT)
-  (|radius| :FLOAT))
+(CFFI:DEFCFUN ("GenMeshPoly" GENMESHPOLY)
+    MESH
+  (SIDES :INT)
+  (RADIUS :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1576:12"
-(CFFI:DEFCFUN ("GenMeshPlane" |GenMeshPlane|)
-    |Mesh|
-  (|width| :FLOAT)
-  (|length| :FLOAT)
-  (|resX| :INT)
-  (|resZ| :INT))
+(CFFI:DEFCFUN ("GenMeshPlane" GENMESHPLANE)
+    MESH
+  (WIDTH :FLOAT)
+  (LENGTH :FLOAT)
+  (RESX :INT)
+  (RESZ :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1577:12"
-(CFFI:DEFCFUN ("GenMeshCube" |GenMeshCube|)
-    |Mesh|
-  (|width| :FLOAT)
-  (|height| :FLOAT)
-  (|length| :FLOAT))
+(CFFI:DEFCFUN ("GenMeshCube" GENMESHCUBE)
+    MESH
+  (WIDTH :FLOAT)
+  (HEIGHT :FLOAT)
+  (LENGTH :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1578:12"
-(CFFI:DEFCFUN ("GenMeshSphere" |GenMeshSphere|)
-    |Mesh|
-  (|radius| :FLOAT)
-  (|rings| :INT)
-  (|slices| :INT))
+(CFFI:DEFCFUN ("GenMeshSphere" GENMESHSPHERE)
+    MESH
+  (RADIUS :FLOAT)
+  (RINGS :INT)
+  (SLICES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1579:12"
-(CFFI:DEFCFUN ("GenMeshHemiSphere" |GenMeshHemiSphere|)
-    |Mesh|
-  (|radius| :FLOAT)
-  (|rings| :INT)
-  (|slices| :INT))
+(CFFI:DEFCFUN ("GenMeshHemiSphere" GENMESHHEMISPHERE)
+    MESH
+  (RADIUS :FLOAT)
+  (RINGS :INT)
+  (SLICES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1580:12"
-(CFFI:DEFCFUN ("GenMeshCylinder" |GenMeshCylinder|)
-    |Mesh|
-  (|radius| :FLOAT)
-  (|height| :FLOAT)
-  (|slices| :INT))
+(CFFI:DEFCFUN ("GenMeshCylinder" GENMESHCYLINDER)
+    MESH
+  (RADIUS :FLOAT)
+  (HEIGHT :FLOAT)
+  (SLICES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1581:12"
-(CFFI:DEFCFUN ("GenMeshCone" |GenMeshCone|)
-    |Mesh|
-  (|radius| :FLOAT)
-  (|height| :FLOAT)
-  (|slices| :INT))
+(CFFI:DEFCFUN ("GenMeshCone" GENMESHCONE)
+    MESH
+  (RADIUS :FLOAT)
+  (HEIGHT :FLOAT)
+  (SLICES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1582:12"
-(CFFI:DEFCFUN ("GenMeshTorus" |GenMeshTorus|)
-    |Mesh|
-  (|radius| :FLOAT)
-  (|size| :FLOAT)
-  (|radSeg| :INT)
-  (|sides| :INT))
+(CFFI:DEFCFUN ("GenMeshTorus" GENMESHTORUS)
+    MESH
+  (RADIUS :FLOAT)
+  (SIZE :FLOAT)
+  (RADSEG :INT)
+  (SIDES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1583:12"
-(CFFI:DEFCFUN ("GenMeshKnot" |GenMeshKnot|)
-    |Mesh|
-  (|radius| :FLOAT)
-  (|size| :FLOAT)
-  (|radSeg| :INT)
-  (|sides| :INT))
+(CFFI:DEFCFUN ("GenMeshKnot" GENMESHKNOT)
+    MESH
+  (RADIUS :FLOAT)
+  (SIZE :FLOAT)
+  (RADSEG :INT)
+  (SIDES :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1584:12"
-(CFFI:DEFCFUN ("GenMeshHeightmap" |GenMeshHeightmap|)
-    |Mesh|
-  (|heightmap| |Image|)
-  (|size| |Vector3|))
+(CFFI:DEFCFUN ("GenMeshHeightmap" GENMESHHEIGHTMAP)
+    MESH
+  (HEIGHTMAP IMAGE)
+  (SIZE VECTOR3))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1585:12"
-(CFFI:DEFCFUN ("GenMeshCubicmap" |GenMeshCubicmap|)
-    |Mesh|
-  (|cubicmap| |Image|)
-  (|cubeSize| |Vector3|))
+(CFFI:DEFCFUN ("GenMeshCubicmap" GENMESHCUBICMAP)
+    MESH
+  (CUBICMAP IMAGE)
+  (CUBESIZE VECTOR3))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1588:17"
-(CFFI:DEFCFUN ("LoadMaterials" |LoadMaterials|)
-    (:POINTER |Material|)
-  (|fileName| :STRING)
-  (|materialCount| (:POINTER :INT)))
+(CFFI:DEFCFUN ("LoadMaterials" LOADMATERIALS)
+    (:POINTER MATERIAL)
+  (FILENAME :STRING)
+  (MATERIALCOUNT (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1589:16"
-(CFFI:DEFCFUN ("LoadMaterialDefault" |LoadMaterialDefault|)
-    |Material|)
+(CFFI:DEFCFUN ("LoadMaterialDefault" LOADMATERIALDEFAULT)
+    MATERIAL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1590:12"
-(CFFI:DEFCFUN ("IsMaterialReady" |IsMaterialReady|)
+(CFFI:DEFCFUN ("IsMaterialReady" ISMATERIALREADY)
     :BOOL
-  (|material| |Material|))
+  (MATERIAL MATERIAL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1591:12"
-(CFFI:DEFCFUN ("UnloadMaterial" |UnloadMaterial|)
+(CFFI:DEFCFUN ("UnloadMaterial" UNLOADMATERIAL)
     :VOID
-  (|material| |Material|))
+  (MATERIAL MATERIAL))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1592:12"
-(CFFI:DEFCFUN ("SetMaterialTexture" |SetMaterialTexture|)
+(CFFI:DEFCFUN ("SetMaterialTexture" SETMATERIALTEXTURE)
     :VOID
-  (|material| (:POINTER |Material|))
-  (|mapType| :INT)
-  (|texture| |Texture2D|))
+  (MATERIAL (:POINTER MATERIAL))
+  (MAPTYPE :INT)
+  (TEXTURE TEXTURE2D))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1593:12"
-(CFFI:DEFCFUN ("SetModelMeshMaterial" |SetModelMeshMaterial|)
+(CFFI:DEFCFUN ("SetModelMeshMaterial" SETMODELMESHMATERIAL)
     :VOID
-  (|model| (:POINTER |Model|))
-  (|meshId| :INT)
-  (|materialId| :INT))
+  (MODEL (:POINTER MODEL))
+  (MESHID :INT)
+  (MATERIALID :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1596:23"
-(CFFI:DEFCFUN ("LoadModelAnimations" |LoadModelAnimations|)
-    (:POINTER |ModelAnimation|)
-  (|fileName| :STRING)
-  (|animCount| (:POINTER :INT)))
+(CFFI:DEFCFUN ("LoadModelAnimations" LOADMODELANIMATIONS)
+    (:POINTER MODELANIMATION)
+  (FILENAME :STRING)
+  (ANIMCOUNT (:POINTER :INT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1597:12"
-(CFFI:DEFCFUN ("UpdateModelAnimation" |UpdateModelAnimation|)
+(CFFI:DEFCFUN ("UpdateModelAnimation" UPDATEMODELANIMATION)
     :VOID
-  (|model| |Model|)
-  (|anim| |ModelAnimation|)
-  (|frame| :INT))
+  (MODEL MODEL)
+  (ANIM MODELANIMATION)
+  (FRAME :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1598:12"
-(CFFI:DEFCFUN ("UnloadModelAnimation" |UnloadModelAnimation|)
+(CFFI:DEFCFUN ("UnloadModelAnimation" UNLOADMODELANIMATION)
     :VOID
-  (|anim| |ModelAnimation|))
+  (ANIM MODELANIMATION))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1599:12"
-(CFFI:DEFCFUN ("UnloadModelAnimations" |UnloadModelAnimations|)
+(CFFI:DEFCFUN ("UnloadModelAnimations" UNLOADMODELANIMATIONS)
     :VOID
-  (|animations| (:POINTER |ModelAnimation|))
-  (|animCount| :INT))
+  (ANIMATIONS (:POINTER MODELANIMATION))
+  (ANIMCOUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1600:12"
-(CFFI:DEFCFUN ("IsModelAnimationValid" |IsModelAnimationValid|)
+(CFFI:DEFCFUN ("IsModelAnimationValid" ISMODELANIMATIONVALID)
     :BOOL
-  (|model| |Model|)
-  (|anim| |ModelAnimation|))
+  (MODEL MODEL)
+  (ANIM MODELANIMATION))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1601:12"
 (CFFI:DEFCFUN ("UpdateModelAnimationBoneMatrices"
-               |UpdateModelAnimationBoneMatrices|)
+               UPDATEMODELANIMATIONBONEMATRICES)
     :VOID
-  (|model| |Model|)
-  (|anim| |ModelAnimation|)
-  (|frame| :INT))
+  (MODEL MODEL)
+  (ANIM MODELANIMATION)
+  (FRAME :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1604:12"
-(CFFI:DEFCFUN ("CheckCollisionSpheres" |CheckCollisionSpheres|)
+(CFFI:DEFCFUN ("CheckCollisionSpheres" CHECKCOLLISIONSPHERES)
     :BOOL
-  (|center1| |Vector3|)
-  (|radius1| :FLOAT)
-  (|center2| |Vector3|)
-  (|radius2| :FLOAT))
+  (CENTER1 VECTOR3)
+  (RADIUS1 :FLOAT)
+  (CENTER2 VECTOR3)
+  (RADIUS2 :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1605:12"
-(CFFI:DEFCFUN ("CheckCollisionBoxes" |CheckCollisionBoxes|)
+(CFFI:DEFCFUN ("CheckCollisionBoxes" CHECKCOLLISIONBOXES)
     :BOOL
-  (|box1| |BoundingBox|)
-  (|box2| |BoundingBox|))
+  (BOX1 BOUNDINGBOX)
+  (BOX2 BOUNDINGBOX))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1606:12"
-(CFFI:DEFCFUN ("CheckCollisionBoxSphere" |CheckCollisionBoxSphere|)
+(CFFI:DEFCFUN ("CheckCollisionBoxSphere" CHECKCOLLISIONBOXSPHERE)
     :BOOL
-  (|box| |BoundingBox|)
-  (|center| |Vector3|)
-  (|radius| :FLOAT))
+  (BOX BOUNDINGBOX)
+  (CENTER VECTOR3)
+  (RADIUS :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1607:20"
-(CFFI:DEFCFUN ("GetRayCollisionSphere" |GetRayCollisionSphere|)
-    |RayCollision|
-  (|ray| |Ray|)
-  (|center| |Vector3|)
-  (|radius| :FLOAT))
+(CFFI:DEFCFUN ("GetRayCollisionSphere" GETRAYCOLLISIONSPHERE)
+    RAYCOLLISION
+  (RAY RAY)
+  (CENTER VECTOR3)
+  (RADIUS :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1608:20"
-(CFFI:DEFCFUN ("GetRayCollisionBox" |GetRayCollisionBox|)
-    |RayCollision|
-  (|ray| |Ray|)
-  (|box| |BoundingBox|))
+(CFFI:DEFCFUN ("GetRayCollisionBox" GETRAYCOLLISIONBOX)
+    RAYCOLLISION
+  (RAY RAY)
+  (BOX BOUNDINGBOX))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1609:20"
-(CFFI:DEFCFUN ("GetRayCollisionMesh" |GetRayCollisionMesh|)
-    |RayCollision|
-  (|ray| |Ray|)
-  (|mesh| |Mesh|)
-  (|transform| |Matrix|))
+(CFFI:DEFCFUN ("GetRayCollisionMesh" GETRAYCOLLISIONMESH)
+    RAYCOLLISION
+  (RAY RAY)
+  (MESH MESH)
+  (TRANSFORM MATRIX))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1610:20"
-(CFFI:DEFCFUN ("GetRayCollisionTriangle" |GetRayCollisionTriangle|)
-    |RayCollision|
-  (|ray| |Ray|)
-  (|p1| |Vector3|)
-  (|p2| |Vector3|)
-  (|p3| |Vector3|))
+(CFFI:DEFCFUN ("GetRayCollisionTriangle" GETRAYCOLLISIONTRIANGLE)
+    RAYCOLLISION
+  (RAY RAY)
+  (P1 VECTOR3)
+  (P2 VECTOR3)
+  (P3 VECTOR3))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1611:20"
-(CFFI:DEFCFUN ("GetRayCollisionQuad" |GetRayCollisionQuad|)
-    |RayCollision|
-  (|ray| |Ray|)
-  (|p1| |Vector3|)
-  (|p2| |Vector3|)
-  (|p3| |Vector3|)
-  (|p4| |Vector3|))
+(CFFI:DEFCFUN ("GetRayCollisionQuad" GETRAYCOLLISIONQUAD)
+    RAYCOLLISION
+  (RAY RAY)
+  (P1 VECTOR3)
+  (P2 VECTOR3)
+  (P3 VECTOR3)
+  (P4 VECTOR3))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1616:16"
-(CFFI:DEFCTYPE |AudioCallback| FUNCTION-POINTER)
+(CFFI:DEFCTYPE AUDIOCALLBACK FUNCTION-POINTER)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1619:12"
-(CFFI:DEFCFUN ("InitAudioDevice" |InitAudioDevice|)
+(CFFI:DEFCFUN ("InitAudioDevice" INITAUDIODEVICE)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1620:12"
-(CFFI:DEFCFUN ("CloseAudioDevice" |CloseAudioDevice|)
+(CFFI:DEFCFUN ("CloseAudioDevice" CLOSEAUDIODEVICE)
     :VOID)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1621:12"
-(CFFI:DEFCFUN ("IsAudioDeviceReady" |IsAudioDeviceReady|)
+(CFFI:DEFCFUN ("IsAudioDeviceReady" ISAUDIODEVICEREADY)
     :BOOL)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1622:12"
-(CFFI:DEFCFUN ("SetMasterVolume" |SetMasterVolume|)
+(CFFI:DEFCFUN ("SetMasterVolume" SETMASTERVOLUME)
     :VOID
-  (|volume| :FLOAT))
+  (VOLUME :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1623:13"
-(CFFI:DEFCFUN ("GetMasterVolume" |GetMasterVolume|)
+(CFFI:DEFCFUN ("GetMasterVolume" GETMASTERVOLUME)
     :FLOAT)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1626:12"
-(CFFI:DEFCFUN ("LoadWave" |LoadWave|)
-    |Wave|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadWave" LOADWAVE)
+    WAVE
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1627:12"
-(CFFI:DEFCFUN ("LoadWaveFromMemory" |LoadWaveFromMemory|)
-    |Wave|
-  (|fileType| :STRING)
-  (|fileData| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT))
+(CFFI:DEFCFUN ("LoadWaveFromMemory" LOADWAVEFROMMEMORY)
+    WAVE
+  (FILETYPE :STRING)
+  (FILEDATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1628:12"
-(CFFI:DEFCFUN ("IsWaveReady" |IsWaveReady|)
+(CFFI:DEFCFUN ("IsWaveReady" ISWAVEREADY)
     :BOOL
-  (|wave| |Wave|))
+  (WAVE WAVE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1629:13"
-(CFFI:DEFCFUN ("LoadSound" |LoadSound|)
-    |Sound|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadSound" LOADSOUND)
+    SOUND
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1630:13"
-(CFFI:DEFCFUN ("LoadSoundFromWave" |LoadSoundFromWave|)
-    |Sound|
-  (|wave| |Wave|))
+(CFFI:DEFCFUN ("LoadSoundFromWave" LOADSOUNDFROMWAVE)
+    SOUND
+  (WAVE WAVE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1631:13"
-(CFFI:DEFCFUN ("LoadSoundAlias" |LoadSoundAlias|)
-    |Sound|
-  (|source| |Sound|))
+(CFFI:DEFCFUN ("LoadSoundAlias" LOADSOUNDALIAS)
+    SOUND
+  (SOURCE SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1632:12"
-(CFFI:DEFCFUN ("IsSoundReady" |IsSoundReady|)
+(CFFI:DEFCFUN ("IsSoundReady" ISSOUNDREADY)
     :BOOL
-  (|sound| |Sound|))
+  (SOUND SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1633:12"
-(CFFI:DEFCFUN ("UpdateSound" |UpdateSound|)
+(CFFI:DEFCFUN ("UpdateSound" UPDATESOUND)
     :VOID
-  (|sound| |Sound|)
-  (|data| (:POINTER :VOID))
-  (|sampleCount| :INT))
+  (SOUND SOUND)
+  (DATA (:POINTER :VOID))
+  (SAMPLECOUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1634:12"
-(CFFI:DEFCFUN ("UnloadWave" |UnloadWave|)
+(CFFI:DEFCFUN ("UnloadWave" UNLOADWAVE)
     :VOID
-  (|wave| |Wave|))
+  (WAVE WAVE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1635:12"
-(CFFI:DEFCFUN ("UnloadSound" |UnloadSound|)
+(CFFI:DEFCFUN ("UnloadSound" UNLOADSOUND)
     :VOID
-  (|sound| |Sound|))
+  (SOUND SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1636:12"
-(CFFI:DEFCFUN ("UnloadSoundAlias" |UnloadSoundAlias|)
+(CFFI:DEFCFUN ("UnloadSoundAlias" UNLOADSOUNDALIAS)
     :VOID
-  (|alias| |Sound|))
+  (ALIAS SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1637:12"
-(CFFI:DEFCFUN ("ExportWave" |ExportWave|)
+(CFFI:DEFCFUN ("ExportWave" EXPORTWAVE)
     :BOOL
-  (|wave| |Wave|)
-  (|fileName| :STRING))
+  (WAVE WAVE)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1638:12"
-(CFFI:DEFCFUN ("ExportWaveAsCode" |ExportWaveAsCode|)
+(CFFI:DEFCFUN ("ExportWaveAsCode" EXPORTWAVEASCODE)
     :BOOL
-  (|wave| |Wave|)
-  (|fileName| :STRING))
+  (WAVE WAVE)
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1641:12"
-(CFFI:DEFCFUN ("PlaySound" |PlaySound|)
+(CFFI:DEFCFUN ("PlaySound" PLAYSOUND)
     :VOID
-  (|sound| |Sound|))
+  (SOUND SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1642:12"
-(CFFI:DEFCFUN ("StopSound" |StopSound|)
+(CFFI:DEFCFUN ("StopSound" STOPSOUND)
     :VOID
-  (|sound| |Sound|))
+  (SOUND SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1643:12"
-(CFFI:DEFCFUN ("PauseSound" |PauseSound|)
+(CFFI:DEFCFUN ("PauseSound" PAUSESOUND)
     :VOID
-  (|sound| |Sound|))
+  (SOUND SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1644:12"
-(CFFI:DEFCFUN ("ResumeSound" |ResumeSound|)
+(CFFI:DEFCFUN ("ResumeSound" RESUMESOUND)
     :VOID
-  (|sound| |Sound|))
+  (SOUND SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1645:12"
-(CFFI:DEFCFUN ("IsSoundPlaying" |IsSoundPlaying|)
+(CFFI:DEFCFUN ("IsSoundPlaying" ISSOUNDPLAYING)
     :BOOL
-  (|sound| |Sound|))
+  (SOUND SOUND))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1646:12"
-(CFFI:DEFCFUN ("SetSoundVolume" |SetSoundVolume|)
+(CFFI:DEFCFUN ("SetSoundVolume" SETSOUNDVOLUME)
     :VOID
-  (|sound| |Sound|)
-  (|volume| :FLOAT))
+  (SOUND SOUND)
+  (VOLUME :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1647:12"
-(CFFI:DEFCFUN ("SetSoundPitch" |SetSoundPitch|)
+(CFFI:DEFCFUN ("SetSoundPitch" SETSOUNDPITCH)
     :VOID
-  (|sound| |Sound|)
-  (|pitch| :FLOAT))
+  (SOUND SOUND)
+  (PITCH :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1648:12"
-(CFFI:DEFCFUN ("SetSoundPan" |SetSoundPan|)
+(CFFI:DEFCFUN ("SetSoundPan" SETSOUNDPAN)
     :VOID
-  (|sound| |Sound|)
-  (|pan| :FLOAT))
+  (SOUND SOUND)
+  (PAN :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1649:12"
-(CFFI:DEFCFUN ("WaveCopy" |WaveCopy|)
-    |Wave|
-  (|wave| |Wave|))
+(CFFI:DEFCFUN ("WaveCopy" WAVECOPY)
+    WAVE
+  (WAVE WAVE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1650:12"
-(CFFI:DEFCFUN ("WaveCrop" |WaveCrop|)
+(CFFI:DEFCFUN ("WaveCrop" WAVECROP)
     :VOID
-  (|wave| (:POINTER |Wave|))
-  (|initFrame| :INT)
-  (|finalFrame| :INT))
+  (WAVE (:POINTER WAVE))
+  (INITFRAME :INT)
+  (FINALFRAME :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1651:12"
-(CFFI:DEFCFUN ("WaveFormat" |WaveFormat|)
+(CFFI:DEFCFUN ("WaveFormat" WAVEFORMAT)
     :VOID
-  (|wave| (:POINTER |Wave|))
-  (|sampleRate| :INT)
-  (|sampleSize| :INT)
-  (|channels| :INT))
+  (WAVE (:POINTER WAVE))
+  (SAMPLERATE :INT)
+  (SAMPLESIZE :INT)
+  (CHANNELS :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1652:14"
-(CFFI:DEFCFUN ("LoadWaveSamples" |LoadWaveSamples|)
+(CFFI:DEFCFUN ("LoadWaveSamples" LOADWAVESAMPLES)
     (:POINTER :FLOAT)
-  (|wave| |Wave|))
+  (WAVE WAVE))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1653:12"
-(CFFI:DEFCFUN ("UnloadWaveSamples" |UnloadWaveSamples|)
+(CFFI:DEFCFUN ("UnloadWaveSamples" UNLOADWAVESAMPLES)
     :VOID
-  (|samples| (:POINTER :FLOAT)))
+  (SAMPLES (:POINTER :FLOAT)))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1656:13"
-(CFFI:DEFCFUN ("LoadMusicStream" |LoadMusicStream|)
-    |Music|
-  (|fileName| :STRING))
+(CFFI:DEFCFUN ("LoadMusicStream" LOADMUSICSTREAM)
+    MUSIC
+  (FILENAME :STRING))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1657:13"
-(CFFI:DEFCFUN ("LoadMusicStreamFromMemory" |LoadMusicStreamFromMemory|)
-    |Music|
-  (|fileType| :STRING)
-  (|data| (:POINTER :UNSIGNED-CHAR))
-  (|dataSize| :INT))
+(CFFI:DEFCFUN ("LoadMusicStreamFromMemory" LOADMUSICSTREAMFROMMEMORY)
+    MUSIC
+  (FILETYPE :STRING)
+  (DATA (:POINTER :UNSIGNED-CHAR))
+  (DATASIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1658:12"
-(CFFI:DEFCFUN ("IsMusicReady" |IsMusicReady|)
+(CFFI:DEFCFUN ("IsMusicReady" ISMUSICREADY)
     :BOOL
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1659:12"
-(CFFI:DEFCFUN ("UnloadMusicStream" |UnloadMusicStream|)
+(CFFI:DEFCFUN ("UnloadMusicStream" UNLOADMUSICSTREAM)
     :VOID
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1660:12"
-(CFFI:DEFCFUN ("PlayMusicStream" |PlayMusicStream|)
+(CFFI:DEFCFUN ("PlayMusicStream" PLAYMUSICSTREAM)
     :VOID
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1661:12"
-(CFFI:DEFCFUN ("IsMusicStreamPlaying" |IsMusicStreamPlaying|)
+(CFFI:DEFCFUN ("IsMusicStreamPlaying" ISMUSICSTREAMPLAYING)
     :BOOL
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1662:12"
-(CFFI:DEFCFUN ("UpdateMusicStream" |UpdateMusicStream|)
+(CFFI:DEFCFUN ("UpdateMusicStream" UPDATEMUSICSTREAM)
     :VOID
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1663:12"
-(CFFI:DEFCFUN ("StopMusicStream" |StopMusicStream|)
+(CFFI:DEFCFUN ("StopMusicStream" STOPMUSICSTREAM)
     :VOID
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1664:12"
-(CFFI:DEFCFUN ("PauseMusicStream" |PauseMusicStream|)
+(CFFI:DEFCFUN ("PauseMusicStream" PAUSEMUSICSTREAM)
     :VOID
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1665:12"
-(CFFI:DEFCFUN ("ResumeMusicStream" |ResumeMusicStream|)
+(CFFI:DEFCFUN ("ResumeMusicStream" RESUMEMUSICSTREAM)
     :VOID
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1666:12"
-(CFFI:DEFCFUN ("SeekMusicStream" |SeekMusicStream|)
+(CFFI:DEFCFUN ("SeekMusicStream" SEEKMUSICSTREAM)
     :VOID
-  (|music| |Music|)
-  (|position| :FLOAT))
+  (MUSIC MUSIC)
+  (POSITION :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1667:12"
-(CFFI:DEFCFUN ("SetMusicVolume" |SetMusicVolume|)
+(CFFI:DEFCFUN ("SetMusicVolume" SETMUSICVOLUME)
     :VOID
-  (|music| |Music|)
-  (|volume| :FLOAT))
+  (MUSIC MUSIC)
+  (VOLUME :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1668:12"
-(CFFI:DEFCFUN ("SetMusicPitch" |SetMusicPitch|)
+(CFFI:DEFCFUN ("SetMusicPitch" SETMUSICPITCH)
     :VOID
-  (|music| |Music|)
-  (|pitch| :FLOAT))
+  (MUSIC MUSIC)
+  (PITCH :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1669:12"
-(CFFI:DEFCFUN ("SetMusicPan" |SetMusicPan|)
+(CFFI:DEFCFUN ("SetMusicPan" SETMUSICPAN)
     :VOID
-  (|music| |Music|)
-  (|pan| :FLOAT))
+  (MUSIC MUSIC)
+  (PAN :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1670:13"
-(CFFI:DEFCFUN ("GetMusicTimeLength" |GetMusicTimeLength|)
+(CFFI:DEFCFUN ("GetMusicTimeLength" GETMUSICTIMELENGTH)
     :FLOAT
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1671:13"
-(CFFI:DEFCFUN ("GetMusicTimePlayed" |GetMusicTimePlayed|)
+(CFFI:DEFCFUN ("GetMusicTimePlayed" GETMUSICTIMEPLAYED)
     :FLOAT
-  (|music| |Music|))
+  (MUSIC MUSIC))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1674:19"
-(CFFI:DEFCFUN ("LoadAudioStream" |LoadAudioStream|)
-    |AudioStream|
-  (|sampleRate| :UNSIGNED-INT)
-  (|sampleSize| :UNSIGNED-INT)
-  (|channels| :UNSIGNED-INT))
+(CFFI:DEFCFUN ("LoadAudioStream" LOADAUDIOSTREAM)
+    AUDIOSTREAM
+  (SAMPLERATE :UNSIGNED-INT)
+  (SAMPLESIZE :UNSIGNED-INT)
+  (CHANNELS :UNSIGNED-INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1675:12"
-(CFFI:DEFCFUN ("IsAudioStreamReady" |IsAudioStreamReady|)
+(CFFI:DEFCFUN ("IsAudioStreamReady" ISAUDIOSTREAMREADY)
     :BOOL
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1676:12"
-(CFFI:DEFCFUN ("UnloadAudioStream" |UnloadAudioStream|)
+(CFFI:DEFCFUN ("UnloadAudioStream" UNLOADAUDIOSTREAM)
     :VOID
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1677:12"
-(CFFI:DEFCFUN ("UpdateAudioStream" |UpdateAudioStream|)
+(CFFI:DEFCFUN ("UpdateAudioStream" UPDATEAUDIOSTREAM)
     :VOID
-  (|stream| |AudioStream|)
-  (|data| (:POINTER :VOID))
-  (|frameCount| :INT))
+  (STREAM AUDIOSTREAM)
+  (DATA (:POINTER :VOID))
+  (FRAMECOUNT :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1678:12"
-(CFFI:DEFCFUN ("IsAudioStreamProcessed" |IsAudioStreamProcessed|)
+(CFFI:DEFCFUN ("IsAudioStreamProcessed" ISAUDIOSTREAMPROCESSED)
     :BOOL
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1679:12"
-(CFFI:DEFCFUN ("PlayAudioStream" |PlayAudioStream|)
+(CFFI:DEFCFUN ("PlayAudioStream" PLAYAUDIOSTREAM)
     :VOID
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1680:12"
-(CFFI:DEFCFUN ("PauseAudioStream" |PauseAudioStream|)
+(CFFI:DEFCFUN ("PauseAudioStream" PAUSEAUDIOSTREAM)
     :VOID
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1681:12"
-(CFFI:DEFCFUN ("ResumeAudioStream" |ResumeAudioStream|)
+(CFFI:DEFCFUN ("ResumeAudioStream" RESUMEAUDIOSTREAM)
     :VOID
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1682:12"
-(CFFI:DEFCFUN ("IsAudioStreamPlaying" |IsAudioStreamPlaying|)
+(CFFI:DEFCFUN ("IsAudioStreamPlaying" ISAUDIOSTREAMPLAYING)
     :BOOL
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1683:12"
-(CFFI:DEFCFUN ("StopAudioStream" |StopAudioStream|)
+(CFFI:DEFCFUN ("StopAudioStream" STOPAUDIOSTREAM)
     :VOID
-  (|stream| |AudioStream|))
+  (STREAM AUDIOSTREAM))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1684:12"
-(CFFI:DEFCFUN ("SetAudioStreamVolume" |SetAudioStreamVolume|)
+(CFFI:DEFCFUN ("SetAudioStreamVolume" SETAUDIOSTREAMVOLUME)
     :VOID
-  (|stream| |AudioStream|)
-  (|volume| :FLOAT))
+  (STREAM AUDIOSTREAM)
+  (VOLUME :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1685:12"
-(CFFI:DEFCFUN ("SetAudioStreamPitch" |SetAudioStreamPitch|)
+(CFFI:DEFCFUN ("SetAudioStreamPitch" SETAUDIOSTREAMPITCH)
     :VOID
-  (|stream| |AudioStream|)
-  (|pitch| :FLOAT))
+  (STREAM AUDIOSTREAM)
+  (PITCH :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1686:12"
-(CFFI:DEFCFUN ("SetAudioStreamPan" |SetAudioStreamPan|)
+(CFFI:DEFCFUN ("SetAudioStreamPan" SETAUDIOSTREAMPAN)
     :VOID
-  (|stream| |AudioStream|)
-  (|pan| :FLOAT))
+  (STREAM AUDIOSTREAM)
+  (PAN :FLOAT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1687:12"
 (CFFI:DEFCFUN ("SetAudioStreamBufferSizeDefault"
-               |SetAudioStreamBufferSizeDefault|)
+               SETAUDIOSTREAMBUFFERSIZEDEFAULT)
     :VOID
-  (|size| :INT))
+  (SIZE :INT))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1688:12"
-(CFFI:DEFCFUN ("SetAudioStreamCallback" |SetAudioStreamCallback|)
+(CFFI:DEFCFUN ("SetAudioStreamCallback" SETAUDIOSTREAMCALLBACK)
     :VOID
-  (|stream| |AudioStream|)
-  (|callback| |AudioCallback|))
+  (STREAM AUDIOSTREAM)
+  (CALLBACK AUDIOCALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1690:12"
-(CFFI:DEFCFUN ("AttachAudioStreamProcessor" |AttachAudioStreamProcessor|)
+(CFFI:DEFCFUN ("AttachAudioStreamProcessor" ATTACHAUDIOSTREAMPROCESSOR)
     :VOID
-  (|stream| |AudioStream|)
-  (|processor| |AudioCallback|))
+  (STREAM AUDIOSTREAM)
+  (PROCESSOR AUDIOCALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1691:12"
-(CFFI:DEFCFUN ("DetachAudioStreamProcessor" |DetachAudioStreamProcessor|)
+(CFFI:DEFCFUN ("DetachAudioStreamProcessor" DETACHAUDIOSTREAMPROCESSOR)
     :VOID
-  (|stream| |AudioStream|)
-  (|processor| |AudioCallback|))
+  (STREAM AUDIOSTREAM)
+  (PROCESSOR AUDIOCALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1693:12"
-(CFFI:DEFCFUN ("AttachAudioMixedProcessor" |AttachAudioMixedProcessor|)
+(CFFI:DEFCFUN ("AttachAudioMixedProcessor" ATTACHAUDIOMIXEDPROCESSOR)
     :VOID
-  (|processor| |AudioCallback|))
+  (PROCESSOR AUDIOCALLBACK))
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:1694:12"
-(CFFI:DEFCFUN ("DetachAudioMixedProcessor" |DetachAudioMixedProcessor|)
+(CFFI:DEFCFUN ("DetachAudioMixedProcessor" DETACHAUDIOMIXEDPROCESSOR)
     :VOID
-  (|processor| |AudioCallback|))
+  (PROCESSOR AUDIOCALLBACK))
 
 
 ;; "/usr/lib/llvm-18/lib/clang/18/include/stdbool.h:20:9"
 
 ;; "/usr/lib/llvm-18/lib/clang/18/include/stdbool.h:21:9"
-(ALEXANDRIA:DEFINE-CONSTANT |true| 1)
+(ALEXANDRIA:DEFINE-CONSTANT TRUE 1)
 
 
 ;; "/usr/lib/llvm-18/lib/clang/18/include/stdbool.h:22:9"
-(ALEXANDRIA:DEFINE-CONSTANT |false| 0)
+(ALEXANDRIA:DEFINE-CONSTANT FALSE 0)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:766:9"
@@ -5179,30 +5179,34 @@
 (ALEXANDRIA:DEFINE-CONSTANT MATERIAL_MAP_DIFFUSE 0)
 
 
-;; "/home/anthony/git/af-raylib/spec/raylib.h:121:13"
-(ALEXANDRIA:DEFINE-CONSTANT RAD2DEG 57.29578)
-
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:118:13"
-(ALEXANDRIA:DEFINE-CONSTANT DEG2RAD 0.01745329)
-
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:115:13"
-(ALEXANDRIA:DEFINE-CONSTANT PI 3.141593)
-
-
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:87:9"
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:86:9"
 (ALEXANDRIA:DEFINE-CONSTANT RAYLIB_VERSION_PATCH 0)
 
 
+;; "/home/anthony/git/af-raylib/spec/raylib.h:84:9"
+(ALEXANDRIA:DEFINE-CONSTANT RAYLIB_VERSION_MAJOR 5)
+
+
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:85:9"
 (ALEXANDRIA:DEFINE-CONSTANT RAYLIB_VERSION_MINOR 5)
 
 
-;; "/home/anthony/git/af-raylib/spec/raylib.h:84:9"
-(ALEXANDRIA:DEFINE-CONSTANT RAYLIB_VERSION_MAJOR 5)
+;; "/home/anthony/git/af-raylib/spec/raylib.h:115:13"
+(ALEXANDRIA:DEFINE-CONSTANT PI 3.141593)
+
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:118:13"
+(ALEXANDRIA:DEFINE-CONSTANT DEG2RAD 0.01745329)
+
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:121:13"
+(ALEXANDRIA:DEFINE-CONSTANT RAD2DEG 57.29578)
+
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:688:9"
+(ALEXANDRIA:DEFINE-CONSTANT MOUSE_LEFT_BUTTON 0)
 
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:690:9"
@@ -5213,9 +5217,27 @@
 (ALEXANDRIA:DEFINE-CONSTANT MOUSE_RIGHT_BUTTON 1)
 
 
-;; "/home/anthony/git/af-raylib/spec/raylib.h:688:9"
-(ALEXANDRIA:DEFINE-CONSTANT MOUSE_LEFT_BUTTON 0)
+;; "/home/anthony/git/af-raylib/spec/raylib.h:177:9"
 
+;; "/home/anthony/git/af-raylib/spec/raylib.h:176:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:178:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:179:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:181:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:180:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:183:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:182:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:184:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:185:9"
+
+;; "/home/anthony/git/af-raylib/spec/raylib.h:186:9"
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:169:9"
 
@@ -5231,27 +5253,9 @@
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:175:9"
 
-;; "/home/anthony/git/af-raylib/spec/raylib.h:176:9"
+;; "/usr/lib/llvm-18/lib/clang/18/include/stdbool.h:13:9"
+(ALEXANDRIA:DEFINE-CONSTANT __BOOL_TRUE_FALSE_ARE_DEFINED 1)
 
-;; "/home/anthony/git/af-raylib/spec/raylib.h:177:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:178:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:179:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:181:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:180:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:182:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:183:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:184:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:185:9"
-
-;; "/home/anthony/git/af-raylib/spec/raylib.h:186:9"
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:187:9"
 
@@ -5269,10 +5273,6 @@
 
 ;; "/home/anthony/git/af-raylib/spec/raylib.h:195:9"
 
-;; "/usr/lib/llvm-18/lib/clang/18/include/stdbool.h:13:9"
-(ALEXANDRIA:DEFINE-CONSTANT |__bool_true_false_are_defined| 1)
-
-
 ;; "<command line>:1:9"
 (ALEXANDRIA:DEFINE-CONSTANT __GCC_HAVE_DWARF2_CFI_ASM 1)
 
@@ -5289,677 +5289,626 @@
 (COMMON-LISP:EXPORT 'COMMON-LISP:NIL '#:AF-RAYLIB.LIB)
 
 (COMMON-LISP:DEFPARAMETER +FUNCTION-NAMES+
-  '(("DetachAudioMixedProcessor" . |DetachAudioMixedProcessor|)
-    ("AttachAudioMixedProcessor" . |AttachAudioMixedProcessor|)
-    ("DetachAudioStreamProcessor" . |DetachAudioStreamProcessor|)
-    ("AttachAudioStreamProcessor" . |AttachAudioStreamProcessor|)
-    ("SetAudioStreamCallback" . |SetAudioStreamCallback|)
-    ("SetAudioStreamBufferSizeDefault" . |SetAudioStreamBufferSizeDefault|)
-    ("SetAudioStreamPan" . |SetAudioStreamPan|)
-    ("SetAudioStreamPitch" . |SetAudioStreamPitch|)
-    ("SetAudioStreamVolume" . |SetAudioStreamVolume|)
-    ("StopAudioStream" . |StopAudioStream|)
-    ("IsAudioStreamPlaying" . |IsAudioStreamPlaying|)
-    ("ResumeAudioStream" . |ResumeAudioStream|)
-    ("PauseAudioStream" . |PauseAudioStream|)
-    ("PlayAudioStream" . |PlayAudioStream|)
-    ("IsAudioStreamProcessed" . |IsAudioStreamProcessed|)
-    ("UpdateAudioStream" . |UpdateAudioStream|)
-    ("UnloadAudioStream" . |UnloadAudioStream|)
-    ("IsAudioStreamReady" . |IsAudioStreamReady|)
-    ("LoadAudioStream" . |LoadAudioStream|)
-    ("GetMusicTimePlayed" . |GetMusicTimePlayed|)
-    ("GetMusicTimeLength" . |GetMusicTimeLength|)
-    ("SetMusicPan" . |SetMusicPan|) ("SetMusicPitch" . |SetMusicPitch|)
-    ("SetMusicVolume" . |SetMusicVolume|)
-    ("SeekMusicStream" . |SeekMusicStream|)
-    ("ResumeMusicStream" . |ResumeMusicStream|)
-    ("PauseMusicStream" . |PauseMusicStream|)
-    ("StopMusicStream" . |StopMusicStream|)
-    ("UpdateMusicStream" . |UpdateMusicStream|)
-    ("IsMusicStreamPlaying" . |IsMusicStreamPlaying|)
-    ("PlayMusicStream" . |PlayMusicStream|)
-    ("UnloadMusicStream" . |UnloadMusicStream|)
-    ("IsMusicReady" . |IsMusicReady|)
-    ("LoadMusicStreamFromMemory" . |LoadMusicStreamFromMemory|)
-    ("LoadMusicStream" . |LoadMusicStream|)
-    ("UnloadWaveSamples" . |UnloadWaveSamples|)
-    ("LoadWaveSamples" . |LoadWaveSamples|) ("WaveFormat" . |WaveFormat|)
-    ("WaveCrop" . |WaveCrop|) ("WaveCopy" . |WaveCopy|)
-    ("SetSoundPan" . |SetSoundPan|) ("SetSoundPitch" . |SetSoundPitch|)
-    ("SetSoundVolume" . |SetSoundVolume|) ("IsSoundPlaying" . |IsSoundPlaying|)
-    ("ResumeSound" . |ResumeSound|) ("PauseSound" . |PauseSound|)
-    ("StopSound" . |StopSound|) ("PlaySound" . |PlaySound|)
-    ("ExportWaveAsCode" . |ExportWaveAsCode|) ("ExportWave" . |ExportWave|)
-    ("UnloadSoundAlias" . |UnloadSoundAlias|) ("UnloadSound" . |UnloadSound|)
-    ("UnloadWave" . |UnloadWave|) ("UpdateSound" . |UpdateSound|)
-    ("IsSoundReady" . |IsSoundReady|) ("LoadSoundAlias" . |LoadSoundAlias|)
-    ("LoadSoundFromWave" . |LoadSoundFromWave|) ("LoadSound" . |LoadSound|)
-    ("IsWaveReady" . |IsWaveReady|)
-    ("LoadWaveFromMemory" . |LoadWaveFromMemory|) ("LoadWave" . |LoadWave|)
-    ("GetMasterVolume" . |GetMasterVolume|)
-    ("SetMasterVolume" . |SetMasterVolume|)
-    ("IsAudioDeviceReady" . |IsAudioDeviceReady|)
-    ("CloseAudioDevice" . |CloseAudioDevice|)
-    ("InitAudioDevice" . |InitAudioDevice|)
-    ("GetRayCollisionQuad" . |GetRayCollisionQuad|)
-    ("GetRayCollisionTriangle" . |GetRayCollisionTriangle|)
-    ("GetRayCollisionMesh" . |GetRayCollisionMesh|)
-    ("GetRayCollisionBox" . |GetRayCollisionBox|)
-    ("GetRayCollisionSphere" . |GetRayCollisionSphere|)
-    ("CheckCollisionBoxSphere" . |CheckCollisionBoxSphere|)
-    ("CheckCollisionBoxes" . |CheckCollisionBoxes|)
-    ("CheckCollisionSpheres" . |CheckCollisionSpheres|)
-    ("UpdateModelAnimationBoneMatrices" . |UpdateModelAnimationBoneMatrices|)
-    ("IsModelAnimationValid" . |IsModelAnimationValid|)
-    ("UnloadModelAnimations" . |UnloadModelAnimations|)
-    ("UnloadModelAnimation" . |UnloadModelAnimation|)
-    ("UpdateModelAnimation" . |UpdateModelAnimation|)
-    ("LoadModelAnimations" . |LoadModelAnimations|)
-    ("SetModelMeshMaterial" . |SetModelMeshMaterial|)
-    ("SetMaterialTexture" . |SetMaterialTexture|)
-    ("UnloadMaterial" . |UnloadMaterial|)
-    ("IsMaterialReady" . |IsMaterialReady|)
-    ("LoadMaterialDefault" . |LoadMaterialDefault|)
-    ("LoadMaterials" . |LoadMaterials|) ("GenMeshCubicmap" . |GenMeshCubicmap|)
-    ("GenMeshHeightmap" . |GenMeshHeightmap|) ("GenMeshKnot" . |GenMeshKnot|)
-    ("GenMeshTorus" . |GenMeshTorus|) ("GenMeshCone" . |GenMeshCone|)
-    ("GenMeshCylinder" . |GenMeshCylinder|)
-    ("GenMeshHemiSphere" . |GenMeshHemiSphere|)
-    ("GenMeshSphere" . |GenMeshSphere|) ("GenMeshCube" . |GenMeshCube|)
-    ("GenMeshPlane" . |GenMeshPlane|) ("GenMeshPoly" . |GenMeshPoly|)
-    ("ExportMeshAsCode" . |ExportMeshAsCode|) ("ExportMesh" . |ExportMesh|)
-    ("GenMeshTangents" . |GenMeshTangents|)
-    ("GetMeshBoundingBox" . |GetMeshBoundingBox|)
-    ("DrawMeshInstanced" . |DrawMeshInstanced|) ("DrawMesh" . |DrawMesh|)
-    ("UnloadMesh" . |UnloadMesh|) ("UpdateMeshBuffer" . |UpdateMeshBuffer|)
-    ("UploadMesh" . |UploadMesh|) ("DrawBillboardPro" . |DrawBillboardPro|)
-    ("DrawBillboardRec" . |DrawBillboardRec|)
-    ("DrawBillboard" . |DrawBillboard|) ("DrawBoundingBox" . |DrawBoundingBox|)
-    ("DrawModelPointsEx" . |DrawModelPointsEx|)
-    ("DrawModelPoints" . |DrawModelPoints|)
-    ("DrawModelWiresEx" . |DrawModelWiresEx|)
-    ("DrawModelWires" . |DrawModelWires|) ("DrawModelEx" . |DrawModelEx|)
-    ("DrawModel" . |DrawModel|) ("GetModelBoundingBox" . |GetModelBoundingBox|)
-    ("UnloadModel" . |UnloadModel|) ("IsModelReady" . |IsModelReady|)
-    ("LoadModelFromMesh" . |LoadModelFromMesh|) ("LoadModel" . |LoadModel|)
-    ("DrawGrid" . |DrawGrid|) ("DrawRay" . |DrawRay|)
-    ("DrawPlane" . |DrawPlane|) ("DrawCapsuleWires" . |DrawCapsuleWires|)
-    ("DrawCapsule" . |DrawCapsule|)
-    ("DrawCylinderWiresEx" . |DrawCylinderWiresEx|)
-    ("DrawCylinderWires" . |DrawCylinderWires|)
-    ("DrawCylinderEx" . |DrawCylinderEx|) ("DrawCylinder" . |DrawCylinder|)
-    ("DrawSphereWires" . |DrawSphereWires|) ("DrawSphereEx" . |DrawSphereEx|)
-    ("DrawSphere" . |DrawSphere|) ("DrawCubeWiresV" . |DrawCubeWiresV|)
-    ("DrawCubeWires" . |DrawCubeWires|) ("DrawCubeV" . |DrawCubeV|)
-    ("DrawCube" . |DrawCube|) ("DrawTriangleStrip3D" . |DrawTriangleStrip3D|)
-    ("DrawTriangle3D" . |DrawTriangle3D|) ("DrawCircle3D" . |DrawCircle3D|)
-    ("DrawPoint3D" . |DrawPoint3D|) ("DrawLine3D" . |DrawLine3D|)
-    ("TextToFloat" . |TextToFloat|) ("TextToInteger" . |TextToInteger|)
-    ("TextToCamel" . |TextToCamel|) ("TextToSnake" . |TextToSnake|)
-    ("TextToPascal" . |TextToPascal|) ("TextToLower" . |TextToLower|)
-    ("TextToUpper" . |TextToUpper|) ("TextFindIndex" . |TextFindIndex|)
-    ("TextAppend" . |TextAppend|) ("TextSplit" . |TextSplit|)
-    ("TextJoin" . |TextJoin|) ("TextInsert" . |TextInsert|)
-    ("TextReplace" . |TextReplace|) ("TextSubtext" . |TextSubtext|)
-    ("TextFormat" . |TextFormat|) ("TextLength" . |TextLength|)
-    ("TextIsEqual" . |TextIsEqual|) ("TextCopy" . |TextCopy|)
-    ("CodepointToUTF8" . |CodepointToUTF8|)
-    ("GetCodepointPrevious" . |GetCodepointPrevious|)
-    ("GetCodepointNext" . |GetCodepointNext|) ("GetCodepoint" . |GetCodepoint|)
-    ("GetCodepointCount" . |GetCodepointCount|)
-    ("UnloadCodepoints" . |UnloadCodepoints|)
-    ("LoadCodepoints" . |LoadCodepoints|) ("UnloadUTF8" . |UnloadUTF8|)
-    ("LoadUTF8" . |LoadUTF8|) ("GetGlyphAtlasRec" . |GetGlyphAtlasRec|)
-    ("GetGlyphInfo" . |GetGlyphInfo|) ("GetGlyphIndex" . |GetGlyphIndex|)
-    ("MeasureTextEx" . |MeasureTextEx|) ("MeasureText" . |MeasureText|)
-    ("SetTextLineSpacing" . |SetTextLineSpacing|)
-    ("DrawTextCodepoints" . |DrawTextCodepoints|)
-    ("DrawTextCodepoint" . |DrawTextCodepoint|) ("DrawTextPro" . |DrawTextPro|)
-    ("DrawTextEx" . |DrawTextEx|) ("DrawText" . |DrawText|)
-    ("DrawFPS" . |DrawFPS|) ("ExportFontAsCode" . |ExportFontAsCode|)
-    ("UnloadFont" . |UnloadFont|) ("UnloadFontData" . |UnloadFontData|)
-    ("GenImageFontAtlas" . |GenImageFontAtlas|)
-    ("LoadFontData" . |LoadFontData|) ("IsFontReady" . |IsFontReady|)
-    ("LoadFontFromMemory" . |LoadFontFromMemory|)
-    ("LoadFontFromImage" . |LoadFontFromImage|) ("LoadFontEx" . |LoadFontEx|)
-    ("LoadFont" . |LoadFont|) ("GetFontDefault" . |GetFontDefault|)
-    ("GetPixelDataSize" . |GetPixelDataSize|)
-    ("SetPixelColor" . |SetPixelColor|) ("GetPixelColor" . |GetPixelColor|)
-    ("GetColor" . |GetColor|) ("ColorLerp" . |ColorLerp|)
-    ("ColorAlphaBlend" . |ColorAlphaBlend|) ("ColorAlpha" . |ColorAlpha|)
-    ("ColorContrast" . |ColorContrast|) ("ColorBrightness" . |ColorBrightness|)
-    ("ColorTint" . |ColorTint|) ("ColorFromHSV" . |ColorFromHSV|)
-    ("ColorToHSV" . |ColorToHSV|)
-    ("ColorFromNormalized" . |ColorFromNormalized|)
-    ("ColorNormalize" . |ColorNormalize|) ("ColorToInt" . |ColorToInt|)
-    ("Fade" . |Fade|) ("ColorIsEqual" . |ColorIsEqual|)
-    ("DrawTextureNPatch" . |DrawTextureNPatch|)
-    ("DrawTexturePro" . |DrawTexturePro|) ("DrawTextureRec" . |DrawTextureRec|)
-    ("DrawTextureEx" . |DrawTextureEx|) ("DrawTextureV" . |DrawTextureV|)
-    ("DrawTexture" . |DrawTexture|) ("SetTextureWrap" . |SetTextureWrap|)
-    ("SetTextureFilter" . |SetTextureFilter|)
-    ("GenTextureMipmaps" . |GenTextureMipmaps|)
-    ("UpdateTextureRec" . |UpdateTextureRec|)
-    ("UpdateTexture" . |UpdateTexture|)
-    ("UnloadRenderTexture" . |UnloadRenderTexture|)
-    ("IsRenderTextureReady" . |IsRenderTextureReady|)
-    ("UnloadTexture" . |UnloadTexture|) ("IsTextureReady" . |IsTextureReady|)
-    ("LoadRenderTexture" . |LoadRenderTexture|)
-    ("LoadTextureCubemap" . |LoadTextureCubemap|)
-    ("LoadTextureFromImage" . |LoadTextureFromImage|)
-    ("LoadTexture" . |LoadTexture|) ("ImageDrawTextEx" . |ImageDrawTextEx|)
-    ("ImageDrawText" . |ImageDrawText|) ("ImageDraw" . |ImageDraw|)
-    ("ImageDrawTriangleStrip" . |ImageDrawTriangleStrip|)
-    ("ImageDrawTriangleFan" . |ImageDrawTriangleFan|)
-    ("ImageDrawTriangleLines" . |ImageDrawTriangleLines|)
-    ("ImageDrawTriangleEx" . |ImageDrawTriangleEx|)
-    ("ImageDrawTriangle" . |ImageDrawTriangle|)
-    ("ImageDrawRectangleLines" . |ImageDrawRectangleLines|)
-    ("ImageDrawRectangleRec" . |ImageDrawRectangleRec|)
-    ("ImageDrawRectangleV" . |ImageDrawRectangleV|)
-    ("ImageDrawRectangle" . |ImageDrawRectangle|)
-    ("ImageDrawCircleLinesV" . |ImageDrawCircleLinesV|)
-    ("ImageDrawCircleLines" . |ImageDrawCircleLines|)
-    ("ImageDrawCircleV" . |ImageDrawCircleV|)
-    ("ImageDrawCircle" . |ImageDrawCircle|)
-    ("ImageDrawLineEx" . |ImageDrawLineEx|)
-    ("ImageDrawLineV" . |ImageDrawLineV|) ("ImageDrawLine" . |ImageDrawLine|)
-    ("ImageDrawPixelV" . |ImageDrawPixelV|)
-    ("ImageDrawPixel" . |ImageDrawPixel|)
-    ("ImageClearBackground" . |ImageClearBackground|)
-    ("GetImageColor" . |GetImageColor|)
-    ("GetImageAlphaBorder" . |GetImageAlphaBorder|)
-    ("UnloadImagePalette" . |UnloadImagePalette|)
-    ("UnloadImageColors" . |UnloadImageColors|)
-    ("LoadImagePalette" . |LoadImagePalette|)
-    ("LoadImageColors" . |LoadImageColors|)
-    ("ImageColorReplace" . |ImageColorReplace|)
-    ("ImageColorBrightness" . |ImageColorBrightness|)
-    ("ImageColorContrast" . |ImageColorContrast|)
-    ("ImageColorGrayscale" . |ImageColorGrayscale|)
-    ("ImageColorInvert" . |ImageColorInvert|)
-    ("ImageColorTint" . |ImageColorTint|) ("ImageRotateCCW" . |ImageRotateCCW|)
-    ("ImageRotateCW" . |ImageRotateCW|) ("ImageRotate" . |ImageRotate|)
-    ("ImageFlipHorizontal" . |ImageFlipHorizontal|)
-    ("ImageFlipVertical" . |ImageFlipVertical|) ("ImageDither" . |ImageDither|)
-    ("ImageMipmaps" . |ImageMipmaps|)
-    ("ImageResizeCanvas" . |ImageResizeCanvas|)
-    ("ImageResizeNN" . |ImageResizeNN|) ("ImageResize" . |ImageResize|)
-    ("ImageKernelConvolution" . |ImageKernelConvolution|)
-    ("ImageBlurGaussian" . |ImageBlurGaussian|)
-    ("ImageAlphaPremultiply" . |ImageAlphaPremultiply|)
-    ("ImageAlphaMask" . |ImageAlphaMask|)
-    ("ImageAlphaClear" . |ImageAlphaClear|)
-    ("ImageAlphaCrop" . |ImageAlphaCrop|) ("ImageCrop" . |ImageCrop|)
-    ("ImageToPOT" . |ImageToPOT|) ("ImageFormat" . |ImageFormat|)
-    ("ImageTextEx" . |ImageTextEx|) ("ImageText" . |ImageText|)
-    ("ImageFromChannel" . |ImageFromChannel|)
-    ("ImageFromImage" . |ImageFromImage|) ("ImageCopy" . |ImageCopy|)
-    ("GenImageText" . |GenImageText|) ("GenImageCellular" . |GenImageCellular|)
-    ("GenImagePerlinNoise" . |GenImagePerlinNoise|)
-    ("GenImageWhiteNoise" . |GenImageWhiteNoise|)
-    ("GenImageChecked" . |GenImageChecked|)
-    ("GenImageGradientSquare" . |GenImageGradientSquare|)
-    ("GenImageGradientRadial" . |GenImageGradientRadial|)
-    ("GenImageGradientLinear" . |GenImageGradientLinear|)
-    ("GenImageColor" . |GenImageColor|)
-    ("ExportImageAsCode" . |ExportImageAsCode|)
-    ("ExportImageToMemory" . |ExportImageToMemory|)
-    ("ExportImage" . |ExportImage|) ("UnloadImage" . |UnloadImage|)
-    ("IsImageReady" . |IsImageReady|)
-    ("LoadImageFromScreen" . |LoadImageFromScreen|)
-    ("LoadImageFromTexture" . |LoadImageFromTexture|)
-    ("LoadImageFromMemory" . |LoadImageFromMemory|)
-    ("LoadImageAnimFromMemory" . |LoadImageAnimFromMemory|)
-    ("LoadImageAnim" . |LoadImageAnim|) ("LoadImageRaw" . |LoadImageRaw|)
-    ("LoadImage" . |LoadImage|) ("GetCollisionRec" . |GetCollisionRec|)
-    ("CheckCollisionCircleLine" . |CheckCollisionCircleLine|)
-    ("CheckCollisionPointLine" . |CheckCollisionPointLine|)
-    ("CheckCollisionLines" . |CheckCollisionLines|)
-    ("CheckCollisionPointPoly" . |CheckCollisionPointPoly|)
-    ("CheckCollisionPointTriangle" . |CheckCollisionPointTriangle|)
-    ("CheckCollisionPointCircle" . |CheckCollisionPointCircle|)
-    ("CheckCollisionPointRec" . |CheckCollisionPointRec|)
-    ("CheckCollisionCircleRec" . |CheckCollisionCircleRec|)
-    ("CheckCollisionCircles" . |CheckCollisionCircles|)
-    ("CheckCollisionRecs" . |CheckCollisionRecs|)
-    ("GetSplinePointBezierCubic" . |GetSplinePointBezierCubic|)
-    ("GetSplinePointBezierQuad" . |GetSplinePointBezierQuad|)
-    ("GetSplinePointCatmullRom" . |GetSplinePointCatmullRom|)
-    ("GetSplinePointBasis" . |GetSplinePointBasis|)
-    ("GetSplinePointLinear" . |GetSplinePointLinear|)
-    ("DrawSplineSegmentBezierCubic" . |DrawSplineSegmentBezierCubic|)
-    ("DrawSplineSegmentBezierQuadratic" . |DrawSplineSegmentBezierQuadratic|)
-    ("DrawSplineSegmentCatmullRom" . |DrawSplineSegmentCatmullRom|)
-    ("DrawSplineSegmentBasis" . |DrawSplineSegmentBasis|)
-    ("DrawSplineSegmentLinear" . |DrawSplineSegmentLinear|)
-    ("DrawSplineBezierCubic" . |DrawSplineBezierCubic|)
-    ("DrawSplineBezierQuadratic" . |DrawSplineBezierQuadratic|)
-    ("DrawSplineCatmullRom" . |DrawSplineCatmullRom|)
-    ("DrawSplineBasis" . |DrawSplineBasis|)
-    ("DrawSplineLinear" . |DrawSplineLinear|)
-    ("DrawPolyLinesEx" . |DrawPolyLinesEx|) ("DrawPolyLines" . |DrawPolyLines|)
-    ("DrawPoly" . |DrawPoly|) ("DrawTriangleStrip" . |DrawTriangleStrip|)
-    ("DrawTriangleFan" . |DrawTriangleFan|)
-    ("DrawTriangleLines" . |DrawTriangleLines|)
-    ("DrawTriangle" . |DrawTriangle|)
-    ("DrawRectangleRoundedLinesEx" . |DrawRectangleRoundedLinesEx|)
-    ("DrawRectangleRoundedLines" . |DrawRectangleRoundedLines|)
-    ("DrawRectangleRounded" . |DrawRectangleRounded|)
-    ("DrawRectangleLinesEx" . |DrawRectangleLinesEx|)
-    ("DrawRectangleLines" . |DrawRectangleLines|)
-    ("DrawRectangleGradientEx" . |DrawRectangleGradientEx|)
-    ("DrawRectangleGradientH" . |DrawRectangleGradientH|)
-    ("DrawRectangleGradientV" . |DrawRectangleGradientV|)
-    ("DrawRectanglePro" . |DrawRectanglePro|)
-    ("DrawRectangleRec" . |DrawRectangleRec|)
-    ("DrawRectangleV" . |DrawRectangleV|) ("DrawRectangle" . |DrawRectangle|)
-    ("DrawRingLines" . |DrawRingLines|) ("DrawRing" . |DrawRing|)
-    ("DrawEllipseLines" . |DrawEllipseLines|) ("DrawEllipse" . |DrawEllipse|)
-    ("DrawCircleLinesV" . |DrawCircleLinesV|)
-    ("DrawCircleLines" . |DrawCircleLines|) ("DrawCircleV" . |DrawCircleV|)
-    ("DrawCircleGradient" . |DrawCircleGradient|)
-    ("DrawCircleSectorLines" . |DrawCircleSectorLines|)
-    ("DrawCircleSector" . |DrawCircleSector|) ("DrawCircle" . |DrawCircle|)
-    ("DrawLineBezier" . |DrawLineBezier|) ("DrawLineStrip" . |DrawLineStrip|)
-    ("DrawLineEx" . |DrawLineEx|) ("DrawLineV" . |DrawLineV|)
-    ("DrawLine" . |DrawLine|) ("DrawPixelV" . |DrawPixelV|)
-    ("DrawPixel" . |DrawPixel|)
-    ("GetShapesTextureRectangle" . |GetShapesTextureRectangle|)
-    ("GetShapesTexture" . |GetShapesTexture|)
-    ("SetShapesTexture" . |SetShapesTexture|)
-    ("UpdateCameraPro" . |UpdateCameraPro|) ("UpdateCamera" . |UpdateCamera|)
-    ("GetGesturePinchAngle" . |GetGesturePinchAngle|)
-    ("GetGesturePinchVector" . |GetGesturePinchVector|)
-    ("GetGestureDragAngle" . |GetGestureDragAngle|)
-    ("GetGestureDragVector" . |GetGestureDragVector|)
-    ("GetGestureHoldDuration" . |GetGestureHoldDuration|)
-    ("GetGestureDetected" . |GetGestureDetected|)
-    ("IsGestureDetected" . |IsGestureDetected|)
-    ("SetGesturesEnabled" . |SetGesturesEnabled|)
-    ("GetTouchPointCount" . |GetTouchPointCount|)
-    ("GetTouchPointId" . |GetTouchPointId|)
-    ("GetTouchPosition" . |GetTouchPosition|) ("GetTouchY" . |GetTouchY|)
-    ("GetTouchX" . |GetTouchX|) ("SetMouseCursor" . |SetMouseCursor|)
-    ("GetMouseWheelMoveV" . |GetMouseWheelMoveV|)
-    ("GetMouseWheelMove" . |GetMouseWheelMove|)
-    ("SetMouseScale" . |SetMouseScale|) ("SetMouseOffset" . |SetMouseOffset|)
-    ("SetMousePosition" . |SetMousePosition|)
-    ("GetMouseDelta" . |GetMouseDelta|)
-    ("GetMousePosition" . |GetMousePosition|) ("GetMouseY" . |GetMouseY|)
-    ("GetMouseX" . |GetMouseX|) ("IsMouseButtonUp" . |IsMouseButtonUp|)
-    ("IsMouseButtonReleased" . |IsMouseButtonReleased|)
-    ("IsMouseButtonDown" . |IsMouseButtonDown|)
-    ("IsMouseButtonPressed" . |IsMouseButtonPressed|)
-    ("SetGamepadVibration" . |SetGamepadVibration|)
-    ("SetGamepadMappings" . |SetGamepadMappings|)
-    ("GetGamepadAxisMovement" . |GetGamepadAxisMovement|)
-    ("GetGamepadAxisCount" . |GetGamepadAxisCount|)
-    ("GetGamepadButtonPressed" . |GetGamepadButtonPressed|)
-    ("IsGamepadButtonUp" . |IsGamepadButtonUp|)
-    ("IsGamepadButtonReleased" . |IsGamepadButtonReleased|)
-    ("IsGamepadButtonDown" . |IsGamepadButtonDown|)
-    ("IsGamepadButtonPressed" . |IsGamepadButtonPressed|)
-    ("GetGamepadName" . |GetGamepadName|)
-    ("IsGamepadAvailable" . |IsGamepadAvailable|) ("SetExitKey" . |SetExitKey|)
-    ("GetCharPressed" . |GetCharPressed|) ("GetKeyPressed" . |GetKeyPressed|)
-    ("IsKeyUp" . |IsKeyUp|) ("IsKeyReleased" . |IsKeyReleased|)
-    ("IsKeyDown" . |IsKeyDown|) ("IsKeyPressedRepeat" . |IsKeyPressedRepeat|)
-    ("IsKeyPressed" . |IsKeyPressed|)
-    ("PlayAutomationEvent" . |PlayAutomationEvent|)
-    ("StopAutomationEventRecording" . |StopAutomationEventRecording|)
-    ("StartAutomationEventRecording" . |StartAutomationEventRecording|)
-    ("SetAutomationEventBaseFrame" . |SetAutomationEventBaseFrame|)
-    ("SetAutomationEventList" . |SetAutomationEventList|)
-    ("ExportAutomationEventList" . |ExportAutomationEventList|)
-    ("UnloadAutomationEventList" . |UnloadAutomationEventList|)
-    ("LoadAutomationEventList" . |LoadAutomationEventList|)
-    ("ComputeMD5" . |ComputeMD5|) ("ComputeCRC32" . |ComputeCRC32|)
-    ("DecodeDataBase64" . |DecodeDataBase64|)
-    ("EncodeDataBase64" . |EncodeDataBase64|)
-    ("DecompressData" . |DecompressData|) ("CompressData" . |CompressData|)
-    ("GetFileModTime" . |GetFileModTime|)
-    ("UnloadDroppedFiles" . |UnloadDroppedFiles|)
-    ("LoadDroppedFiles" . |LoadDroppedFiles|)
-    ("IsFileDropped" . |IsFileDropped|)
-    ("UnloadDirectoryFiles" . |UnloadDirectoryFiles|)
-    ("LoadDirectoryFilesEx" . |LoadDirectoryFilesEx|)
-    ("LoadDirectoryFiles" . |LoadDirectoryFiles|)
-    ("IsFileNameValid" . |IsFileNameValid|) ("IsPathFile" . |IsPathFile|)
-    ("ChangeDirectory" . |ChangeDirectory|) ("MakeDirectory" . |MakeDirectory|)
-    ("GetApplicationDirectory" . |GetApplicationDirectory|)
-    ("GetWorkingDirectory" . |GetWorkingDirectory|)
-    ("GetPrevDirectoryPath" . |GetPrevDirectoryPath|)
-    ("GetDirectoryPath" . |GetDirectoryPath|)
-    ("GetFileNameWithoutExt" . |GetFileNameWithoutExt|)
-    ("GetFileName" . |GetFileName|) ("GetFileExtension" . |GetFileExtension|)
-    ("GetFileLength" . |GetFileLength|) ("IsFileExtension" . |IsFileExtension|)
-    ("DirectoryExists" . |DirectoryExists|) ("FileExists" . |FileExists|)
-    ("SaveFileText" . |SaveFileText|) ("UnloadFileText" . |UnloadFileText|)
-    ("LoadFileText" . |LoadFileText|) ("ExportDataAsCode" . |ExportDataAsCode|)
-    ("SaveFileData" . |SaveFileData|) ("UnloadFileData" . |UnloadFileData|)
-    ("LoadFileData" . |LoadFileData|)
-    ("SetSaveFileTextCallback" . |SetSaveFileTextCallback|)
-    ("SetLoadFileTextCallback" . |SetLoadFileTextCallback|)
-    ("SetSaveFileDataCallback" . |SetSaveFileDataCallback|)
-    ("SetLoadFileDataCallback" . |SetLoadFileDataCallback|)
-    ("SetTraceLogCallback" . |SetTraceLogCallback|) ("MemFree" . |MemFree|)
-    ("MemRealloc" . |MemRealloc|) ("MemAlloc" . |MemAlloc|)
-    ("SetTraceLogLevel" . |SetTraceLogLevel|) ("TraceLog" . |TraceLog|)
-    ("OpenURL" . |OpenURL|) ("SetConfigFlags" . |SetConfigFlags|)
-    ("TakeScreenshot" . |TakeScreenshot|)
-    ("UnloadRandomSequence" . |UnloadRandomSequence|)
-    ("LoadRandomSequence" . |LoadRandomSequence|)
-    ("GetRandomValue" . |GetRandomValue|) ("SetRandomSeed" . |SetRandomSeed|)
-    ("WaitTime" . |WaitTime|) ("PollInputEvents" . |PollInputEvents|)
-    ("SwapScreenBuffer" . |SwapScreenBuffer|) ("GetFPS" . |GetFPS|)
-    ("GetTime" . |GetTime|) ("GetFrameTime" . |GetFrameTime|)
-    ("SetTargetFPS" . |SetTargetFPS|)
-    ("GetCameraMatrix2D" . |GetCameraMatrix2D|)
-    ("GetCameraMatrix" . |GetCameraMatrix|)
-    ("GetScreenToWorld2D" . |GetScreenToWorld2D|)
-    ("GetWorldToScreen2D" . |GetWorldToScreen2D|)
-    ("GetWorldToScreenEx" . |GetWorldToScreenEx|)
-    ("GetWorldToScreen" . |GetWorldToScreen|)
-    ("GetScreenToWorldRayEx" . |GetScreenToWorldRayEx|)
-    ("GetScreenToWorldRay" . |GetScreenToWorldRay|)
-    ("UnloadShader" . |UnloadShader|)
-    ("SetShaderValueTexture" . |SetShaderValueTexture|)
-    ("SetShaderValueMatrix" . |SetShaderValueMatrix|)
-    ("SetShaderValueV" . |SetShaderValueV|)
-    ("SetShaderValue" . |SetShaderValue|)
-    ("GetShaderLocationAttrib" . |GetShaderLocationAttrib|)
-    ("GetShaderLocation" . |GetShaderLocation|)
-    ("IsShaderReady" . |IsShaderReady|)
-    ("LoadShaderFromMemory" . |LoadShaderFromMemory|)
-    ("LoadShader" . |LoadShader|)
-    ("UnloadVrStereoConfig" . |UnloadVrStereoConfig|)
-    ("LoadVrStereoConfig" . |LoadVrStereoConfig|)
-    ("EndVrStereoMode" . |EndVrStereoMode|)
-    ("BeginVrStereoMode" . |BeginVrStereoMode|)
-    ("EndScissorMode" . |EndScissorMode|)
-    ("BeginScissorMode" . |BeginScissorMode|) ("EndBlendMode" . |EndBlendMode|)
-    ("BeginBlendMode" . |BeginBlendMode|) ("EndShaderMode" . |EndShaderMode|)
-    ("BeginShaderMode" . |BeginShaderMode|)
-    ("EndTextureMode" . |EndTextureMode|)
-    ("BeginTextureMode" . |BeginTextureMode|) ("EndMode3D" . |EndMode3D|)
-    ("BeginMode3D" . |BeginMode3D|) ("EndMode2D" . |EndMode2D|)
-    ("BeginMode2D" . |BeginMode2D|) ("EndDrawing" . |EndDrawing|)
-    ("BeginDrawing" . |BeginDrawing|) ("ClearBackground" . |ClearBackground|)
-    ("IsCursorOnScreen" . |IsCursorOnScreen|)
-    ("DisableCursor" . |DisableCursor|) ("EnableCursor" . |EnableCursor|)
-    ("IsCursorHidden" . |IsCursorHidden|) ("HideCursor" . |HideCursor|)
-    ("ShowCursor" . |ShowCursor|)
-    ("DisableEventWaiting" . |DisableEventWaiting|)
-    ("EnableEventWaiting" . |EnableEventWaiting|)
-    ("GetClipboardText" . |GetClipboardText|)
-    ("SetClipboardText" . |SetClipboardText|)
-    ("GetMonitorName" . |GetMonitorName|)
-    ("GetWindowScaleDPI" . |GetWindowScaleDPI|)
-    ("GetWindowPosition" . |GetWindowPosition|)
-    ("GetMonitorRefreshRate" . |GetMonitorRefreshRate|)
-    ("GetMonitorPhysicalHeight" . |GetMonitorPhysicalHeight|)
-    ("GetMonitorPhysicalWidth" . |GetMonitorPhysicalWidth|)
-    ("GetMonitorHeight" . |GetMonitorHeight|)
-    ("GetMonitorWidth" . |GetMonitorWidth|)
-    ("GetMonitorPosition" . |GetMonitorPosition|)
-    ("GetCurrentMonitor" . |GetCurrentMonitor|)
-    ("GetMonitorCount" . |GetMonitorCount|)
-    ("GetRenderHeight" . |GetRenderHeight|)
-    ("GetRenderWidth" . |GetRenderWidth|)
-    ("GetScreenHeight" . |GetScreenHeight|)
-    ("GetScreenWidth" . |GetScreenWidth|)
-    ("GetWindowHandle" . |GetWindowHandle|)
-    ("SetWindowFocused" . |SetWindowFocused|)
-    ("SetWindowOpacity" . |SetWindowOpacity|)
-    ("SetWindowSize" . |SetWindowSize|)
-    ("SetWindowMaxSize" . |SetWindowMaxSize|)
-    ("SetWindowMinSize" . |SetWindowMinSize|)
-    ("SetWindowMonitor" . |SetWindowMonitor|)
-    ("SetWindowPosition" . |SetWindowPosition|)
-    ("SetWindowTitle" . |SetWindowTitle|) ("SetWindowIcons" . |SetWindowIcons|)
-    ("SetWindowIcon" . |SetWindowIcon|) ("RestoreWindow" . |RestoreWindow|)
-    ("MinimizeWindow" . |MinimizeWindow|) ("MaximizeWindow" . |MaximizeWindow|)
-    ("ToggleBorderlessWindowed" . |ToggleBorderlessWindowed|)
-    ("ToggleFullscreen" . |ToggleFullscreen|)
-    ("ClearWindowState" . |ClearWindowState|)
-    ("SetWindowState" . |SetWindowState|) ("IsWindowState" . |IsWindowState|)
-    ("IsWindowResized" . |IsWindowResized|)
-    ("IsWindowFocused" . |IsWindowFocused|)
-    ("IsWindowMaximized" . |IsWindowMaximized|)
-    ("IsWindowMinimized" . |IsWindowMinimized|)
-    ("IsWindowHidden" . |IsWindowHidden|)
-    ("IsWindowFullscreen" . |IsWindowFullscreen|)
-    ("IsWindowReady" . |IsWindowReady|)
-    ("WindowShouldClose" . |WindowShouldClose|) ("CloseWindow" . |CloseWindow|)
-    ("InitWindow" . |InitWindow|)))
+  '(("DETACHAUDIOMIXEDPROCESSOR" . DETACHAUDIOMIXEDPROCESSOR)
+    ("ATTACHAUDIOMIXEDPROCESSOR" . ATTACHAUDIOMIXEDPROCESSOR)
+    ("DETACHAUDIOSTREAMPROCESSOR" . DETACHAUDIOSTREAMPROCESSOR)
+    ("ATTACHAUDIOSTREAMPROCESSOR" . ATTACHAUDIOSTREAMPROCESSOR)
+    ("SETAUDIOSTREAMCALLBACK" . SETAUDIOSTREAMCALLBACK)
+    ("SETAUDIOSTREAMBUFFERSIZEDEFAULT" . SETAUDIOSTREAMBUFFERSIZEDEFAULT)
+    ("SETAUDIOSTREAMPAN" . SETAUDIOSTREAMPAN)
+    ("SETAUDIOSTREAMPITCH" . SETAUDIOSTREAMPITCH)
+    ("SETAUDIOSTREAMVOLUME" . SETAUDIOSTREAMVOLUME)
+    ("STOPAUDIOSTREAM" . STOPAUDIOSTREAM)
+    ("ISAUDIOSTREAMPLAYING" . ISAUDIOSTREAMPLAYING)
+    ("RESUMEAUDIOSTREAM" . RESUMEAUDIOSTREAM)
+    ("PAUSEAUDIOSTREAM" . PAUSEAUDIOSTREAM)
+    ("PLAYAUDIOSTREAM" . PLAYAUDIOSTREAM)
+    ("ISAUDIOSTREAMPROCESSED" . ISAUDIOSTREAMPROCESSED)
+    ("UPDATEAUDIOSTREAM" . UPDATEAUDIOSTREAM)
+    ("UNLOADAUDIOSTREAM" . UNLOADAUDIOSTREAM)
+    ("ISAUDIOSTREAMREADY" . ISAUDIOSTREAMREADY)
+    ("LOADAUDIOSTREAM" . LOADAUDIOSTREAM)
+    ("GETMUSICTIMEPLAYED" . GETMUSICTIMEPLAYED)
+    ("GETMUSICTIMELENGTH" . GETMUSICTIMELENGTH) ("SETMUSICPAN" . SETMUSICPAN)
+    ("SETMUSICPITCH" . SETMUSICPITCH) ("SETMUSICVOLUME" . SETMUSICVOLUME)
+    ("SEEKMUSICSTREAM" . SEEKMUSICSTREAM)
+    ("RESUMEMUSICSTREAM" . RESUMEMUSICSTREAM)
+    ("PAUSEMUSICSTREAM" . PAUSEMUSICSTREAM)
+    ("STOPMUSICSTREAM" . STOPMUSICSTREAM)
+    ("UPDATEMUSICSTREAM" . UPDATEMUSICSTREAM)
+    ("ISMUSICSTREAMPLAYING" . ISMUSICSTREAMPLAYING)
+    ("PLAYMUSICSTREAM" . PLAYMUSICSTREAM)
+    ("UNLOADMUSICSTREAM" . UNLOADMUSICSTREAM) ("ISMUSICREADY" . ISMUSICREADY)
+    ("LOADMUSICSTREAMFROMMEMORY" . LOADMUSICSTREAMFROMMEMORY)
+    ("LOADMUSICSTREAM" . LOADMUSICSTREAM)
+    ("UNLOADWAVESAMPLES" . UNLOADWAVESAMPLES)
+    ("LOADWAVESAMPLES" . LOADWAVESAMPLES) ("WAVEFORMAT" . WAVEFORMAT)
+    ("WAVECROP" . WAVECROP) ("WAVECOPY" . WAVECOPY)
+    ("SETSOUNDPAN" . SETSOUNDPAN) ("SETSOUNDPITCH" . SETSOUNDPITCH)
+    ("SETSOUNDVOLUME" . SETSOUNDVOLUME) ("ISSOUNDPLAYING" . ISSOUNDPLAYING)
+    ("RESUMESOUND" . RESUMESOUND) ("PAUSESOUND" . PAUSESOUND)
+    ("STOPSOUND" . STOPSOUND) ("PLAYSOUND" . PLAYSOUND)
+    ("EXPORTWAVEASCODE" . EXPORTWAVEASCODE) ("EXPORTWAVE" . EXPORTWAVE)
+    ("UNLOADSOUNDALIAS" . UNLOADSOUNDALIAS) ("UNLOADSOUND" . UNLOADSOUND)
+    ("UNLOADWAVE" . UNLOADWAVE) ("UPDATESOUND" . UPDATESOUND)
+    ("ISSOUNDREADY" . ISSOUNDREADY) ("LOADSOUNDALIAS" . LOADSOUNDALIAS)
+    ("LOADSOUNDFROMWAVE" . LOADSOUNDFROMWAVE) ("LOADSOUND" . LOADSOUND)
+    ("ISWAVEREADY" . ISWAVEREADY) ("LOADWAVEFROMMEMORY" . LOADWAVEFROMMEMORY)
+    ("LOADWAVE" . LOADWAVE) ("GETMASTERVOLUME" . GETMASTERVOLUME)
+    ("SETMASTERVOLUME" . SETMASTERVOLUME)
+    ("ISAUDIODEVICEREADY" . ISAUDIODEVICEREADY)
+    ("CLOSEAUDIODEVICE" . CLOSEAUDIODEVICE)
+    ("INITAUDIODEVICE" . INITAUDIODEVICE)
+    ("GETRAYCOLLISIONQUAD" . GETRAYCOLLISIONQUAD)
+    ("GETRAYCOLLISIONTRIANGLE" . GETRAYCOLLISIONTRIANGLE)
+    ("GETRAYCOLLISIONMESH" . GETRAYCOLLISIONMESH)
+    ("GETRAYCOLLISIONBOX" . GETRAYCOLLISIONBOX)
+    ("GETRAYCOLLISIONSPHERE" . GETRAYCOLLISIONSPHERE)
+    ("CHECKCOLLISIONBOXSPHERE" . CHECKCOLLISIONBOXSPHERE)
+    ("CHECKCOLLISIONBOXES" . CHECKCOLLISIONBOXES)
+    ("CHECKCOLLISIONSPHERES" . CHECKCOLLISIONSPHERES)
+    ("UPDATEMODELANIMATIONBONEMATRICES" . UPDATEMODELANIMATIONBONEMATRICES)
+    ("ISMODELANIMATIONVALID" . ISMODELANIMATIONVALID)
+    ("UNLOADMODELANIMATIONS" . UNLOADMODELANIMATIONS)
+    ("UNLOADMODELANIMATION" . UNLOADMODELANIMATION)
+    ("UPDATEMODELANIMATION" . UPDATEMODELANIMATION)
+    ("LOADMODELANIMATIONS" . LOADMODELANIMATIONS)
+    ("SETMODELMESHMATERIAL" . SETMODELMESHMATERIAL)
+    ("SETMATERIALTEXTURE" . SETMATERIALTEXTURE)
+    ("UNLOADMATERIAL" . UNLOADMATERIAL) ("ISMATERIALREADY" . ISMATERIALREADY)
+    ("LOADMATERIALDEFAULT" . LOADMATERIALDEFAULT)
+    ("LOADMATERIALS" . LOADMATERIALS) ("GENMESHCUBICMAP" . GENMESHCUBICMAP)
+    ("GENMESHHEIGHTMAP" . GENMESHHEIGHTMAP) ("GENMESHKNOT" . GENMESHKNOT)
+    ("GENMESHTORUS" . GENMESHTORUS) ("GENMESHCONE" . GENMESHCONE)
+    ("GENMESHCYLINDER" . GENMESHCYLINDER)
+    ("GENMESHHEMISPHERE" . GENMESHHEMISPHERE) ("GENMESHSPHERE" . GENMESHSPHERE)
+    ("GENMESHCUBE" . GENMESHCUBE) ("GENMESHPLANE" . GENMESHPLANE)
+    ("GENMESHPOLY" . GENMESHPOLY) ("EXPORTMESHASCODE" . EXPORTMESHASCODE)
+    ("EXPORTMESH" . EXPORTMESH) ("GENMESHTANGENTS" . GENMESHTANGENTS)
+    ("GETMESHBOUNDINGBOX" . GETMESHBOUNDINGBOX)
+    ("DRAWMESHINSTANCED" . DRAWMESHINSTANCED) ("DRAWMESH" . DRAWMESH)
+    ("UNLOADMESH" . UNLOADMESH) ("UPDATEMESHBUFFER" . UPDATEMESHBUFFER)
+    ("UPLOADMESH" . UPLOADMESH) ("DRAWBILLBOARDPRO" . DRAWBILLBOARDPRO)
+    ("DRAWBILLBOARDREC" . DRAWBILLBOARDREC) ("DRAWBILLBOARD" . DRAWBILLBOARD)
+    ("DRAWBOUNDINGBOX" . DRAWBOUNDINGBOX)
+    ("DRAWMODELPOINTSEX" . DRAWMODELPOINTSEX)
+    ("DRAWMODELPOINTS" . DRAWMODELPOINTS)
+    ("DRAWMODELWIRESEX" . DRAWMODELWIRESEX) ("DRAWMODELWIRES" . DRAWMODELWIRES)
+    ("DRAWMODELEX" . DRAWMODELEX) ("DRAWMODEL" . DRAWMODEL)
+    ("GETMODELBOUNDINGBOX" . GETMODELBOUNDINGBOX) ("UNLOADMODEL" . UNLOADMODEL)
+    ("ISMODELREADY" . ISMODELREADY) ("LOADMODELFROMMESH" . LOADMODELFROMMESH)
+    ("LOADMODEL" . LOADMODEL) ("DRAWGRID" . DRAWGRID) ("DRAWRAY" . DRAWRAY)
+    ("DRAWPLANE" . DRAWPLANE) ("DRAWCAPSULEWIRES" . DRAWCAPSULEWIRES)
+    ("DRAWCAPSULE" . DRAWCAPSULE) ("DRAWCYLINDERWIRESEX" . DRAWCYLINDERWIRESEX)
+    ("DRAWCYLINDERWIRES" . DRAWCYLINDERWIRES)
+    ("DRAWCYLINDEREX" . DRAWCYLINDEREX) ("DRAWCYLINDER" . DRAWCYLINDER)
+    ("DRAWSPHEREWIRES" . DRAWSPHEREWIRES) ("DRAWSPHEREEX" . DRAWSPHEREEX)
+    ("DRAWSPHERE" . DRAWSPHERE) ("DRAWCUBEWIRESV" . DRAWCUBEWIRESV)
+    ("DRAWCUBEWIRES" . DRAWCUBEWIRES) ("DRAWCUBEV" . DRAWCUBEV)
+    ("DRAWCUBE" . DRAWCUBE) ("DRAWTRIANGLESTRIP3D" . DRAWTRIANGLESTRIP3D)
+    ("DRAWTRIANGLE3D" . DRAWTRIANGLE3D) ("DRAWCIRCLE3D" . DRAWCIRCLE3D)
+    ("DRAWPOINT3D" . DRAWPOINT3D) ("DRAWLINE3D" . DRAWLINE3D)
+    ("TEXTTOFLOAT" . TEXTTOFLOAT) ("TEXTTOINTEGER" . TEXTTOINTEGER)
+    ("TEXTTOCAMEL" . TEXTTOCAMEL) ("TEXTTOSNAKE" . TEXTTOSNAKE)
+    ("TEXTTOPASCAL" . TEXTTOPASCAL) ("TEXTTOLOWER" . TEXTTOLOWER)
+    ("TEXTTOUPPER" . TEXTTOUPPER) ("TEXTFINDINDEX" . TEXTFINDINDEX)
+    ("TEXTAPPEND" . TEXTAPPEND) ("TEXTSPLIT" . TEXTSPLIT)
+    ("TEXTJOIN" . TEXTJOIN) ("TEXTINSERT" . TEXTINSERT)
+    ("TEXTREPLACE" . TEXTREPLACE) ("TEXTSUBTEXT" . TEXTSUBTEXT)
+    ("TEXTFORMAT" . TEXTFORMAT) ("TEXTLENGTH" . TEXTLENGTH)
+    ("TEXTISEQUAL" . TEXTISEQUAL) ("TEXTCOPY" . TEXTCOPY)
+    ("CODEPOINTTOUTF8" . CODEPOINTTOUTF8)
+    ("GETCODEPOINTPREVIOUS" . GETCODEPOINTPREVIOUS)
+    ("GETCODEPOINTNEXT" . GETCODEPOINTNEXT) ("GETCODEPOINT" . GETCODEPOINT)
+    ("GETCODEPOINTCOUNT" . GETCODEPOINTCOUNT)
+    ("UNLOADCODEPOINTS" . UNLOADCODEPOINTS) ("LOADCODEPOINTS" . LOADCODEPOINTS)
+    ("UNLOADUTF8" . UNLOADUTF8) ("LOADUTF8" . LOADUTF8)
+    ("GETGLYPHATLASREC" . GETGLYPHATLASREC) ("GETGLYPHINFO" . GETGLYPHINFO)
+    ("GETGLYPHINDEX" . GETGLYPHINDEX) ("MEASURETEXTEX" . MEASURETEXTEX)
+    ("MEASURETEXT" . MEASURETEXT) ("SETTEXTLINESPACING" . SETTEXTLINESPACING)
+    ("DRAWTEXTCODEPOINTS" . DRAWTEXTCODEPOINTS)
+    ("DRAWTEXTCODEPOINT" . DRAWTEXTCODEPOINT) ("DRAWTEXTPRO" . DRAWTEXTPRO)
+    ("DRAWTEXTEX" . DRAWTEXTEX) ("DRAWTEXT" . DRAWTEXT) ("DRAWFPS" . DRAWFPS)
+    ("EXPORTFONTASCODE" . EXPORTFONTASCODE) ("UNLOADFONT" . UNLOADFONT)
+    ("UNLOADFONTDATA" . UNLOADFONTDATA)
+    ("GENIMAGEFONTATLAS" . GENIMAGEFONTATLAS) ("LOADFONTDATA" . LOADFONTDATA)
+    ("ISFONTREADY" . ISFONTREADY) ("LOADFONTFROMMEMORY" . LOADFONTFROMMEMORY)
+    ("LOADFONTFROMIMAGE" . LOADFONTFROMIMAGE) ("LOADFONTEX" . LOADFONTEX)
+    ("LOADFONT" . LOADFONT) ("GETFONTDEFAULT" . GETFONTDEFAULT)
+    ("GETPIXELDATASIZE" . GETPIXELDATASIZE) ("SETPIXELCOLOR" . SETPIXELCOLOR)
+    ("GETPIXELCOLOR" . GETPIXELCOLOR) ("GETCOLOR" . GETCOLOR)
+    ("COLORLERP" . COLORLERP) ("COLORALPHABLEND" . COLORALPHABLEND)
+    ("COLORALPHA" . COLORALPHA) ("COLORCONTRAST" . COLORCONTRAST)
+    ("COLORBRIGHTNESS" . COLORBRIGHTNESS) ("COLORTINT" . COLORTINT)
+    ("COLORFROMHSV" . COLORFROMHSV) ("COLORTOHSV" . COLORTOHSV)
+    ("COLORFROMNORMALIZED" . COLORFROMNORMALIZED)
+    ("COLORNORMALIZE" . COLORNORMALIZE) ("COLORTOINT" . COLORTOINT)
+    ("FADE" . FADE) ("COLORISEQUAL" . COLORISEQUAL)
+    ("DRAWTEXTURENPATCH" . DRAWTEXTURENPATCH)
+    ("DRAWTEXTUREPRO" . DRAWTEXTUREPRO) ("DRAWTEXTUREREC" . DRAWTEXTUREREC)
+    ("DRAWTEXTUREEX" . DRAWTEXTUREEX) ("DRAWTEXTUREV" . DRAWTEXTUREV)
+    ("DRAWTEXTURE" . DRAWTEXTURE) ("SETTEXTUREWRAP" . SETTEXTUREWRAP)
+    ("SETTEXTUREFILTER" . SETTEXTUREFILTER)
+    ("GENTEXTUREMIPMAPS" . GENTEXTUREMIPMAPS)
+    ("UPDATETEXTUREREC" . UPDATETEXTUREREC) ("UPDATETEXTURE" . UPDATETEXTURE)
+    ("UNLOADRENDERTEXTURE" . UNLOADRENDERTEXTURE)
+    ("ISRENDERTEXTUREREADY" . ISRENDERTEXTUREREADY)
+    ("UNLOADTEXTURE" . UNLOADTEXTURE) ("ISTEXTUREREADY" . ISTEXTUREREADY)
+    ("LOADRENDERTEXTURE" . LOADRENDERTEXTURE)
+    ("LOADTEXTURECUBEMAP" . LOADTEXTURECUBEMAP)
+    ("LOADTEXTUREFROMIMAGE" . LOADTEXTUREFROMIMAGE)
+    ("LOADTEXTURE" . LOADTEXTURE) ("IMAGEDRAWTEXTEX" . IMAGEDRAWTEXTEX)
+    ("IMAGEDRAWTEXT" . IMAGEDRAWTEXT) ("IMAGEDRAW" . IMAGEDRAW)
+    ("IMAGEDRAWTRIANGLESTRIP" . IMAGEDRAWTRIANGLESTRIP)
+    ("IMAGEDRAWTRIANGLEFAN" . IMAGEDRAWTRIANGLEFAN)
+    ("IMAGEDRAWTRIANGLELINES" . IMAGEDRAWTRIANGLELINES)
+    ("IMAGEDRAWTRIANGLEEX" . IMAGEDRAWTRIANGLEEX)
+    ("IMAGEDRAWTRIANGLE" . IMAGEDRAWTRIANGLE)
+    ("IMAGEDRAWRECTANGLELINES" . IMAGEDRAWRECTANGLELINES)
+    ("IMAGEDRAWRECTANGLEREC" . IMAGEDRAWRECTANGLEREC)
+    ("IMAGEDRAWRECTANGLEV" . IMAGEDRAWRECTANGLEV)
+    ("IMAGEDRAWRECTANGLE" . IMAGEDRAWRECTANGLE)
+    ("IMAGEDRAWCIRCLELINESV" . IMAGEDRAWCIRCLELINESV)
+    ("IMAGEDRAWCIRCLELINES" . IMAGEDRAWCIRCLELINES)
+    ("IMAGEDRAWCIRCLEV" . IMAGEDRAWCIRCLEV)
+    ("IMAGEDRAWCIRCLE" . IMAGEDRAWCIRCLE) ("IMAGEDRAWLINEEX" . IMAGEDRAWLINEEX)
+    ("IMAGEDRAWLINEV" . IMAGEDRAWLINEV) ("IMAGEDRAWLINE" . IMAGEDRAWLINE)
+    ("IMAGEDRAWPIXELV" . IMAGEDRAWPIXELV) ("IMAGEDRAWPIXEL" . IMAGEDRAWPIXEL)
+    ("IMAGECLEARBACKGROUND" . IMAGECLEARBACKGROUND)
+    ("GETIMAGECOLOR" . GETIMAGECOLOR)
+    ("GETIMAGEALPHABORDER" . GETIMAGEALPHABORDER)
+    ("UNLOADIMAGEPALETTE" . UNLOADIMAGEPALETTE)
+    ("UNLOADIMAGECOLORS" . UNLOADIMAGECOLORS)
+    ("LOADIMAGEPALETTE" . LOADIMAGEPALETTE)
+    ("LOADIMAGECOLORS" . LOADIMAGECOLORS)
+    ("IMAGECOLORREPLACE" . IMAGECOLORREPLACE)
+    ("IMAGECOLORBRIGHTNESS" . IMAGECOLORBRIGHTNESS)
+    ("IMAGECOLORCONTRAST" . IMAGECOLORCONTRAST)
+    ("IMAGECOLORGRAYSCALE" . IMAGECOLORGRAYSCALE)
+    ("IMAGECOLORINVERT" . IMAGECOLORINVERT) ("IMAGECOLORTINT" . IMAGECOLORTINT)
+    ("IMAGEROTATECCW" . IMAGEROTATECCW) ("IMAGEROTATECW" . IMAGEROTATECW)
+    ("IMAGEROTATE" . IMAGEROTATE) ("IMAGEFLIPHORIZONTAL" . IMAGEFLIPHORIZONTAL)
+    ("IMAGEFLIPVERTICAL" . IMAGEFLIPVERTICAL) ("IMAGEDITHER" . IMAGEDITHER)
+    ("IMAGEMIPMAPS" . IMAGEMIPMAPS) ("IMAGERESIZECANVAS" . IMAGERESIZECANVAS)
+    ("IMAGERESIZENN" . IMAGERESIZENN) ("IMAGERESIZE" . IMAGERESIZE)
+    ("IMAGEKERNELCONVOLUTION" . IMAGEKERNELCONVOLUTION)
+    ("IMAGEBLURGAUSSIAN" . IMAGEBLURGAUSSIAN)
+    ("IMAGEALPHAPREMULTIPLY" . IMAGEALPHAPREMULTIPLY)
+    ("IMAGEALPHAMASK" . IMAGEALPHAMASK) ("IMAGEALPHACLEAR" . IMAGEALPHACLEAR)
+    ("IMAGEALPHACROP" . IMAGEALPHACROP) ("IMAGECROP" . IMAGECROP)
+    ("IMAGETOPOT" . IMAGETOPOT) ("IMAGEFORMAT" . IMAGEFORMAT)
+    ("IMAGETEXTEX" . IMAGETEXTEX) ("IMAGETEXT" . IMAGETEXT)
+    ("IMAGEFROMCHANNEL" . IMAGEFROMCHANNEL) ("IMAGEFROMIMAGE" . IMAGEFROMIMAGE)
+    ("IMAGECOPY" . IMAGECOPY) ("GENIMAGETEXT" . GENIMAGETEXT)
+    ("GENIMAGECELLULAR" . GENIMAGECELLULAR)
+    ("GENIMAGEPERLINNOISE" . GENIMAGEPERLINNOISE)
+    ("GENIMAGEWHITENOISE" . GENIMAGEWHITENOISE)
+    ("GENIMAGECHECKED" . GENIMAGECHECKED)
+    ("GENIMAGEGRADIENTSQUARE" . GENIMAGEGRADIENTSQUARE)
+    ("GENIMAGEGRADIENTRADIAL" . GENIMAGEGRADIENTRADIAL)
+    ("GENIMAGEGRADIENTLINEAR" . GENIMAGEGRADIENTLINEAR)
+    ("GENIMAGECOLOR" . GENIMAGECOLOR) ("EXPORTIMAGEASCODE" . EXPORTIMAGEASCODE)
+    ("EXPORTIMAGETOMEMORY" . EXPORTIMAGETOMEMORY) ("EXPORTIMAGE" . EXPORTIMAGE)
+    ("UNLOADIMAGE" . UNLOADIMAGE) ("ISIMAGEREADY" . ISIMAGEREADY)
+    ("LOADIMAGEFROMSCREEN" . LOADIMAGEFROMSCREEN)
+    ("LOADIMAGEFROMTEXTURE" . LOADIMAGEFROMTEXTURE)
+    ("LOADIMAGEFROMMEMORY" . LOADIMAGEFROMMEMORY)
+    ("LOADIMAGEANIMFROMMEMORY" . LOADIMAGEANIMFROMMEMORY)
+    ("LOADIMAGEANIM" . LOADIMAGEANIM) ("LOADIMAGERAW" . LOADIMAGERAW)
+    ("LOADIMAGE" . LOADIMAGE) ("GETCOLLISIONREC" . GETCOLLISIONREC)
+    ("CHECKCOLLISIONCIRCLELINE" . CHECKCOLLISIONCIRCLELINE)
+    ("CHECKCOLLISIONPOINTLINE" . CHECKCOLLISIONPOINTLINE)
+    ("CHECKCOLLISIONLINES" . CHECKCOLLISIONLINES)
+    ("CHECKCOLLISIONPOINTPOLY" . CHECKCOLLISIONPOINTPOLY)
+    ("CHECKCOLLISIONPOINTTRIANGLE" . CHECKCOLLISIONPOINTTRIANGLE)
+    ("CHECKCOLLISIONPOINTCIRCLE" . CHECKCOLLISIONPOINTCIRCLE)
+    ("CHECKCOLLISIONPOINTREC" . CHECKCOLLISIONPOINTREC)
+    ("CHECKCOLLISIONCIRCLEREC" . CHECKCOLLISIONCIRCLEREC)
+    ("CHECKCOLLISIONCIRCLES" . CHECKCOLLISIONCIRCLES)
+    ("CHECKCOLLISIONRECS" . CHECKCOLLISIONRECS)
+    ("GETSPLINEPOINTBEZIERCUBIC" . GETSPLINEPOINTBEZIERCUBIC)
+    ("GETSPLINEPOINTBEZIERQUAD" . GETSPLINEPOINTBEZIERQUAD)
+    ("GETSPLINEPOINTCATMULLROM" . GETSPLINEPOINTCATMULLROM)
+    ("GETSPLINEPOINTBASIS" . GETSPLINEPOINTBASIS)
+    ("GETSPLINEPOINTLINEAR" . GETSPLINEPOINTLINEAR)
+    ("DRAWSPLINESEGMENTBEZIERCUBIC" . DRAWSPLINESEGMENTBEZIERCUBIC)
+    ("DRAWSPLINESEGMENTBEZIERQUADRATIC" . DRAWSPLINESEGMENTBEZIERQUADRATIC)
+    ("DRAWSPLINESEGMENTCATMULLROM" . DRAWSPLINESEGMENTCATMULLROM)
+    ("DRAWSPLINESEGMENTBASIS" . DRAWSPLINESEGMENTBASIS)
+    ("DRAWSPLINESEGMENTLINEAR" . DRAWSPLINESEGMENTLINEAR)
+    ("DRAWSPLINEBEZIERCUBIC" . DRAWSPLINEBEZIERCUBIC)
+    ("DRAWSPLINEBEZIERQUADRATIC" . DRAWSPLINEBEZIERQUADRATIC)
+    ("DRAWSPLINECATMULLROM" . DRAWSPLINECATMULLROM)
+    ("DRAWSPLINEBASIS" . DRAWSPLINEBASIS)
+    ("DRAWSPLINELINEAR" . DRAWSPLINELINEAR)
+    ("DRAWPOLYLINESEX" . DRAWPOLYLINESEX) ("DRAWPOLYLINES" . DRAWPOLYLINES)
+    ("DRAWPOLY" . DRAWPOLY) ("DRAWTRIANGLESTRIP" . DRAWTRIANGLESTRIP)
+    ("DRAWTRIANGLEFAN" . DRAWTRIANGLEFAN)
+    ("DRAWTRIANGLELINES" . DRAWTRIANGLELINES) ("DRAWTRIANGLE" . DRAWTRIANGLE)
+    ("DRAWRECTANGLEROUNDEDLINESEX" . DRAWRECTANGLEROUNDEDLINESEX)
+    ("DRAWRECTANGLEROUNDEDLINES" . DRAWRECTANGLEROUNDEDLINES)
+    ("DRAWRECTANGLEROUNDED" . DRAWRECTANGLEROUNDED)
+    ("DRAWRECTANGLELINESEX" . DRAWRECTANGLELINESEX)
+    ("DRAWRECTANGLELINES" . DRAWRECTANGLELINES)
+    ("DRAWRECTANGLEGRADIENTEX" . DRAWRECTANGLEGRADIENTEX)
+    ("DRAWRECTANGLEGRADIENTH" . DRAWRECTANGLEGRADIENTH)
+    ("DRAWRECTANGLEGRADIENTV" . DRAWRECTANGLEGRADIENTV)
+    ("DRAWRECTANGLEPRO" . DRAWRECTANGLEPRO)
+    ("DRAWRECTANGLEREC" . DRAWRECTANGLEREC) ("DRAWRECTANGLEV" . DRAWRECTANGLEV)
+    ("DRAWRECTANGLE" . DRAWRECTANGLE) ("DRAWRINGLINES" . DRAWRINGLINES)
+    ("DRAWRING" . DRAWRING) ("DRAWELLIPSELINES" . DRAWELLIPSELINES)
+    ("DRAWELLIPSE" . DRAWELLIPSE) ("DRAWCIRCLELINESV" . DRAWCIRCLELINESV)
+    ("DRAWCIRCLELINES" . DRAWCIRCLELINES) ("DRAWCIRCLEV" . DRAWCIRCLEV)
+    ("DRAWCIRCLEGRADIENT" . DRAWCIRCLEGRADIENT)
+    ("DRAWCIRCLESECTORLINES" . DRAWCIRCLESECTORLINES)
+    ("DRAWCIRCLESECTOR" . DRAWCIRCLESECTOR) ("DRAWCIRCLE" . DRAWCIRCLE)
+    ("DRAWLINEBEZIER" . DRAWLINEBEZIER) ("DRAWLINESTRIP" . DRAWLINESTRIP)
+    ("DRAWLINEEX" . DRAWLINEEX) ("DRAWLINEV" . DRAWLINEV)
+    ("DRAWLINE" . DRAWLINE) ("DRAWPIXELV" . DRAWPIXELV)
+    ("DRAWPIXEL" . DRAWPIXEL)
+    ("GETSHAPESTEXTURERECTANGLE" . GETSHAPESTEXTURERECTANGLE)
+    ("GETSHAPESTEXTURE" . GETSHAPESTEXTURE)
+    ("SETSHAPESTEXTURE" . SETSHAPESTEXTURE)
+    ("UPDATECAMERAPRO" . UPDATECAMERAPRO) ("UPDATECAMERA" . UPDATECAMERA)
+    ("GETGESTUREPINCHANGLE" . GETGESTUREPINCHANGLE)
+    ("GETGESTUREPINCHVECTOR" . GETGESTUREPINCHVECTOR)
+    ("GETGESTUREDRAGANGLE" . GETGESTUREDRAGANGLE)
+    ("GETGESTUREDRAGVECTOR" . GETGESTUREDRAGVECTOR)
+    ("GETGESTUREHOLDDURATION" . GETGESTUREHOLDDURATION)
+    ("GETGESTUREDETECTED" . GETGESTUREDETECTED)
+    ("ISGESTUREDETECTED" . ISGESTUREDETECTED)
+    ("SETGESTURESENABLED" . SETGESTURESENABLED)
+    ("GETTOUCHPOINTCOUNT" . GETTOUCHPOINTCOUNT)
+    ("GETTOUCHPOINTID" . GETTOUCHPOINTID)
+    ("GETTOUCHPOSITION" . GETTOUCHPOSITION) ("GETTOUCHY" . GETTOUCHY)
+    ("GETTOUCHX" . GETTOUCHX) ("SETMOUSECURSOR" . SETMOUSECURSOR)
+    ("GETMOUSEWHEELMOVEV" . GETMOUSEWHEELMOVEV)
+    ("GETMOUSEWHEELMOVE" . GETMOUSEWHEELMOVE) ("SETMOUSESCALE" . SETMOUSESCALE)
+    ("SETMOUSEOFFSET" . SETMOUSEOFFSET) ("SETMOUSEPOSITION" . SETMOUSEPOSITION)
+    ("GETMOUSEDELTA" . GETMOUSEDELTA) ("GETMOUSEPOSITION" . GETMOUSEPOSITION)
+    ("GETMOUSEY" . GETMOUSEY) ("GETMOUSEX" . GETMOUSEX)
+    ("ISMOUSEBUTTONUP" . ISMOUSEBUTTONUP)
+    ("ISMOUSEBUTTONRELEASED" . ISMOUSEBUTTONRELEASED)
+    ("ISMOUSEBUTTONDOWN" . ISMOUSEBUTTONDOWN)
+    ("ISMOUSEBUTTONPRESSED" . ISMOUSEBUTTONPRESSED)
+    ("SETGAMEPADVIBRATION" . SETGAMEPADVIBRATION)
+    ("SETGAMEPADMAPPINGS" . SETGAMEPADMAPPINGS)
+    ("GETGAMEPADAXISMOVEMENT" . GETGAMEPADAXISMOVEMENT)
+    ("GETGAMEPADAXISCOUNT" . GETGAMEPADAXISCOUNT)
+    ("GETGAMEPADBUTTONPRESSED" . GETGAMEPADBUTTONPRESSED)
+    ("ISGAMEPADBUTTONUP" . ISGAMEPADBUTTONUP)
+    ("ISGAMEPADBUTTONRELEASED" . ISGAMEPADBUTTONRELEASED)
+    ("ISGAMEPADBUTTONDOWN" . ISGAMEPADBUTTONDOWN)
+    ("ISGAMEPADBUTTONPRESSED" . ISGAMEPADBUTTONPRESSED)
+    ("GETGAMEPADNAME" . GETGAMEPADNAME)
+    ("ISGAMEPADAVAILABLE" . ISGAMEPADAVAILABLE) ("SETEXITKEY" . SETEXITKEY)
+    ("GETCHARPRESSED" . GETCHARPRESSED) ("GETKEYPRESSED" . GETKEYPRESSED)
+    ("ISKEYUP" . ISKEYUP) ("ISKEYRELEASED" . ISKEYRELEASED)
+    ("ISKEYDOWN" . ISKEYDOWN) ("ISKEYPRESSEDREPEAT" . ISKEYPRESSEDREPEAT)
+    ("ISKEYPRESSED" . ISKEYPRESSED)
+    ("PLAYAUTOMATIONEVENT" . PLAYAUTOMATIONEVENT)
+    ("STOPAUTOMATIONEVENTRECORDING" . STOPAUTOMATIONEVENTRECORDING)
+    ("STARTAUTOMATIONEVENTRECORDING" . STARTAUTOMATIONEVENTRECORDING)
+    ("SETAUTOMATIONEVENTBASEFRAME" . SETAUTOMATIONEVENTBASEFRAME)
+    ("SETAUTOMATIONEVENTLIST" . SETAUTOMATIONEVENTLIST)
+    ("EXPORTAUTOMATIONEVENTLIST" . EXPORTAUTOMATIONEVENTLIST)
+    ("UNLOADAUTOMATIONEVENTLIST" . UNLOADAUTOMATIONEVENTLIST)
+    ("LOADAUTOMATIONEVENTLIST" . LOADAUTOMATIONEVENTLIST)
+    ("COMPUTEMD5" . COMPUTEMD5) ("COMPUTECRC32" . COMPUTECRC32)
+    ("DECODEDATABASE64" . DECODEDATABASE64)
+    ("ENCODEDATABASE64" . ENCODEDATABASE64) ("DECOMPRESSDATA" . DECOMPRESSDATA)
+    ("COMPRESSDATA" . COMPRESSDATA) ("GETFILEMODTIME" . GETFILEMODTIME)
+    ("UNLOADDROPPEDFILES" . UNLOADDROPPEDFILES)
+    ("LOADDROPPEDFILES" . LOADDROPPEDFILES) ("ISFILEDROPPED" . ISFILEDROPPED)
+    ("UNLOADDIRECTORYFILES" . UNLOADDIRECTORYFILES)
+    ("LOADDIRECTORYFILESEX" . LOADDIRECTORYFILESEX)
+    ("LOADDIRECTORYFILES" . LOADDIRECTORYFILES)
+    ("ISFILENAMEVALID" . ISFILENAMEVALID) ("ISPATHFILE" . ISPATHFILE)
+    ("CHANGEDIRECTORY" . CHANGEDIRECTORY) ("MAKEDIRECTORY" . MAKEDIRECTORY)
+    ("GETAPPLICATIONDIRECTORY" . GETAPPLICATIONDIRECTORY)
+    ("GETWORKINGDIRECTORY" . GETWORKINGDIRECTORY)
+    ("GETPREVDIRECTORYPATH" . GETPREVDIRECTORYPATH)
+    ("GETDIRECTORYPATH" . GETDIRECTORYPATH)
+    ("GETFILENAMEWITHOUTEXT" . GETFILENAMEWITHOUTEXT)
+    ("GETFILENAME" . GETFILENAME) ("GETFILEEXTENSION" . GETFILEEXTENSION)
+    ("GETFILELENGTH" . GETFILELENGTH) ("ISFILEEXTENSION" . ISFILEEXTENSION)
+    ("DIRECTORYEXISTS" . DIRECTORYEXISTS) ("FILEEXISTS" . FILEEXISTS)
+    ("SAVEFILETEXT" . SAVEFILETEXT) ("UNLOADFILETEXT" . UNLOADFILETEXT)
+    ("LOADFILETEXT" . LOADFILETEXT) ("EXPORTDATAASCODE" . EXPORTDATAASCODE)
+    ("SAVEFILEDATA" . SAVEFILEDATA) ("UNLOADFILEDATA" . UNLOADFILEDATA)
+    ("LOADFILEDATA" . LOADFILEDATA)
+    ("SETSAVEFILETEXTCALLBACK" . SETSAVEFILETEXTCALLBACK)
+    ("SETLOADFILETEXTCALLBACK" . SETLOADFILETEXTCALLBACK)
+    ("SETSAVEFILEDATACALLBACK" . SETSAVEFILEDATACALLBACK)
+    ("SETLOADFILEDATACALLBACK" . SETLOADFILEDATACALLBACK)
+    ("SETTRACELOGCALLBACK" . SETTRACELOGCALLBACK) ("MEMFREE" . MEMFREE)
+    ("MEMREALLOC" . MEMREALLOC) ("MEMALLOC" . MEMALLOC)
+    ("SETTRACELOGLEVEL" . SETTRACELOGLEVEL) ("TRACELOG" . TRACELOG)
+    ("OPENURL" . OPENURL) ("SETCONFIGFLAGS" . SETCONFIGFLAGS)
+    ("TAKESCREENSHOT" . TAKESCREENSHOT)
+    ("UNLOADRANDOMSEQUENCE" . UNLOADRANDOMSEQUENCE)
+    ("LOADRANDOMSEQUENCE" . LOADRANDOMSEQUENCE)
+    ("GETRANDOMVALUE" . GETRANDOMVALUE) ("SETRANDOMSEED" . SETRANDOMSEED)
+    ("WAITTIME" . WAITTIME) ("POLLINPUTEVENTS" . POLLINPUTEVENTS)
+    ("SWAPSCREENBUFFER" . SWAPSCREENBUFFER) ("GETFPS" . GETFPS)
+    ("GETTIME" . GETTIME) ("GETFRAMETIME" . GETFRAMETIME)
+    ("SETTARGETFPS" . SETTARGETFPS) ("GETCAMERAMATRIX2D" . GETCAMERAMATRIX2D)
+    ("GETCAMERAMATRIX" . GETCAMERAMATRIX)
+    ("GETSCREENTOWORLD2D" . GETSCREENTOWORLD2D)
+    ("GETWORLDTOSCREEN2D" . GETWORLDTOSCREEN2D)
+    ("GETWORLDTOSCREENEX" . GETWORLDTOSCREENEX)
+    ("GETWORLDTOSCREEN" . GETWORLDTOSCREEN)
+    ("GETSCREENTOWORLDRAYEX" . GETSCREENTOWORLDRAYEX)
+    ("GETSCREENTOWORLDRAY" . GETSCREENTOWORLDRAY)
+    ("UNLOADSHADER" . UNLOADSHADER)
+    ("SETSHADERVALUETEXTURE" . SETSHADERVALUETEXTURE)
+    ("SETSHADERVALUEMATRIX" . SETSHADERVALUEMATRIX)
+    ("SETSHADERVALUEV" . SETSHADERVALUEV) ("SETSHADERVALUE" . SETSHADERVALUE)
+    ("GETSHADERLOCATIONATTRIB" . GETSHADERLOCATIONATTRIB)
+    ("GETSHADERLOCATION" . GETSHADERLOCATION) ("ISSHADERREADY" . ISSHADERREADY)
+    ("LOADSHADERFROMMEMORY" . LOADSHADERFROMMEMORY) ("LOADSHADER" . LOADSHADER)
+    ("UNLOADVRSTEREOCONFIG" . UNLOADVRSTEREOCONFIG)
+    ("LOADVRSTEREOCONFIG" . LOADVRSTEREOCONFIG)
+    ("ENDVRSTEREOMODE" . ENDVRSTEREOMODE)
+    ("BEGINVRSTEREOMODE" . BEGINVRSTEREOMODE)
+    ("ENDSCISSORMODE" . ENDSCISSORMODE) ("BEGINSCISSORMODE" . BEGINSCISSORMODE)
+    ("ENDBLENDMODE" . ENDBLENDMODE) ("BEGINBLENDMODE" . BEGINBLENDMODE)
+    ("ENDSHADERMODE" . ENDSHADERMODE) ("BEGINSHADERMODE" . BEGINSHADERMODE)
+    ("ENDTEXTUREMODE" . ENDTEXTUREMODE) ("BEGINTEXTUREMODE" . BEGINTEXTUREMODE)
+    ("ENDMODE3D" . ENDMODE3D) ("BEGINMODE3D" . BEGINMODE3D)
+    ("ENDMODE2D" . ENDMODE2D) ("BEGINMODE2D" . BEGINMODE2D)
+    ("ENDDRAWING" . ENDDRAWING) ("BEGINDRAWING" . BEGINDRAWING)
+    ("CLEARBACKGROUND" . CLEARBACKGROUND)
+    ("ISCURSORONSCREEN" . ISCURSORONSCREEN) ("DISABLECURSOR" . DISABLECURSOR)
+    ("ENABLECURSOR" . ENABLECURSOR) ("ISCURSORHIDDEN" . ISCURSORHIDDEN)
+    ("HIDECURSOR" . HIDECURSOR) ("SHOWCURSOR" . SHOWCURSOR)
+    ("DISABLEEVENTWAITING" . DISABLEEVENTWAITING)
+    ("ENABLEEVENTWAITING" . ENABLEEVENTWAITING)
+    ("GETCLIPBOARDTEXT" . GETCLIPBOARDTEXT)
+    ("SETCLIPBOARDTEXT" . SETCLIPBOARDTEXT) ("GETMONITORNAME" . GETMONITORNAME)
+    ("GETWINDOWSCALEDPI" . GETWINDOWSCALEDPI)
+    ("GETWINDOWPOSITION" . GETWINDOWPOSITION)
+    ("GETMONITORREFRESHRATE" . GETMONITORREFRESHRATE)
+    ("GETMONITORPHYSICALHEIGHT" . GETMONITORPHYSICALHEIGHT)
+    ("GETMONITORPHYSICALWIDTH" . GETMONITORPHYSICALWIDTH)
+    ("GETMONITORHEIGHT" . GETMONITORHEIGHT)
+    ("GETMONITORWIDTH" . GETMONITORWIDTH)
+    ("GETMONITORPOSITION" . GETMONITORPOSITION)
+    ("GETCURRENTMONITOR" . GETCURRENTMONITOR)
+    ("GETMONITORCOUNT" . GETMONITORCOUNT) ("GETRENDERHEIGHT" . GETRENDERHEIGHT)
+    ("GETRENDERWIDTH" . GETRENDERWIDTH) ("GETSCREENHEIGHT" . GETSCREENHEIGHT)
+    ("GETSCREENWIDTH" . GETSCREENWIDTH) ("GETWINDOWHANDLE" . GETWINDOWHANDLE)
+    ("SETWINDOWFOCUSED" . SETWINDOWFOCUSED)
+    ("SETWINDOWOPACITY" . SETWINDOWOPACITY) ("SETWINDOWSIZE" . SETWINDOWSIZE)
+    ("SETWINDOWMAXSIZE" . SETWINDOWMAXSIZE)
+    ("SETWINDOWMINSIZE" . SETWINDOWMINSIZE)
+    ("SETWINDOWMONITOR" . SETWINDOWMONITOR)
+    ("SETWINDOWPOSITION" . SETWINDOWPOSITION)
+    ("SETWINDOWTITLE" . SETWINDOWTITLE) ("SETWINDOWICONS" . SETWINDOWICONS)
+    ("SETWINDOWICON" . SETWINDOWICON) ("RESTOREWINDOW" . RESTOREWINDOW)
+    ("MINIMIZEWINDOW" . MINIMIZEWINDOW) ("MAXIMIZEWINDOW" . MAXIMIZEWINDOW)
+    ("TOGGLEBORDERLESSWINDOWED" . TOGGLEBORDERLESSWINDOWED)
+    ("TOGGLEFULLSCREEN" . TOGGLEFULLSCREEN)
+    ("CLEARWINDOWSTATE" . CLEARWINDOWSTATE) ("SETWINDOWSTATE" . SETWINDOWSTATE)
+    ("ISWINDOWSTATE" . ISWINDOWSTATE) ("ISWINDOWRESIZED" . ISWINDOWRESIZED)
+    ("ISWINDOWFOCUSED" . ISWINDOWFOCUSED)
+    ("ISWINDOWMAXIMIZED" . ISWINDOWMAXIMIZED)
+    ("ISWINDOWMINIMIZED" . ISWINDOWMINIMIZED)
+    ("ISWINDOWHIDDEN" . ISWINDOWHIDDEN)
+    ("ISWINDOWFULLSCREEN" . ISWINDOWFULLSCREEN)
+    ("ISWINDOWREADY" . ISWINDOWREADY) ("WINDOWSHOULDCLOSE" . WINDOWSHOULDCLOSE)
+    ("CLOSEWINDOW" . CLOSEWINDOW) ("INITWINDOW" . INITWINDOW)))
 
 (COMMON-LISP:DEFPARAMETER +STRUCT-NAMES+
-  '(("AutomationEventList" . |AutomationEventList|)
-    ("AutomationEvent" . |AutomationEvent|) ("FilePathList" . |FilePathList|)
-    ("VrStereoConfig" . |VrStereoConfig|) ("VrDeviceInfo" . |VrDeviceInfo|)
-    ("Music" . |Music|) ("Sound" . |Sound|) ("AudioStream" . |AudioStream|)
-    ("rAudioProcessor" . |rAudioProcessor|) ("rAudioBuffer" . |rAudioBuffer|)
-    ("Wave" . |Wave|) ("BoundingBox" . |BoundingBox|)
-    ("RayCollision" . |RayCollision|) ("Ray" . |Ray|)
-    ("ModelAnimation" . |ModelAnimation|) ("Model" . |Model|)
-    ("BoneInfo" . |BoneInfo|) ("Transform" . |Transform|)
-    ("Material" . |Material|) ("MaterialMap" . |MaterialMap|)
-    ("Shader" . |Shader|) ("Mesh" . |Mesh|) ("Camera2D" . |Camera2D|)
-    ("Camera3D" . |Camera3D|) ("Font" . |Font|) ("GlyphInfo" . |GlyphInfo|)
-    ("NPatchInfo" . |NPatchInfo|) ("RenderTexture" . |RenderTexture|)
-    ("Texture" . |Texture|) ("Image" . |Image|) ("Rectangle" . |Rectangle|)
-    ("Color" . |Color|) ("Matrix" . |Matrix|) ("Vector4" . |Vector4|)
-    ("Vector3" . |Vector3|) ("Vector2" . |Vector2|)))
+  '(("AUTOMATIONEVENTLIST" . AUTOMATIONEVENTLIST)
+    ("AUTOMATIONEVENT" . AUTOMATIONEVENT) ("FILEPATHLIST" . FILEPATHLIST)
+    ("VRSTEREOCONFIG" . VRSTEREOCONFIG) ("VRDEVICEINFO" . VRDEVICEINFO)
+    ("MUSIC" . MUSIC) ("SOUND" . SOUND) ("AUDIOSTREAM" . AUDIOSTREAM)
+    ("RAUDIOPROCESSOR" . RAUDIOPROCESSOR) ("RAUDIOBUFFER" . RAUDIOBUFFER)
+    ("WAVE" . WAVE) ("BOUNDINGBOX" . BOUNDINGBOX)
+    ("RAYCOLLISION" . RAYCOLLISION) ("RAY" . RAY)
+    ("MODELANIMATION" . MODELANIMATION) ("MODEL" . MODEL)
+    ("BONEINFO" . BONEINFO) ("TRANSFORM" . TRANSFORM) ("MATERIAL" . MATERIAL)
+    ("MATERIALMAP" . MATERIALMAP) ("SHADER" . SHADER) ("MESH" . MESH)
+    ("CAMERA2D" . CAMERA2D) ("CAMERA3D" . CAMERA3D) ("FONT" . FONT)
+    ("GLYPHINFO" . GLYPHINFO) ("NPATCHINFO" . NPATCHINFO)
+    ("RENDERTEXTURE" . RENDERTEXTURE) ("TEXTURE" . TEXTURE) ("IMAGE" . IMAGE)
+    ("RECTANGLE" . RECTANGLE) ("COLOR" . COLOR) ("MATRIX" . MATRIX)
+    ("VECTOR4" . VECTOR4) ("VECTOR3" . VECTOR3) ("VECTOR2" . VECTOR2)))
 
 (COMMON-LISP:DEFPARAMETER +UNION-NAMES+ 'COMMON-LISP:NIL)
 
 (COMMON-LISP:DEFPARAMETER +VARIABLE-NAMES+ 'COMMON-LISP:NIL)
 
 (COMMON-LISP:DEFPARAMETER +TYPE-NAMES+
-  '(("AudioCallback" . |AudioCallback|)
-    ("SaveFileTextCallback" . |SaveFileTextCallback|)
-    ("LoadFileTextCallback" . |LoadFileTextCallback|)
-    ("SaveFileDataCallback" . |SaveFileDataCallback|)
-    ("LoadFileDataCallback" . |LoadFileDataCallback|)
-    ("TraceLogCallback" . |TraceLogCallback|) ("NPatchLayout" . |NPatchLayout|)
-    ("CameraProjection" . |CameraProjection|) ("CameraMode" . |CameraMode|)
-    ("Gesture" . |Gesture|) ("BlendMode" . |BlendMode|)
-    ("FontType" . |FontType|) ("CubemapLayout" . |CubemapLayout|)
-    ("TextureWrap" . |TextureWrap|) ("TextureFilter" . |TextureFilter|)
-    ("PixelFormat" . |PixelFormat|)
-    ("ShaderAttributeDataType" . |ShaderAttributeDataType|)
-    ("ShaderUniformDataType" . |ShaderUniformDataType|)
-    ("ShaderLocationIndex" . |ShaderLocationIndex|)
-    ("MaterialMapIndex" . |MaterialMapIndex|) ("GamepadAxis" . |GamepadAxis|)
-    ("GamepadButton" . |GamepadButton|) ("MouseCursor" . |MouseCursor|)
-    ("MouseButton" . |MouseButton|) ("KeyboardKey" . |KeyboardKey|)
-    ("TraceLogLevel" . |TraceLogLevel|) ("ConfigFlags" . |ConfigFlags|)
-    ("AutomationEventList" . |AutomationEventList|)
-    ("AutomationEvent" . |AutomationEvent|) ("FilePathList" . |FilePathList|)
-    ("VrStereoConfig" . |VrStereoConfig|) ("VrDeviceInfo" . |VrDeviceInfo|)
-    ("Music" . |Music|) ("Sound" . |Sound|) ("AudioStream" . |AudioStream|)
-    ("rAudioProcessor" . |rAudioProcessor|) ("rAudioBuffer" . |rAudioBuffer|)
-    ("Wave" . |Wave|) ("BoundingBox" . |BoundingBox|)
-    ("RayCollision" . |RayCollision|) ("Ray" . |Ray|)
-    ("ModelAnimation" . |ModelAnimation|) ("Model" . |Model|)
-    ("BoneInfo" . |BoneInfo|) ("Transform" . |Transform|)
-    ("Material" . |Material|) ("MaterialMap" . |MaterialMap|)
-    ("Shader" . |Shader|) ("Mesh" . |Mesh|) ("Camera2D" . |Camera2D|)
-    ("Camera" . |Camera|) ("Camera3D" . |Camera3D|) ("Font" . |Font|)
-    ("GlyphInfo" . |GlyphInfo|) ("NPatchInfo" . |NPatchInfo|)
-    ("RenderTexture2D" . |RenderTexture2D|) ("RenderTexture" . |RenderTexture|)
-    ("TextureCubemap" . |TextureCubemap|) ("Texture2D" . |Texture2D|)
-    ("Texture" . |Texture|) ("Image" . |Image|) ("Rectangle" . |Rectangle|)
-    ("Color" . |Color|) ("Matrix" . |Matrix|) ("Quaternion" . |Quaternion|)
-    ("Vector4" . |Vector4|) ("Vector3" . |Vector3|) ("Vector2" . |Vector2|)
-    ("va_list" . |va_list|) ("__builtin_va_list" . |__builtin_va_list|)
-    ("__gnuc_va_list" . |__gnuc_va_list|)))
+  '(("AUDIOCALLBACK" . AUDIOCALLBACK)
+    ("SAVEFILETEXTCALLBACK" . SAVEFILETEXTCALLBACK)
+    ("LOADFILETEXTCALLBACK" . LOADFILETEXTCALLBACK)
+    ("SAVEFILEDATACALLBACK" . SAVEFILEDATACALLBACK)
+    ("LOADFILEDATACALLBACK" . LOADFILEDATACALLBACK)
+    ("TRACELOGCALLBACK" . TRACELOGCALLBACK) ("NPATCHLAYOUT" . NPATCHLAYOUT)
+    ("CAMERAPROJECTION" . CAMERAPROJECTION) ("CAMERAMODE" . CAMERAMODE)
+    ("GESTURE" . GESTURE) ("BLENDMODE" . BLENDMODE) ("FONTTYPE" . FONTTYPE)
+    ("CUBEMAPLAYOUT" . CUBEMAPLAYOUT) ("TEXTUREWRAP" . TEXTUREWRAP)
+    ("TEXTUREFILTER" . TEXTUREFILTER) ("PIXELFORMAT" . PIXELFORMAT)
+    ("SHADERATTRIBUTEDATATYPE" . SHADERATTRIBUTEDATATYPE)
+    ("SHADERUNIFORMDATATYPE" . SHADERUNIFORMDATATYPE)
+    ("SHADERLOCATIONINDEX" . SHADERLOCATIONINDEX)
+    ("MATERIALMAPINDEX" . MATERIALMAPINDEX) ("GAMEPADAXIS" . GAMEPADAXIS)
+    ("GAMEPADBUTTON" . GAMEPADBUTTON) ("MOUSECURSOR" . MOUSECURSOR)
+    ("MOUSEBUTTON" . MOUSEBUTTON) ("KEYBOARDKEY" . KEYBOARDKEY)
+    ("TRACELOGLEVEL" . TRACELOGLEVEL) ("CONFIGFLAGS" . CONFIGFLAGS)
+    ("AUTOMATIONEVENTLIST" . AUTOMATIONEVENTLIST)
+    ("AUTOMATIONEVENT" . AUTOMATIONEVENT) ("FILEPATHLIST" . FILEPATHLIST)
+    ("VRSTEREOCONFIG" . VRSTEREOCONFIG) ("VRDEVICEINFO" . VRDEVICEINFO)
+    ("MUSIC" . MUSIC) ("SOUND" . SOUND) ("AUDIOSTREAM" . AUDIOSTREAM)
+    ("RAUDIOPROCESSOR" . RAUDIOPROCESSOR) ("RAUDIOBUFFER" . RAUDIOBUFFER)
+    ("WAVE" . WAVE) ("BOUNDINGBOX" . BOUNDINGBOX)
+    ("RAYCOLLISION" . RAYCOLLISION) ("RAY" . RAY)
+    ("MODELANIMATION" . MODELANIMATION) ("MODEL" . MODEL)
+    ("BONEINFO" . BONEINFO) ("TRANSFORM" . TRANSFORM) ("MATERIAL" . MATERIAL)
+    ("MATERIALMAP" . MATERIALMAP) ("SHADER" . SHADER) ("MESH" . MESH)
+    ("CAMERA2D" . CAMERA2D) ("CAMERA" . CAMERA) ("CAMERA3D" . CAMERA3D)
+    ("FONT" . FONT) ("GLYPHINFO" . GLYPHINFO) ("NPATCHINFO" . NPATCHINFO)
+    ("RENDERTEXTURE2D" . RENDERTEXTURE2D) ("RENDERTEXTURE" . RENDERTEXTURE)
+    ("TEXTURECUBEMAP" . TEXTURECUBEMAP) ("TEXTURE2D" . TEXTURE2D)
+    ("TEXTURE" . TEXTURE) ("IMAGE" . IMAGE) ("RECTANGLE" . RECTANGLE)
+    ("COLOR" . COLOR) ("MATRIX" . MATRIX) ("QUATERNION" . QUATERNION)
+    ("VECTOR4" . VECTOR4) ("VECTOR3" . VECTOR3) ("VECTOR2" . VECTOR2)
+    ("VA_LIST" . VA_LIST) ("__BUILTIN_VA_LIST" . __BUILTIN_VA_LIST)
+    ("__GNUC_VA_LIST" . __GNUC_VA_LIST)))
 
 (COMMON-LISP:DEFPARAMETER +CONSTANT-NAMES+
   '(("SHADER_LOC_MAP_SPECULAR" . SHADER_LOC_MAP_SPECULAR)
     ("SHADER_LOC_MAP_DIFFUSE" . SHADER_LOC_MAP_DIFFUSE)
     ("__GCC_HAVE_DWARF2_CFI_ASM" . __GCC_HAVE_DWARF2_CFI_ASM)
-    ("__bool_true_false_are_defined" . |__bool_true_false_are_defined|)
-    ("MOUSE_LEFT_BUTTON" . MOUSE_LEFT_BUTTON)
+    ("__BOOL_TRUE_FALSE_ARE_DEFINED" . __BOOL_TRUE_FALSE_ARE_DEFINED)
     ("MOUSE_RIGHT_BUTTON" . MOUSE_RIGHT_BUTTON)
     ("MOUSE_MIDDLE_BUTTON" . MOUSE_MIDDLE_BUTTON)
-    ("RAYLIB_VERSION_MAJOR" . RAYLIB_VERSION_MAJOR)
+    ("MOUSE_LEFT_BUTTON" . MOUSE_LEFT_BUTTON) ("RAD2DEG" . RAD2DEG)
+    ("DEG2RAD" . DEG2RAD) ("PI" . PI)
     ("RAYLIB_VERSION_MINOR" . RAYLIB_VERSION_MINOR)
-    ("RAYLIB_VERSION_PATCH" . RAYLIB_VERSION_PATCH) ("PI" . PI)
-    ("DEG2RAD" . DEG2RAD) ("RAD2DEG" . RAD2DEG)
+    ("RAYLIB_VERSION_MAJOR" . RAYLIB_VERSION_MAJOR)
+    ("RAYLIB_VERSION_PATCH" . RAYLIB_VERSION_PATCH)
     ("MATERIAL_MAP_DIFFUSE" . MATERIAL_MAP_DIFFUSE)
-    ("MATERIAL_MAP_SPECULAR" . MATERIAL_MAP_SPECULAR) ("false" . |false|)
-    ("true" . |true|)))
+    ("MATERIAL_MAP_SPECULAR" . MATERIAL_MAP_SPECULAR) ("FALSE" . FALSE)
+    ("TRUE" . TRUE)))
 
 (COMMON-LISP:DEFPARAMETER +ARGUMENT-NAMES+
-  '(("processor" . |processor|) ("frameCount" . |frameCount|)
-    ("stream" . |stream|) ("music" . |music|) ("samples" . |samples|)
-    ("channels" . |channels|) ("sampleSize" . |sampleSize|)
-    ("sampleRate" . |sampleRate|) ("finalFrame" . |finalFrame|)
-    ("initFrame" . |initFrame|) ("pan" . |pan|) ("pitch" . |pitch|)
-    ("alias" . |alias|) ("sampleCount" . |sampleCount|) ("sound" . |sound|)
-    ("wave" . |wave|) ("volume" . |volume|) ("box2" . |box2|) ("box1" . |box1|)
-    ("animations" . |animations|) ("anim" . |anim|) ("animCount" . |animCount|)
-    ("materialId" . |materialId|) ("meshId" . |meshId|) ("mapType" . |mapType|)
-    ("materialCount" . |materialCount|) ("cubeSize" . |cubeSize|)
-    ("cubicmap" . |cubicmap|) ("heightmap" . |heightmap|) ("radSeg" . |radSeg|)
-    ("resZ" . |resZ|) ("resX" . |resX|) ("instances" . |instances|)
-    ("transforms" . |transforms|) ("transform" . |transform|)
-    ("material" . |material|) ("offset" . |offset|) ("dynamic" . |dynamic|)
-    ("up" . |up|) ("box" . |box|) ("model" . |model|) ("mesh" . |mesh|)
-    ("ray" . |ray|) ("endRadius" . |endRadius|) ("startRadius" . |startRadius|)
-    ("radiusBottom" . |radiusBottom|) ("radiusTop" . |radiusTop|)
-    ("slices" . |slices|) ("rings" . |rings|) ("centerPos" . |centerPos|)
-    ("rotationAngle" . |rotationAngle|) ("rotationAxis" . |rotationAxis|)
-    ("find" . |find|) ("append" . |append|) ("delimiter" . |delimiter|)
-    ("textList" . |textList|) ("insert" . |insert|) ("by" . |by|)
-    ("text2" . |text2|) ("text1" . |text1|) ("utf8Size" . |utf8Size|)
-    ("codepointSize" . |codepointSize|) ("length" . |length|)
-    ("codepoint" . |codepoint|) ("packMethod" . |packMethod|)
-    ("padding" . |padding|) ("glyphCount" . |glyphCount|)
-    ("glyphRecs" . |glyphRecs|) ("glyphs" . |glyphs|) ("type" . |type|)
-    ("firstChar" . |firstChar|) ("codepointCount" . |codepointCount|)
-    ("codepoints" . |codepoints|) ("dstPtr" . |dstPtr|) ("srcPtr" . |srcPtr|)
-    ("hexValue" . |hexValue|) ("color2" . |color2|) ("color1" . |color1|)
-    ("saturation" . |saturation|) ("hue" . |hue|) ("normalized" . |normalized|)
-    ("alpha" . |alpha|) ("nPatchInfo" . |nPatchInfo|) ("dest" . |dest|)
-    ("wrap" . |wrap|) ("pixels" . |pixels|) ("layout" . |layout|)
-    ("dstRec" . |dstRec|) ("srcRec" . |srcRec|) ("src" . |src|) ("c1" . |c1|)
-    ("dst" . |dst|) ("colors" . |colors|) ("colorCount" . |colorCount|)
-    ("maxPaletteSize" . |maxPaletteSize|) ("replace" . |replace|)
-    ("brightness" . |brightness|) ("contrast" . |contrast|)
-    ("degrees" . |degrees|) ("aBpp" . |aBpp|) ("bBpp" . |bBpp|)
-    ("gBpp" . |gBpp|) ("rBpp" . |rBpp|) ("newHeight" . |newHeight|)
-    ("newWidth" . |newWidth|) ("kernelSize" . |kernelSize|)
-    ("kernel" . |kernel|) ("blurSize" . |blurSize|) ("alphaMask" . |alphaMask|)
-    ("crop" . |crop|) ("fill" . |fill|) ("newFormat" . |newFormat|)
-    ("tint" . |tint|) ("spacing" . |spacing|) ("font" . |font|)
-    ("fontSize" . |fontSize|) ("selectedChannel" . |selectedChannel|)
-    ("tileSize" . |tileSize|) ("scale" . |scale|) ("factor" . |factor|)
-    ("col2" . |col2|) ("col1" . |col1|) ("checksY" . |checksY|)
-    ("checksX" . |checksX|) ("density" . |density|) ("end" . |end|)
-    ("start" . |start|) ("direction" . |direction|) ("fileSize" . |fileSize|)
-    ("fileData" . |fileData|) ("fileType" . |fileType|) ("frames" . |frames|)
-    ("headerSize" . |headerSize|) ("format" . |format|)
-    ("threshold" . |threshold|) ("collisionPoint" . |collisionPoint|)
-    ("endPos2" . |endPos2|) ("startPos2" . |startPos2|) ("endPos1" . |endPos1|)
-    ("startPos1" . |startPos1|) ("point" . |point|) ("radius2" . |radius2|)
-    ("center2" . |center2|) ("radius1" . |radius1|) ("center1" . |center1|)
-    ("rec2" . |rec2|) ("rec1" . |rec1|) ("t" . |t|) ("c3" . |c3|) ("c2" . |c2|)
-    ("p4" . |p4|) ("p3" . |p3|) ("p2" . |p2|) ("p1" . |p1|) ("sides" . |sides|)
-    ("v3" . |v3|) ("v2" . |v2|) ("v1" . |v1|) ("roundness" . |roundness|)
-    ("lineThick" . |lineThick|) ("bottomRight" . |bottomRight|)
-    ("topRight" . |topRight|) ("bottomLeft" . |bottomLeft|)
-    ("topLeft" . |topLeft|) ("right" . |right|) ("left" . |left|)
-    ("bottom" . |bottom|) ("top" . |top|) ("origin" . |origin|) ("rec" . |rec|)
-    ("outerRadius" . |outerRadius|) ("innerRadius" . |innerRadius|)
-    ("radiusV" . |radiusV|) ("radiusH" . |radiusH|) ("outer" . |outer|)
-    ("inner" . |inner|) ("segments" . |segments|) ("endAngle" . |endAngle|)
-    ("startAngle" . |startAngle|) ("center" . |center|) ("radius" . |radius|)
-    ("centerY" . |centerY|) ("centerX" . |centerX|)
-    ("pointCount" . |pointCount|) ("points" . |points|) ("thick" . |thick|)
-    ("endPos" . |endPos|) ("startPos" . |startPos|) ("endPosY" . |endPosY|)
-    ("endPosX" . |endPosX|) ("startPosY" . |startPosY|)
-    ("startPosX" . |startPosX|) ("posY" . |posY|) ("posX" . |posX|)
-    ("source" . |source|) ("zoom" . |zoom|) ("rotation" . |rotation|)
-    ("movement" . |movement|) ("gesture" . |gesture|) ("index" . |index|)
-    ("cursor" . |cursor|) ("scaleY" . |scaleY|) ("scaleX" . |scaleX|)
-    ("offsetY" . |offsetY|) ("offsetX" . |offsetX|)
-    ("rightMotor" . |rightMotor|) ("leftMotor" . |leftMotor|)
-    ("mappings" . |mappings|) ("axis" . |axis|) ("button" . |button|)
-    ("gamepad" . |gamepad|) ("key" . |key|) ("event" . |event|)
-    ("frame" . |frame|) ("list" . |list|) ("outputSize" . |outputSize|)
-    ("compData" . |compData|) ("compDataSize" . |compDataSize|)
-    ("files" . |files|) ("scanSubdirs" . |scanSubdirs|) ("filter" . |filter|)
-    ("basePath" . |basePath|) ("path" . |path|) ("dir" . |dir|)
-    ("filePath" . |filePath|) ("ext" . |ext|) ("dirPath" . |dirPath|)
-    ("data" . |data|) ("dataSize" . |dataSize|) ("callback" . |callback|)
-    ("ptr" . |ptr|) ("size" . |size|) ("logLevel" . |logLevel|) ("url" . |url|)
-    ("fileName" . |fileName|) ("sequence" . |sequence|) ("max" . |max|)
-    ("min" . |min|) ("seed" . |seed|) ("seconds" . |seconds|) ("fps" . |fps|)
-    ("position" . |position|) ("texture" . |texture|) ("mat" . |mat|)
-    ("uniformType" . |uniformType|) ("value" . |value|)
-    ("locIndex" . |locIndex|) ("attribName" . |attribName|)
-    ("uniformName" . |uniformName|) ("fsCode" . |fsCode|) ("vsCode" . |vsCode|)
-    ("fsFileName" . |fsFileName|) ("vsFileName" . |vsFileName|)
-    ("device" . |device|) ("config" . |config|) ("mode" . |mode|)
-    ("shader" . |shader|) ("target" . |target|) ("camera" . |camera|)
-    ("color" . |color|) ("text" . |text|) ("opacity" . |opacity|)
-    ("monitor" . |monitor|) ("y" . |y|) ("x" . |x|) ("count" . |count|)
-    ("images" . |images|) ("image" . |image|) ("flags" . |flags|)
-    ("flag" . |flag|) ("title" . |title|) ("height" . |height|)
-    ("width" . |width|)))
+  '(("PROCESSOR" . PROCESSOR) ("FRAMECOUNT" . FRAMECOUNT) ("STREAM" . STREAM)
+    ("MUSIC" . MUSIC) ("SAMPLES" . SAMPLES) ("CHANNELS" . CHANNELS)
+    ("SAMPLESIZE" . SAMPLESIZE) ("SAMPLERATE" . SAMPLERATE)
+    ("FINALFRAME" . FINALFRAME) ("INITFRAME" . INITFRAME) ("PAN" . PAN)
+    ("PITCH" . PITCH) ("ALIAS" . ALIAS) ("SAMPLECOUNT" . SAMPLECOUNT)
+    ("SOUND" . SOUND) ("WAVE" . WAVE) ("VOLUME" . VOLUME) ("BOX2" . BOX2)
+    ("BOX1" . BOX1) ("ANIMATIONS" . ANIMATIONS) ("ANIM" . ANIM)
+    ("ANIMCOUNT" . ANIMCOUNT) ("MATERIALID" . MATERIALID) ("MESHID" . MESHID)
+    ("MAPTYPE" . MAPTYPE) ("MATERIALCOUNT" . MATERIALCOUNT)
+    ("CUBESIZE" . CUBESIZE) ("CUBICMAP" . CUBICMAP) ("HEIGHTMAP" . HEIGHTMAP)
+    ("RADSEG" . RADSEG) ("RESZ" . RESZ) ("RESX" . RESX)
+    ("INSTANCES" . INSTANCES) ("TRANSFORMS" . TRANSFORMS)
+    ("TRANSFORM" . TRANSFORM) ("MATERIAL" . MATERIAL) ("OFFSET" . OFFSET)
+    ("DYNAMIC" . DYNAMIC) ("UP" . UP) ("BOX" . BOX) ("MODEL" . MODEL)
+    ("MESH" . MESH) ("RAY" . RAY) ("ENDRADIUS" . ENDRADIUS)
+    ("STARTRADIUS" . STARTRADIUS) ("RADIUSBOTTOM" . RADIUSBOTTOM)
+    ("RADIUSTOP" . RADIUSTOP) ("SLICES" . SLICES) ("RINGS" . RINGS)
+    ("CENTERPOS" . CENTERPOS) ("ROTATIONANGLE" . ROTATIONANGLE)
+    ("ROTATIONAXIS" . ROTATIONAXIS) ("FIND" . FIND) ("APPEND" . APPEND)
+    ("DELIMITER" . DELIMITER) ("TEXTLIST" . TEXTLIST) ("INSERT" . INSERT)
+    ("BY" . BY) ("TEXT2" . TEXT2) ("TEXT1" . TEXT1) ("UTF8SIZE" . UTF8SIZE)
+    ("CODEPOINTSIZE" . CODEPOINTSIZE) ("LENGTH" . LENGTH)
+    ("CODEPOINT" . CODEPOINT) ("PACKMETHOD" . PACKMETHOD) ("PADDING" . PADDING)
+    ("GLYPHCOUNT" . GLYPHCOUNT) ("GLYPHRECS" . GLYPHRECS) ("GLYPHS" . GLYPHS)
+    ("TYPE" . TYPE) ("FIRSTCHAR" . FIRSTCHAR)
+    ("CODEPOINTCOUNT" . CODEPOINTCOUNT) ("CODEPOINTS" . CODEPOINTS)
+    ("DSTPTR" . DSTPTR) ("SRCPTR" . SRCPTR) ("HEXVALUE" . HEXVALUE)
+    ("COLOR2" . COLOR2) ("COLOR1" . COLOR1) ("SATURATION" . SATURATION)
+    ("HUE" . HUE) ("NORMALIZED" . NORMALIZED) ("ALPHA" . ALPHA)
+    ("NPATCHINFO" . NPATCHINFO) ("DEST" . DEST) ("WRAP" . WRAP)
+    ("PIXELS" . PIXELS) ("LAYOUT" . LAYOUT) ("DSTREC" . DSTREC)
+    ("SRCREC" . SRCREC) ("SRC" . SRC) ("C1" . C1) ("DST" . DST)
+    ("COLORS" . COLORS) ("COLORCOUNT" . COLORCOUNT)
+    ("MAXPALETTESIZE" . MAXPALETTESIZE) ("REPLACE" . REPLACE)
+    ("BRIGHTNESS" . BRIGHTNESS) ("CONTRAST" . CONTRAST) ("DEGREES" . DEGREES)
+    ("ABPP" . ABPP) ("BBPP" . BBPP) ("GBPP" . GBPP) ("RBPP" . RBPP)
+    ("NEWHEIGHT" . NEWHEIGHT) ("NEWWIDTH" . NEWWIDTH)
+    ("KERNELSIZE" . KERNELSIZE) ("KERNEL" . KERNEL) ("BLURSIZE" . BLURSIZE)
+    ("ALPHAMASK" . ALPHAMASK) ("CROP" . CROP) ("FILL" . FILL)
+    ("NEWFORMAT" . NEWFORMAT) ("TINT" . TINT) ("SPACING" . SPACING)
+    ("FONT" . FONT) ("FONTSIZE" . FONTSIZE)
+    ("SELECTEDCHANNEL" . SELECTEDCHANNEL) ("TILESIZE" . TILESIZE)
+    ("SCALE" . SCALE) ("FACTOR" . FACTOR) ("COL2" . COL2) ("COL1" . COL1)
+    ("CHECKSY" . CHECKSY) ("CHECKSX" . CHECKSX) ("DENSITY" . DENSITY)
+    ("END" . END) ("START" . START) ("DIRECTION" . DIRECTION)
+    ("FILESIZE" . FILESIZE) ("FILEDATA" . FILEDATA) ("FILETYPE" . FILETYPE)
+    ("FRAMES" . FRAMES) ("HEADERSIZE" . HEADERSIZE) ("FORMAT" . FORMAT)
+    ("THRESHOLD" . THRESHOLD) ("COLLISIONPOINT" . COLLISIONPOINT)
+    ("ENDPOS2" . ENDPOS2) ("STARTPOS2" . STARTPOS2) ("ENDPOS1" . ENDPOS1)
+    ("STARTPOS1" . STARTPOS1) ("POINT" . POINT) ("RADIUS2" . RADIUS2)
+    ("CENTER2" . CENTER2) ("RADIUS1" . RADIUS1) ("CENTER1" . CENTER1)
+    ("REC2" . REC2) ("REC1" . REC1) ("T" . T) ("C3" . C3) ("C2" . C2)
+    ("P4" . P4) ("P3" . P3) ("P2" . P2) ("P1" . P1) ("SIDES" . SIDES)
+    ("V3" . V3) ("V2" . V2) ("V1" . V1) ("ROUNDNESS" . ROUNDNESS)
+    ("LINETHICK" . LINETHICK) ("BOTTOMRIGHT" . BOTTOMRIGHT)
+    ("TOPRIGHT" . TOPRIGHT) ("BOTTOMLEFT" . BOTTOMLEFT) ("TOPLEFT" . TOPLEFT)
+    ("RIGHT" . RIGHT) ("LEFT" . LEFT) ("BOTTOM" . BOTTOM) ("TOP" . TOP)
+    ("ORIGIN" . ORIGIN) ("REC" . REC) ("OUTERRADIUS" . OUTERRADIUS)
+    ("INNERRADIUS" . INNERRADIUS) ("RADIUSV" . RADIUSV) ("RADIUSH" . RADIUSH)
+    ("OUTER" . OUTER) ("INNER" . INNER) ("SEGMENTS" . SEGMENTS)
+    ("ENDANGLE" . ENDANGLE) ("STARTANGLE" . STARTANGLE) ("CENTER" . CENTER)
+    ("RADIUS" . RADIUS) ("CENTERY" . CENTERY) ("CENTERX" . CENTERX)
+    ("POINTCOUNT" . POINTCOUNT) ("POINTS" . POINTS) ("THICK" . THICK)
+    ("ENDPOS" . ENDPOS) ("STARTPOS" . STARTPOS) ("ENDPOSY" . ENDPOSY)
+    ("ENDPOSX" . ENDPOSX) ("STARTPOSY" . STARTPOSY) ("STARTPOSX" . STARTPOSX)
+    ("POSY" . POSY) ("POSX" . POSX) ("SOURCE" . SOURCE) ("ZOOM" . ZOOM)
+    ("ROTATION" . ROTATION) ("MOVEMENT" . MOVEMENT) ("GESTURE" . GESTURE)
+    ("INDEX" . INDEX) ("CURSOR" . CURSOR) ("SCALEY" . SCALEY)
+    ("SCALEX" . SCALEX) ("OFFSETY" . OFFSETY) ("OFFSETX" . OFFSETX)
+    ("RIGHTMOTOR" . RIGHTMOTOR) ("LEFTMOTOR" . LEFTMOTOR)
+    ("MAPPINGS" . MAPPINGS) ("AXIS" . AXIS) ("BUTTON" . BUTTON)
+    ("GAMEPAD" . GAMEPAD) ("KEY" . KEY) ("EVENT" . EVENT) ("FRAME" . FRAME)
+    ("LIST" . LIST) ("OUTPUTSIZE" . OUTPUTSIZE) ("COMPDATA" . COMPDATA)
+    ("COMPDATASIZE" . COMPDATASIZE) ("FILES" . FILES)
+    ("SCANSUBDIRS" . SCANSUBDIRS) ("FILTER" . FILTER) ("BASEPATH" . BASEPATH)
+    ("PATH" . PATH) ("DIR" . DIR) ("FILEPATH" . FILEPATH) ("EXT" . EXT)
+    ("DIRPATH" . DIRPATH) ("DATA" . DATA) ("DATASIZE" . DATASIZE)
+    ("CALLBACK" . CALLBACK) ("PTR" . PTR) ("SIZE" . SIZE)
+    ("LOGLEVEL" . LOGLEVEL) ("URL" . URL) ("FILENAME" . FILENAME)
+    ("SEQUENCE" . SEQUENCE) ("MAX" . MAX) ("MIN" . MIN) ("SEED" . SEED)
+    ("SECONDS" . SECONDS) ("FPS" . FPS) ("POSITION" . POSITION)
+    ("TEXTURE" . TEXTURE) ("MAT" . MAT) ("UNIFORMTYPE" . UNIFORMTYPE)
+    ("VALUE" . VALUE) ("LOCINDEX" . LOCINDEX) ("ATTRIBNAME" . ATTRIBNAME)
+    ("UNIFORMNAME" . UNIFORMNAME) ("FSCODE" . FSCODE) ("VSCODE" . VSCODE)
+    ("FSFILENAME" . FSFILENAME) ("VSFILENAME" . VSFILENAME) ("DEVICE" . DEVICE)
+    ("CONFIG" . CONFIG) ("MODE" . MODE) ("SHADER" . SHADER) ("TARGET" . TARGET)
+    ("CAMERA" . CAMERA) ("COLOR" . COLOR) ("TEXT" . TEXT) ("OPACITY" . OPACITY)
+    ("MONITOR" . MONITOR) ("Y" . Y) ("X" . X) ("COUNT" . COUNT)
+    ("IMAGES" . IMAGES) ("IMAGE" . IMAGE) ("FLAGS" . FLAGS) ("FLAG" . FLAG)
+    ("TITLE" . TITLE) ("HEIGHT" . HEIGHT) ("WIDTH" . WIDTH)))
 
 (COMMON-LISP:DEFPARAMETER +FIELD-NAMES+
-  '(("events" . |events|) ("type" . |type|) ("frame" . |frame|)
-    ("paths" . |paths|) ("count" . |count|) ("capacity" . |capacity|)
-    ("scaleIn" . |scaleIn|) ("rightScreenCenter" . |rightScreenCenter|)
-    ("leftScreenCenter" . |leftScreenCenter|)
-    ("rightLensCenter" . |rightLensCenter|)
-    ("leftLensCenter" . |leftLensCenter|) ("viewOffset" . |viewOffset|)
-    ("chromaAbCorrection" . |chromaAbCorrection|)
-    ("lensDistortionValues" . |lensDistortionValues|)
-    ("interpupillaryDistance" . |interpupillaryDistance|)
-    ("lensSeparationDistance" . |lensSeparationDistance|)
-    ("eyeToScreenDistance" . |eyeToScreenDistance|)
-    ("vScreenSize" . |vScreenSize|) ("hScreenSize" . |hScreenSize|)
-    ("vResolution" . |vResolution|) ("hResolution" . |hResolution|)
-    ("ctxData" . |ctxData|) ("ctxType" . |ctxType|) ("looping" . |looping|)
-    ("stream" . |stream|) ("processor" . |processor|) ("buffer" . |buffer|)
-    ("channels" . |channels|) ("sampleSize" . |sampleSize|)
-    ("sampleRate" . |sampleRate|) ("max" . |max|) ("min" . |min|)
-    ("normal" . |normal|) ("point" . |point|) ("distance" . |distance|)
-    ("hit" . |hit|) ("direction" . |direction|) ("framePoses" . |framePoses|)
-    ("frameCount" . |frameCount|) ("bindPose" . |bindPose|) ("bones" . |bones|)
-    ("meshMaterial" . |meshMaterial|) ("materials" . |materials|)
-    ("meshes" . |meshes|) ("materialCount" . |materialCount|)
-    ("meshCount" . |meshCount|) ("transform" . |transform|)
-    ("parent" . |parent|) ("name" . |name|) ("scale" . |scale|)
-    ("translation" . |translation|) ("params" . |params|) ("maps" . |maps|)
-    ("shader" . |shader|) ("color" . |color|) ("locs" . |locs|)
-    ("vboId" . |vboId|) ("vaoId" . |vaoId|) ("boneCount" . |boneCount|)
-    ("boneMatrices" . |boneMatrices|) ("boneWeights" . |boneWeights|)
-    ("boneIds" . |boneIds|) ("animNormals" . |animNormals|)
-    ("animVertices" . |animVertices|) ("indices" . |indices|)
-    ("colors" . |colors|) ("tangents" . |tangents|) ("normals" . |normals|)
-    ("texcoords2" . |texcoords2|) ("texcoords" . |texcoords|)
-    ("vertices" . |vertices|) ("triangleCount" . |triangleCount|)
-    ("vertexCount" . |vertexCount|) ("zoom" . |zoom|) ("rotation" . |rotation|)
-    ("offset" . |offset|) ("projection" . |projection|) ("fovy" . |fovy|)
-    ("up" . |up|) ("target" . |target|) ("position" . |position|)
-    ("glyphs" . |glyphs|) ("recs" . |recs|) ("glyphPadding" . |glyphPadding|)
-    ("glyphCount" . |glyphCount|) ("baseSize" . |baseSize|) ("image" . |image|)
-    ("advanceX" . |advanceX|) ("offsetY" . |offsetY|) ("offsetX" . |offsetX|)
-    ("value" . |value|) ("layout" . |layout|) ("bottom" . |bottom|)
-    ("right" . |right|) ("top" . |top|) ("left" . |left|) ("source" . |source|)
-    ("depth" . |depth|) ("texture" . |texture|) ("id" . |id|)
-    ("format" . |format|) ("mipmaps" . |mipmaps|) ("data" . |data|)
-    ("height" . |height|) ("width" . |width|) ("a" . |a|) ("b" . |b|)
-    ("g" . |g|) ("r" . |r|) ("m15" . |m15|) ("m11" . |m11|) ("m7" . |m7|)
-    ("m3" . |m3|) ("m14" . |m14|) ("m10" . |m10|) ("m6" . |m6|) ("m2" . |m2|)
-    ("m13" . |m13|) ("m9" . |m9|) ("m5" . |m5|) ("m1" . |m1|) ("m12" . |m12|)
-    ("m8" . |m8|) ("m4" . |m4|) ("m0" . |m0|) ("w" . |w|) ("z" . |z|)
-    ("y" . |y|) ("x" . |x|)))
+  '(("EVENTS" . EVENTS) ("TYPE" . TYPE) ("FRAME" . FRAME) ("PATHS" . PATHS)
+    ("COUNT" . COUNT) ("CAPACITY" . CAPACITY) ("SCALEIN" . SCALEIN)
+    ("RIGHTSCREENCENTER" . RIGHTSCREENCENTER)
+    ("LEFTSCREENCENTER" . LEFTSCREENCENTER)
+    ("RIGHTLENSCENTER" . RIGHTLENSCENTER) ("LEFTLENSCENTER" . LEFTLENSCENTER)
+    ("VIEWOFFSET" . VIEWOFFSET) ("CHROMAABCORRECTION" . CHROMAABCORRECTION)
+    ("LENSDISTORTIONVALUES" . LENSDISTORTIONVALUES)
+    ("INTERPUPILLARYDISTANCE" . INTERPUPILLARYDISTANCE)
+    ("LENSSEPARATIONDISTANCE" . LENSSEPARATIONDISTANCE)
+    ("EYETOSCREENDISTANCE" . EYETOSCREENDISTANCE) ("VSCREENSIZE" . VSCREENSIZE)
+    ("HSCREENSIZE" . HSCREENSIZE) ("VRESOLUTION" . VRESOLUTION)
+    ("HRESOLUTION" . HRESOLUTION) ("CTXDATA" . CTXDATA) ("CTXTYPE" . CTXTYPE)
+    ("LOOPING" . LOOPING) ("STREAM" . STREAM) ("PROCESSOR" . PROCESSOR)
+    ("BUFFER" . BUFFER) ("CHANNELS" . CHANNELS) ("SAMPLESIZE" . SAMPLESIZE)
+    ("SAMPLERATE" . SAMPLERATE) ("MAX" . MAX) ("MIN" . MIN) ("NORMAL" . NORMAL)
+    ("POINT" . POINT) ("DISTANCE" . DISTANCE) ("HIT" . HIT)
+    ("DIRECTION" . DIRECTION) ("FRAMEPOSES" . FRAMEPOSES)
+    ("FRAMECOUNT" . FRAMECOUNT) ("BINDPOSE" . BINDPOSE) ("BONES" . BONES)
+    ("MESHMATERIAL" . MESHMATERIAL) ("MATERIALS" . MATERIALS)
+    ("MESHES" . MESHES) ("MATERIALCOUNT" . MATERIALCOUNT)
+    ("MESHCOUNT" . MESHCOUNT) ("TRANSFORM" . TRANSFORM) ("PARENT" . PARENT)
+    ("NAME" . NAME) ("SCALE" . SCALE) ("TRANSLATION" . TRANSLATION)
+    ("PARAMS" . PARAMS) ("MAPS" . MAPS) ("SHADER" . SHADER) ("COLOR" . COLOR)
+    ("LOCS" . LOCS) ("VBOID" . VBOID) ("VAOID" . VAOID)
+    ("BONECOUNT" . BONECOUNT) ("BONEMATRICES" . BONEMATRICES)
+    ("BONEWEIGHTS" . BONEWEIGHTS) ("BONEIDS" . BONEIDS)
+    ("ANIMNORMALS" . ANIMNORMALS) ("ANIMVERTICES" . ANIMVERTICES)
+    ("INDICES" . INDICES) ("COLORS" . COLORS) ("TANGENTS" . TANGENTS)
+    ("NORMALS" . NORMALS) ("TEXCOORDS2" . TEXCOORDS2) ("TEXCOORDS" . TEXCOORDS)
+    ("VERTICES" . VERTICES) ("TRIANGLECOUNT" . TRIANGLECOUNT)
+    ("VERTEXCOUNT" . VERTEXCOUNT) ("ZOOM" . ZOOM) ("ROTATION" . ROTATION)
+    ("OFFSET" . OFFSET) ("PROJECTION" . PROJECTION) ("FOVY" . FOVY) ("UP" . UP)
+    ("TARGET" . TARGET) ("POSITION" . POSITION) ("GLYPHS" . GLYPHS)
+    ("RECS" . RECS) ("GLYPHPADDING" . GLYPHPADDING) ("GLYPHCOUNT" . GLYPHCOUNT)
+    ("BASESIZE" . BASESIZE) ("IMAGE" . IMAGE) ("ADVANCEX" . ADVANCEX)
+    ("OFFSETY" . OFFSETY) ("OFFSETX" . OFFSETX) ("VALUE" . VALUE)
+    ("LAYOUT" . LAYOUT) ("BOTTOM" . BOTTOM) ("RIGHT" . RIGHT) ("TOP" . TOP)
+    ("LEFT" . LEFT) ("SOURCE" . SOURCE) ("DEPTH" . DEPTH) ("TEXTURE" . TEXTURE)
+    ("ID" . ID) ("FORMAT" . FORMAT) ("MIPMAPS" . MIPMAPS) ("DATA" . DATA)
+    ("HEIGHT" . HEIGHT) ("WIDTH" . WIDTH) ("A" . A) ("B" . B) ("G" . G)
+    ("R" . R) ("M15" . M15) ("M11" . M11) ("M7" . M7) ("M3" . M3) ("M14" . M14)
+    ("M10" . M10) ("M6" . M6) ("M2" . M2) ("M13" . M13) ("M9" . M9) ("M5" . M5)
+    ("M1" . M1) ("M12" . M12) ("M8" . M8) ("M4" . M4) ("M0" . M0) ("W" . W)
+    ("Z" . Z) ("Y" . Y) ("X" . X)))
 

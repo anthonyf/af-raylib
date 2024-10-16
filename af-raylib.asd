@@ -20,6 +20,6 @@
 			      :c2ffi-executable "../c2ffi/build/bin/c2ffi"
 			      :package #:af-raylib.lib
 			      :foreign-library-name "af-raylib.lib::libraylib"
-			      ;;:ffi-name-transformer "af-raylib.prelude::ffi-name-transformer"
+			      :ffi-name-transformer "af-raylib.prelude::ffi-name-transformer"
 			      :include-sources ("rlgl.h" "raymath.h")
 			      :foreign-library-spec ((t (:default "/usr/local/lib/libraylib"))))))))

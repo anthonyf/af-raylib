@@ -8,3 +8,7 @@
 
 (uiop:define-package #:af-raylib
   (:use #:cl))
+
+(uiop:define-package #:af-raylib.examples
+  (:use #:cl)
+  (:mix #:af-raylib))
