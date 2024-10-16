@@ -10,8 +10,9 @@
   :depends-on (#:cffi
 	       #:cffi/c2ffi
 	       #:cffi-libffi
-	       #:cl-ppcre
-	       #:cl-json)
+	       #:cl-ppcre ;; indirect?
+	       #:cl-json ;; indirect?
+	       #:alexandria)
   :components ((:file "package")
                (:file "prelude")
 	       (:module "spec"
@@ -21,5 +22,7 @@
 			      :package #:af-raylib.lib
 			      :foreign-library-name "af-raylib.lib::libraylib"
 			      :ffi-name-transformer "af-raylib.prelude::ffi-name-transformer"
+			      :ffi-name-export-predicate "af-raylib.prelude::ffi-export-predicate"
 			      :include-sources ("rlgl.h" "raymath.h")
-			      :foreign-library-spec ((t (:default "/usr/local/lib/libraylib"))))))))
+			      :foreign-library-spec ((t (:default "/usr/local/lib/libraylib"))))))
+	       (:file "postlude")))
