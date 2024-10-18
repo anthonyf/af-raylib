@@ -12,7 +12,8 @@
 	       #:cffi-libffi
 	       #:cl-ppcre ;; indirect?
 	       #:cl-json ;; indirect?
-	       #:alexandria)
+	       #:alexandria
+	       #:float-features)
   :components ((:file "package")
                (:file "prelude")
 	       (:module "spec"
@@ -24,5 +25,8 @@
 			      :ffi-name-transformer "af-raylib.prelude::ffi-name-transformer"
 			      :ffi-name-export-predicate "af-raylib.prelude::ffi-export-predicate"
 			      :include-sources ("rlgl.h" "raymath.h")
-			      :foreign-library-spec ((t (:default "/usr/local/lib/libraylib"))))))
+			      :foreign-library-spec ((:darwin "libraylib.dylib")
+						     (:unix "libraylib.so")
+						     (:windows (:or "raylib.dll" "libraylib.dll"))
+						     (t (:default (:or "libraylib" "/usr/local/lib/libraylib")))))))
 	       (:file "postlude")))

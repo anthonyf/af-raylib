@@ -14,4 +14,6 @@
   (:use #:cl)
   (:shadowing-import-from #:af-raylib #:pi)
   (:mix #:af-raylib
-	#:alexandria))
+	#:af-raylib.lib
+	#:alexandria
+	#:float-features))
