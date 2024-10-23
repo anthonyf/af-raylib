@@ -25,7 +25,8 @@
 	       (clear-background +raywhite+)
 	       (draw-text "Congrats! You created your first window!" 190 200 20 +lightgray+)
 	       (end-drawing)))
-    (close-window)))
+    (close-window)
+    (uiop:quit)))
 
 (main)
 
