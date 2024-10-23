@@ -31,4 +31,4 @@
 												 (t (:default (:or "libraylib" "/usr/local/lib/libraylib")))))))
 						   (:file "package")
 						   (:file "constants")
-						   (:module "examples" :components ())))))
+						   (:file "macros")))))

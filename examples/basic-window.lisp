@@ -18,15 +18,11 @@
 			    :invalid 
 			    :divide-by-zero
 			    :denormalized-operand)
-    (init-window +width+ +height+ "basic window example")
-    (loop until (window-should-close)
-	  do (progn
-	       (begin-drawing)
-	       (clear-background +raywhite+)
-	       (draw-text "Congrats! You created your first window!" 190 200 20 +lightgray+)
-	       (end-drawing)))
-    (close-window)
-    (uiop:quit)))
+    (with-window (+width+ +height+ "basic window example")
+      (loop until (window-should-close)
+	    do (with-drawing ()
+		 (clear-background +raywhite+)
+		 (draw-text "Congrats! You created your first window!" 190 200 20 +lightgray+))))))
 
 (main)
 

@@ -32,5 +32,9 @@
    #:+BLANK+
    #:+MAGENTA+
    #:+RAYWHITE+
+
+   ;; macros
+   #:with-window
+   #:with-drawing
    ))
 
