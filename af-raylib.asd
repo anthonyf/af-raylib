@@ -11,11 +11,10 @@
 	       #:cffi/c2ffi
 	       #:cffi-libffi
 	       #:cl-ppcre ;; indirect?
-	       #:cl-json ;; indirect?
+	       #:cl-json  ;; indirect?
 	       #:alexandria
 	       #:float-features)
-  :components ((:file "package")
-               (:file "prelude")
+  :components ((:file "prelude")
 	       (:module "spec"
 		:components ((:cffi/c2ffi-file
 			      "raylib.h"
@@ -29,6 +28,6 @@
 						     (:unix "libraylib.so")
 						     (:windows (:or "raylib.dll" "libraylib.dll"))
 						     (t (:default (:or "libraylib" "/usr/local/lib/libraylib")))))))
-	       (:file "postlude")
-	       (:module "examples"
-			:components ((:file "package")))))
+	       (:file "package")
+	       (:file "constants")
+	       (:module "examples" :components ())))
