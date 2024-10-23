@@ -12,14 +12,16 @@
 			    :invalid 
 			    :divide-by-zero
 			    :denormalized-operand)
-    (af-raylib.lib:initwindow +width+ +height+ "basic window example")
-    (loop until (af-raylib.lib:windowshouldclose)
+    (init-window +width+ +height+ "basic window example")
+    (loop until (window-should-close)
 	  do (progn
-	       (af-raylib.lib:begindrawing)
-	       (af-raylib.lib:clearbackground af-raylib::)
-	       (af-raylib.lib:enddrawing)))
-    ))
+	       (begin-drawing)
+	       (clear-background '(r 255 g 0 b 0 a 255))
+	       
+	       (end-drawing)))
+    (close-window)))
 
 
 (main)
+
 

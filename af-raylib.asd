@@ -29,4 +29,6 @@
 						     (:unix "libraylib.so")
 						     (:windows (:or "raylib.dll" "libraylib.dll"))
 						     (t (:default (:or "libraylib" "/usr/local/lib/libraylib")))))))
-	       (:file "postlude")))
+	       (:file "postlude")
+	       (:module "examples"
+			:components ((:file "package")))))

@@ -3,8 +3,9 @@
 
 (defun ffi-name-transformer (name kind &key &allow-other-keys)
   (declare (ignore kind))
-  (string-upcase name))
+  (cffi:translate-camelcase-name name)
+  )
 
 (defun ffi-export-predicate (symbol &key &allow-other-keys)
-  t ;;(not (find-symbol (symbol-name symbol) :cl-user))
+  (not (find-symbol (symbol-name symbol) :cl-user))
   )
